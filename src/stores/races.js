@@ -12,7 +12,7 @@ export const useRacesStore = defineStore('races', () => {
   // Filters
   const filterCity = ref([])
   const filterDistances = ref([])
-  const filterStatus = ref('')
+  const filterStatus = ref('접수중')
   const filterDateFrom = ref('')
   const filterDateTo = ref('')
   const filterDays = ref([])
