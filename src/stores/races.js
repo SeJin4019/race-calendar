@@ -64,7 +64,7 @@ export const useRacesStore = defineStore('races', () => {
     loading.value = true
     error.value = null
     try {
-      const res = await fetch('/races.json')
+      const res = await fetch(`${import.meta.env.BASE_URL}races.json`)
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
       const data = await res.json()
       races.value = (data.races || []).map(r => ({
