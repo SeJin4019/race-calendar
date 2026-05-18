@@ -102,9 +102,18 @@
         </button>
       </div>
 
-      <!-- Count + 종료 대회 토글 -->
+      <!-- Count + 필터 상태 바 -->
       <div class="px-4 py-2 text-xs text-gray-400 bg-gray-50 flex items-center justify-between">
-        <span>{{ displayedRaces.length }}개 대회</span>
+        <div class="flex items-center gap-2">
+          <span>{{ displayedRaces.length }}개 대회</span>
+          <button
+            v-if="hasActiveFilters"
+            @click="resetFilters"
+            class="flex items-center gap-1 px-2 py-0.5 bg-blue-50 text-blue-600 rounded-full text-xs font-medium"
+          >
+            필터 {{ activeFilterCount }}개 · 전체 보기 ✕
+          </button>
+        </div>
         <button
           @click="racesStore.hideEnded = !racesStore.hideEnded"
           class="text-xs transition-colors"
@@ -224,6 +233,20 @@ const displayedRaces = computed(() => {
   if (filterCertified.value) races = races.filter(r => r.is_certified)
   return races
 })
+
+const activeFilterCount = computed(() => {
+  let count = 0
+  if (racesStore.filterStatus) count++
+  if (racesStore.filterCity.length) count++
+  if (racesStore.filterDistances.length) count++
+  if (racesStore.filterDays.length) count++
+  if (racesStore.searchQuery) count++
+  if (filterFavorites.value) count++
+  if (filterCertified.value) count++
+  return count
+})
+
+const hasActiveFilters = computed(() => activeFilterCount.value > 0)
 
 const groupedRaces = computed(() => {
   const groups = {}
