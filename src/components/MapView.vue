@@ -1,13 +1,35 @@
 <template>
   <div class="relative w-full h-full">
-    <!-- Map container -->
-    <div ref="mapContainer" class="w-full h-full" />
+    <l-map
+      ref="mapRef"
+      :zoom="7"
+      :center="[36.5, 127.8]"
+      :use-global-leaflet="false"
+      class="w-full h-full"
+      @ready="onMapReady"
+    >
+      <l-tile-layer
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        layer-type="base"
+        name="OpenStreetMap"
+      />
+
+      <l-marker
+        v-for="race in mappableRaces"
+        :key="race.id"
+        :lat-lng="[race.location.lat, race.location.lng]"
+        @click="onMarkerClick(race)"
+      >
+        <l-tooltip>{{ race.name }}</l-tooltip>
+      </l-marker>
+    </l-map>
 
     <!-- Bottom sheet: selected race -->
     <Transition name="slide-up">
       <div
         v-if="selectedRace"
-        class="absolute bottom-0 left-0 right-0 bg-white rounded-t-2xl shadow-lg p-4 z-10"
+        class="absolute bottom-0 left-0 right-0 bg-white rounded-t-2xl shadow-lg p-4 z-[1000]"
       >
         <div class="flex justify-between items-start mb-2">
           <h3 class="font-bold text-base leading-tight pr-4">{{ selectedRace.name }}</h3>
@@ -34,48 +56,36 @@
         </RouterLink>
       </div>
     </Transition>
-
-    <!-- No API key warning -->
-    <div
-      v-if="!apiKey"
-      class="absolute inset-0 flex flex-col items-center justify-center bg-gray-100 text-center p-6"
-    >
-      <div class="text-4xl mb-3">🗺️</div>
-      <p class="font-bold mb-1">카카오 지도 API 키가 필요해요</p>
-      <p class="text-sm text-gray-500 mb-3">.env 파일에 VITE_KAKAO_MAP_KEY를 설정하세요</p>
-      <a
-        href="https://developers.kakao.com"
-        target="_blank"
-        class="text-blue-600 text-sm underline"
-      >카카오 개발자 콘솔 →</a>
-    </div>
-
-    <!-- Loading -->
-    <div v-if="loading" class="absolute inset-0 flex items-center justify-center bg-white/80">
-      <div class="text-gray-500 text-sm">지도 불러오는 중...</div>
-    </div>
   </div>
 </template>
 
 <script setup>
-import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
+import { ref, computed } from 'vue'
 import { RouterLink } from 'vue-router'
+import { LMap, LTileLayer, LMarker, LTooltip } from '@vue-leaflet/vue-leaflet'
+import 'leaflet/dist/leaflet.css'
 import { useRacesStore } from '../stores/races'
 import { useUiStore } from '../stores/ui'
 
 const racesStore = useRacesStore()
 const uiStore = useUiStore()
+const mapRef = ref(null)
 
-const mapContainer = ref(null)
-const loading = ref(true)
-const apiKey = import.meta.env.VITE_KAKAO_MAP_KEY
-
-let map = null
-const markers = new Map() // raceId → kakao marker
+const mappableRaces = computed(() =>
+  racesStore.races.filter(r => r.location?.lat && r.location?.lng)
+)
 
 const selectedRace = computed(() =>
   uiStore.selectedRaceId ? racesStore.getRaceById(uiStore.selectedRaceId) : null
 )
+
+function onMapReady() {
+  // Map is ready - markers will render via v-for
+}
+
+function onMarkerClick(race) {
+  uiStore.selectRace(race.id)
+}
 
 function formatDate(dateStr) {
   if (!dateStr) return ''
@@ -92,67 +102,6 @@ function statusClass(status) {
   }
   return map[status] || 'bg-gray-100 text-gray-600'
 }
-
-function loadKakaoScript() {
-  return new Promise((resolve, reject) => {
-    if (window.kakao?.maps) { resolve(); return }
-    const script = document.createElement('script')
-    script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${apiKey}&autoload=false`
-    script.onload = () => window.kakao.maps.load(resolve)
-    script.onerror = reject
-    document.head.appendChild(script)
-  })
-}
-
-function createMarkers(racesData) {
-  if (!map || !window.kakao?.maps) return
-  // Remove old markers
-  markers.forEach(m => m.setMap(null))
-  markers.clear()
-
-  racesData.forEach(race => {
-    if (!race.location?.lat || !race.location?.lng) return
-    const position = new window.kakao.maps.LatLng(race.location.lat, race.location.lng)
-    const marker = new window.kakao.maps.Marker({ position, map })
-    window.kakao.maps.event.addListener(marker, 'click', () => {
-      uiStore.selectRace(race.id)
-    })
-    markers.set(race.id, marker)
-  })
-}
-
-async function initMap() {
-  if (!apiKey || !mapContainer.value) return
-  try {
-    await loadKakaoScript()
-    const center = new window.kakao.maps.LatLng(36.5, 127.8)
-    map = new window.kakao.maps.Map(mapContainer.value, {
-      center,
-      level: 13
-    })
-    createMarkers(racesStore.races)
-  } catch (e) {
-    console.error('Kakao map init failed:', e)
-  } finally {
-    loading.value = false
-  }
-}
-
-// Re-create markers when races load
-watch(() => racesStore.races, (newRaces) => {
-  if (newRaces.length > 0) createMarkers(newRaces)
-}, { immediate: false })
-
-onMounted(async () => {
-  if (!apiKey) { loading.value = false; return }
-  await initMap()
-})
-
-onUnmounted(() => {
-  markers.forEach(m => m.setMap(null))
-  markers.clear()
-  map = null
-})
 </script>
 
 <style scoped>

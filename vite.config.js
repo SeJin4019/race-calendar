@@ -33,8 +33,15 @@ export default defineConfig({
             }
           },
           {
-            urlPattern: /^https:\/\/dapi\.kakao\.com\//,
-            handler: 'NetworkOnly'
+            urlPattern: /^https:\/\/[abc]\.tile\.openstreetmap\.org\//,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'osm-tiles',
+              expiration: {
+                maxEntries: 500,
+                maxAgeSeconds: 60 * 60 * 24 * 30
+              }
+            }
           }
         ]
       }
