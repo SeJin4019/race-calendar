@@ -16,19 +16,6 @@
 
       <!-- Filter row -->
       <div class="flex gap-2 px-3 py-2 overflow-x-auto bg-white border-b border-gray-100 shrink-0">
-        <!-- 즐겨찾기 filter -->
-        <button
-          @click="filterFavorites = !filterFavorites"
-          class="shrink-0 px-3 py-1 rounded-full text-xs font-medium border transition-colors"
-          :class="filterFavorites
-            ? 'bg-yellow-400 text-white border-yellow-400'
-            : 'bg-white text-yellow-500 border-yellow-200'"
-        >
-          ★ 즐겨찾기
-        </button>
-
-        <div class="w-px bg-gray-200 shrink-0"></div>
-
         <!-- 풀코스 filter -->
         <button
           @click="toggleFullOnly"
@@ -78,6 +65,16 @@
         </button>
 
         <!-- Province filter -->
+        <div class="w-px bg-gray-200 shrink-0"></div>
+        <button
+          @click="racesStore.filterCity = []"
+          class="shrink-0 px-3 py-1 rounded-full text-xs font-medium border transition-colors"
+          :class="racesStore.filterCity.length === 0
+            ? 'bg-blue-600 text-white border-blue-600'
+            : 'bg-white text-gray-600 border-gray-200'"
+        >
+          전체
+        </button>
         <button
           v-for="city in racesStore.cities"
           :key="city"
@@ -176,13 +173,8 @@
                 </div>
               </div>
 
-              <!-- Right: favorite + status -->
+              <!-- Right: status -->
               <div class="shrink-0 flex flex-col items-end gap-1.5">
-                <button
-                  @click.prevent.stop="favoritesStore.toggle(race.id)"
-                  class="text-lg leading-none transition-colors"
-                  :class="favoritesStore.has(race.id) ? 'text-yellow-400' : 'text-gray-200'"
-                >★</button>
                 <span class="text-xs px-2 py-1 rounded-full font-medium" :class="statusClass(race.status)">
                   {{ race.status }}
                 </span>
@@ -202,23 +194,15 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { computed, onMounted } from 'vue'
 import { RouterLink } from 'vue-router'
 import { useRacesStore } from '../stores/races'
-import { useFavoritesStore } from '../stores/favorites'
 import AppLayout from '../components/AppLayout.vue'
 import { monthStr, dayStr, dayOfWeek, dday } from '../utils/date'
 
 const racesStore = useRacesStore()
-const favoritesStore = useFavoritesStore()
 
-const filterFavorites = ref(false)
-
-const displayedRaces = computed(() => {
-  let races = racesStore.filteredRaces
-  if (filterFavorites.value) races = races.filter(r => favoritesStore.has(r.id))
-  return races
-})
+const displayedRaces = computed(() => racesStore.filteredRaces)
 
 const activeFilterCount = computed(() => {
   let count = 0
@@ -227,7 +211,6 @@ const activeFilterCount = computed(() => {
   if (racesStore.filterDistances.length) count++
   if (racesStore.filterDays.length) count++
   if (racesStore.searchQuery) count++
-  if (filterFavorites.value) count++
   return count
 })
 
@@ -282,7 +265,6 @@ function resetFilters() {
   racesStore.filterDistances = []
   racesStore.filterDays = []
   racesStore.searchQuery = ''
-  filterFavorites.value = false
 }
 
 function regDday(race) {
