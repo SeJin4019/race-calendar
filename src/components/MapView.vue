@@ -6,7 +6,6 @@
       :center="[36.5, 127.8]"
       :use-global-leaflet="false"
       class="w-full h-full"
-      @ready="onMapReady"
     >
       <l-tile-layer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -78,10 +77,6 @@ const mappableRaces = computed(() =>
 const selectedRace = computed(() =>
   uiStore.selectedRaceId ? racesStore.getRaceById(uiStore.selectedRaceId) : null
 )
-
-function onMapReady() {
-  // Map is ready - markers will render via v-for
-}
 
 function onMarkerClick(race) {
   uiStore.selectRace(race.id)

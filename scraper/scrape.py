@@ -19,7 +19,8 @@ import argparse
 import logging
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urljoin, urlencode
+import hashlib
+from urllib.parse import urljoin, urlencode, urlparse, parse_qs
 from urllib.robotparser import RobotFileParser
 
 try:
@@ -124,8 +125,8 @@ def scrape_race_list() -> list[dict]:
 
         try:
             resp = get(url)
-        except requests.HTTPError as e:
-            log.error("HTTP error on page %d: %s", page, e)
+        except requests.exceptions.RequestException as e:
+            log.error("Request failed on page %d: %s", page, e)
             break
 
         soup = BeautifulSoup(resp.text, "html.parser")
@@ -155,6 +156,9 @@ def scrape_race_list() -> list[dict]:
             break
 
         page += 1
+        if page > 50:  # Safety cap — site shouldn't have more than 50 pages
+            log.warning("Reached page limit (50). Stopping.")
+            break
 
     return races
 
@@ -175,7 +179,17 @@ def parse_race_row(row, base_url: str) -> dict | None:
     detail_url = urljoin(base_url, link["href"]) if link and link.get("href") else ""
 
     # Generate a stable ID from the URL or name
-    race_id = f"mol-{detail_url.split('=')[-1]}" if "=" in detail_url else f"mol-{hash(texts[0]) & 0xFFFFFF}"
+    # Build a stable ID from the URL query param (common Korean site patterns: idx, id, no, seq, rno)
+    # Falls back to a deterministic SHA256 of the race name so IDs survive between runs.
+    race_id = None
+    if detail_url:
+        params = parse_qs(urlparse(detail_url).query)
+        for key in ('idx', 'id', 'no', 'seq', 'rno'):
+            if key in params:
+                race_id = f"mol-{params[key][0]}"
+                break
+    if not race_id:
+        race_id = f"mol-{hashlib.sha256(texts[0].encode()).hexdigest()[:8]}"
 
     # Parse status from known Korean keywords
     status = "접수예정"
@@ -244,7 +258,8 @@ def main():
     env_file = Path(__file__).parent / ".env"
     if env_file.exists():
         for line in env_file.read_text().splitlines():
-            if "=" in line and not line.startswith("#"):
+            line = line.split("#")[0].strip()  # Strip inline comments
+            if "=" in line:
                 k, v = line.split("=", 1)
                 os.environ.setdefault(k.strip(), v.strip())
 

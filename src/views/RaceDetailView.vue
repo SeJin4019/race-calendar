@@ -84,6 +84,11 @@
       </a>
     </div>
 
+    <!-- Loading -->
+    <div v-else-if="racesStore.loading" class="flex justify-center p-8">
+      <span class="text-gray-400 text-sm">불러오는 중...</span>
+    </div>
+
     <!-- Not found -->
     <div v-else class="flex flex-col items-center justify-center py-24 text-gray-400">
       <span class="text-4xl mb-3">😕</span>

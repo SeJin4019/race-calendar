@@ -42,6 +42,16 @@ export const useRacesStore = defineStore('races', () => {
     })
   })
 
+  function sanitizeUrl(url) {
+    if (!url) return ''
+    try {
+      const { protocol } = new URL(url)
+      return (protocol === 'http:' || protocol === 'https:') ? url : ''
+    } catch {
+      return ''
+    }
+  }
+
   async function loadRaces() {
     loading.value = true
     error.value = null
@@ -49,7 +59,11 @@ export const useRacesStore = defineStore('races', () => {
       const res = await fetch('/races.json')
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
       const data = await res.json()
-      races.value = data.races || []
+      races.value = (data.races || []).map(r => ({
+        ...r,
+        registration_url: sanitizeUrl(r.registration_url),
+        source_url: sanitizeUrl(r.source_url)
+      }))
       lastUpdated.value = data.last_updated || null
     } catch (e) {
       error.value = e.message
