@@ -22,7 +22,6 @@
           :key="race.id"
           @click="goToDetail(race.id)"
           class="flex items-center gap-3 p-3 mb-2 rounded-xl border border-gray-100 cursor-pointer hover:bg-gray-50 active:bg-gray-100"
-          :class="uiStore.selectedRaceId === race.id ? 'border-blue-300 bg-blue-50' : ''"
         >
           <div class="flex-1 min-w-0">
             <p class="font-medium text-sm truncate">{{ race.name }}</p>
@@ -55,11 +54,9 @@ import { useRouter } from 'vue-router'
 import VueCal from 'vue-cal'
 import 'vue-cal/dist/vuecal.css'
 import { useRacesStore } from '../stores/races'
-import { useUiStore } from '../stores/ui'
 import { formatDate } from '../utils/date'
 
 const racesStore = useRacesStore()
-const uiStore = useUiStore()
 const router = useRouter()
 
 const selectedDate = ref(null)
@@ -89,12 +86,10 @@ const selectedDateLabel = computed(() => {
 })
 
 function onEventClick(event) {
-  selectedDate.value = event.start?.substring(0, 10) || event.start
-  uiStore.selectRace(event.raceId)
+  router.push(`/races/${event.raceId}`)
 }
 
 function goToDetail(id) {
-  uiStore.selectRace(id)
   router.push(`/races/${id}`)
 }
 

@@ -40,6 +40,6 @@ function isActive(to) {
 
 const navItems = [
   { to: '/', icon: '📋', label: '목록' },
-  { to: '/map', icon: '🗺️', label: '지도' }
+  { to: '/map', icon: '📅', label: '달력' }
 ]
 </script>
