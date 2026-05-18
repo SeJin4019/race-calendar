@@ -65,6 +65,7 @@ import { LMap, LTileLayer, LMarker, LTooltip } from '@vue-leaflet/vue-leaflet'
 import 'leaflet/dist/leaflet.css'
 import { useRacesStore } from '../stores/races'
 import { useUiStore } from '../stores/ui'
+import { formatDate } from '../utils/date'
 
 const racesStore = useRacesStore()
 const uiStore = useUiStore()
@@ -80,12 +81,6 @@ const selectedRace = computed(() =>
 
 function onMarkerClick(race) {
   uiStore.selectRace(race.id)
-}
-
-function formatDate(dateStr) {
-  if (!dateStr) return ''
-  const d = new Date(dateStr)
-  return `${d.getFullYear()}년 ${d.getMonth() + 1}월 ${d.getDate()}일`
 }
 
 function statusClass(status) {

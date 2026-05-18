@@ -56,6 +56,7 @@ import VueCal from 'vue-cal'
 import 'vue-cal/dist/vuecal.css'
 import { useRacesStore } from '../stores/races'
 import { useUiStore } from '../stores/ui'
+import { formatDate } from '../utils/date'
 
 const racesStore = useRacesStore()
 const uiStore = useUiStore()
@@ -84,8 +85,7 @@ const selectedDateRaces = computed(() => {
 
 const selectedDateLabel = computed(() => {
   if (!selectedDate.value) return ''
-  const d = new Date(selectedDate.value)
-  return `${d.getFullYear()}년 ${d.getMonth() + 1}월 ${d.getDate()}일`
+  return formatDate(selectedDate.value)
 })
 
 function onEventClick(event) {

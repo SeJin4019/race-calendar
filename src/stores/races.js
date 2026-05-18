@@ -15,6 +15,8 @@ export const useRacesStore = defineStore('races', () => {
   const filterStatus = ref('')
   const filterDateFrom = ref('')
   const filterDateTo = ref('')
+  const filterDays = ref([])
+  const hideEnded = ref(true)
   const searchQuery = ref('')
 
   const isStale = computed(() => {
@@ -23,20 +25,26 @@ export const useRacesStore = defineStore('races', () => {
   })
 
   const cities = computed(() => {
-    const set = new Set(races.value.map(r => r.location?.city).filter(Boolean))
+    const set = new Set(races.value.map(r => r.location?.province).filter(Boolean))
     return [...set].sort()
   })
 
   const filteredRaces = computed(() => {
+    const todayStr = new Date().toISOString().slice(0, 10)
     return races.value.filter(race => {
-      if (filterCity.value.length > 0 && !filterCity.value.includes(race.location?.city)) return false
+      if (hideEnded.value && race.date < todayStr) return false
+      if (filterCity.value.length > 0 && !filterCity.value.includes(race.location?.province)) return false
       if (filterDistances.value.length > 0 && !filterDistances.value.some(d => race.distances?.includes(d))) return false
       if (filterStatus.value && race.status !== filterStatus.value) return false
       if (filterDateFrom.value && race.date < filterDateFrom.value) return false
       if (filterDateTo.value && race.date > filterDateTo.value) return false
+      if (filterDays.value.length > 0) {
+        const day = new Date(race.date + 'T00:00:00').getDay()
+        if (!filterDays.value.includes(day)) return false
+      }
       if (searchQuery.value) {
         const q = searchQuery.value.toLowerCase()
-        if (!race.name?.toLowerCase().includes(q) && !race.location?.city?.toLowerCase().includes(q)) return false
+        if (!race.name?.toLowerCase().includes(q) && !race.location?.city?.toLowerCase().includes(q) && !race.location?.province?.toLowerCase().includes(q)) return false
       }
       return true
     })
@@ -78,7 +86,7 @@ export const useRacesStore = defineStore('races', () => {
 
   return {
     races, lastUpdated, loading, error,
-    filterCity, filterDistances, filterStatus, filterDateFrom, filterDateTo, searchQuery,
+    filterCity, filterDistances, filterStatus, filterDateFrom, filterDateTo, filterDays, hideEnded, searchQuery,
     isStale, cities, filteredRaces,
     loadRaces, getRaceById
   }

@@ -3,7 +3,21 @@
     "allow": [
       "Bash(npm run *)",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "PowerShell(New-Item *)",
+      "Bash(npm install *)",
+      "WebSearch",
+      "WebFetch(domain:gorunning.kr)",
+      "WebFetch(domain:marathongo.co.kr)",
+      "WebFetch(domain:www.kado.net)",
+      "WebFetch(domain:mara1080.com)",
+      "WebFetch(domain:www.gyeongjumarathon.com)",
+      "WebFetch(domain:www.gongjumarathon.com)",
+      "WebFetch(domain:marathon.jtbc.com)",
+      "Skill(browse)",
+      "Bash(git remote *)",
+      "Bash(gh auth *)",
+      "PowerShell(gh auth *)"
     ]
   }
 }
