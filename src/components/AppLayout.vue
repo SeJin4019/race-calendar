@@ -17,7 +17,7 @@
         :key="item.to"
         :to="item.to"
         class="flex-1 flex flex-col items-center py-2 text-xs gap-1 transition-colors"
-        :class="[$route.path === item.to ? 'text-blue-600' : 'text-gray-500']"
+        :class="[isActive(item.to) ? 'text-blue-600' : 'text-gray-500']"
       >
         <span class="text-xl">{{ item.icon }}</span>
         <span>{{ item.label }}</span>
@@ -33,8 +33,13 @@ import { useRoute, RouterLink } from 'vue-router'
 const racesStore = useRacesStore()
 const $route = useRoute()
 
+function isActive(to) {
+  if (to === '/') return $route.path === '/' || $route.path.startsWith('/races')
+  return $route.path === to
+}
+
 const navItems = [
-  { to: '/', icon: '🗺️', label: '홈' },
-  { to: '/races', icon: '📋', label: '목록' }
+  { to: '/', icon: '📋', label: '목록' },
+  { to: '/map', icon: '🗺️', label: '지도' }
 ]
 </script>

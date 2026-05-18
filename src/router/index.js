@@ -3,13 +3,17 @@ import { createRouter, createWebHistory } from 'vue-router'
 const routes = [
   {
     path: '/',
+    component: () => import('../views/RaceListView.vue'),
+    meta: { title: '대회 목록' }
+  },
+  {
+    path: '/map',
     component: () => import('../views/HomeView.vue'),
-    meta: { title: '홈' }
+    meta: { title: '지도' }
   },
   {
     path: '/races',
-    component: () => import('../views/RaceListView.vue'),
-    meta: { title: '대회 목록' }
+    redirect: '/'
   },
   {
     path: '/races/:id',
