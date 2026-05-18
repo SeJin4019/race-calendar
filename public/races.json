@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-18T09:00:00Z",
+  "last_updated": "2026-05-18T07:47:16Z",
   "races": [
     {
       "id": "gangnam-half-2026",
@@ -44,8 +44,7 @@
       "registration_start": "2026-03-30",
       "registration_deadline": "2026-05-17",
       "source_url": "https://gorunning.kr/races/1037/",
-      "status": "접수마감",
-      "is_certified": false
+      "status": "접수마감"
     },
     {
       "id": "blue-sky-run-2026",
@@ -92,8 +91,7 @@
       "registration_start": "2026-03-05",
       "registration_deadline": "2026-05-28",
       "source_url": "https://gorunning.kr/races/999/",
-      "status": "접수중",
-      "is_certified": false
+      "status": "접수중"
     },
     {
       "id": "daegu-masters-half-2026",
@@ -134,8 +132,7 @@
       "registration_start": "2025-12-23",
       "registration_deadline": "2026-06-23",
       "source_url": "https://gorunning.kr/races/929/",
-      "status": "접수중",
-      "is_certified": true
+      "status": "접수중"
     },
     {
       "id": "hangang-seoul-half-2026",
@@ -183,8 +180,7 @@
       "registration_start": "2026-05-13",
       "registration_deadline": "2026-08-23",
       "source_url": "https://gorunning.kr/races/1112/",
-      "status": "접수중",
-      "is_certified": false
+      "status": "접수중"
     },
     {
       "id": "cheorwon-dmz-2026",
@@ -227,8 +223,7 @@
       "registration_start": "2026-02-02",
       "registration_deadline": "2026-02-27",
       "source_url": "https://gorunning.kr/races/938/",
-      "status": "접수마감",
-      "is_certified": true
+      "status": "접수마감"
     },
     {
       "id": "hopestream-gangbyeon-2026",
@@ -275,8 +270,7 @@
       "registration_start": "2026-02-10",
       "registration_deadline": "2026-05-01",
       "source_url": "https://gorunning.kr/races/700/",
-      "status": "접수마감",
-      "is_certified": true
+      "status": "접수마감"
     },
     {
       "id": "green-umbrella-run-2026",
@@ -318,8 +312,7 @@
       "registration_start": "2026-04-13",
       "registration_deadline": "2026-08-01",
       "source_url": "https://gorunning.kr/races/1070/",
-      "status": "접수중",
-      "is_certified": false
+      "status": "접수중"
     },
     {
       "id": "gapyeong-jaraseom-2026",
@@ -368,8 +361,7 @@
       "registration_start_time": "10:00",
       "registration_deadline": "2026-05-30",
       "source_url": "https://gorunning.kr/races/927/",
-      "status": "접수중",
-      "is_certified": false
+      "status": "접수중"
     },
     {
       "id": "gongju-marathon-2026",
@@ -417,8 +409,7 @@
       "registration_start": "2026-05-14",
       "registration_deadline": "2026-05-21",
       "source_url": "https://gorunning.kr/races/1119/",
-      "status": "접수중",
-      "is_certified": false
+      "status": "접수중"
     },
     {
       "id": "seosan-cosmos-2026",
@@ -461,8 +452,7 @@
       "registration_start": "2026-03-20",
       "registration_deadline": "2026-09-03",
       "source_url": "https://gorunning.kr/races/1036/",
-      "status": "접수중",
-      "is_certified": false
+      "status": "접수중"
     },
     {
       "id": "andong-marathon-2026",
@@ -512,8 +502,7 @@
       "registration_start": "2026-04-13",
       "registration_deadline": "2026-05-31",
       "source_url": "https://gorunning.kr/races/1056/",
-      "status": "접수중",
-      "is_certified": false
+      "status": "접수중"
     },
     {
       "id": "hongcheon-love-2026",
@@ -561,8 +550,7 @@
       "registration_start": "2026-05-19",
       "registration_deadline": "2026-08-31",
       "source_url": "https://gorunning.kr/races/1105/",
-      "status": "접수예정",
-      "is_certified": false
+      "status": "접수예정"
     },
     {
       "id": "hongseong-marathon-2026",
@@ -610,8 +598,7 @@
       "registration_start_time": "10:00",
       "registration_deadline": "2026-05-29",
       "source_url": "https://gorunning.kr/races/928/",
-      "status": "접수중",
-      "is_certified": false
+      "status": "접수중"
     },
     {
       "id": "naju-marathon-2026",
@@ -661,8 +648,7 @@
       "registration_start": "2026-04-20",
       "registration_deadline": "2026-07-19",
       "source_url": "https://gorunning.kr/races/994/",
-      "status": "접수중",
-      "is_certified": false
+      "status": "접수중"
     },
     {
       "id": "seoul-race-2026",
@@ -707,8 +693,7 @@
       "registration_start": "2026-05-11",
       "registration_deadline": "2026-05-27",
       "source_url": "https://gorunning.kr/races/1084/",
-      "status": "접수중",
-      "is_certified": false
+      "status": "접수중"
     },
     {
       "id": "gyeongpo-marathon-2026",
@@ -757,8 +742,7 @@
       "registration_start": "2026-05-18",
       "registration_deadline": "2026-06-23",
       "source_url": "https://gorunning.kr/races/890/2026-gyeongpo-marathon/",
-      "status": "접수중",
-      "is_certified": false
+      "status": "접수중"
     },
     {
       "id": "gyeongju-marathon-2026",
@@ -807,8 +791,7 @@
       "registration_start": "2026-05-26",
       "registration_deadline": "2026-05-28",
       "source_url": "https://gorunning.kr/races/1118/",
-      "status": "접수중",
-      "is_certified": false
+      "status": "접수중"
     },
     {
       "id": "asia-open-marathon-2026",
@@ -853,8 +836,7 @@
       "registration_start": "2026-02-01",
       "registration_deadline": "2026-09-30",
       "source_url": "https://gorunning.kr/races/891/",
-      "status": "접수중",
-      "is_certified": true
+      "status": "접수중"
     },
     {
       "id": "jtbc-seoul-marathon-2026",
@@ -899,8 +881,7 @@
       "registration_start": "2026-01-18",
       "registration_deadline": "2026-02-18",
       "source_url": "https://gorunning.kr/races/852/",
-      "status": "접수마감",
-      "is_certified": true
+      "status": "접수마감"
     },
     {
       "id": "ulsan-human-rights-2026",
@@ -948,8 +929,7 @@
       "registration_start": "2026-08-18",
       "registration_deadline": "2026-09-18",
       "source_url": "https://gorunning.kr/races/1090/",
-      "status": "접수예정",
-      "is_certified": false
+      "status": "접수예정"
     },
     {
       "id": "sangju-gotgam-2026",
@@ -997,8 +977,317 @@
       "registration_start": "2026-05-06",
       "registration_deadline": "2026-10-15",
       "source_url": "https://gorunning.kr/races/1099/",
+      "status": "접수중"
+    },
+    {
+      "id": "suwon-5k-run-2026",
+      "name": "제8회 수원화성 5K 달리기",
+      "date": "2026-06-14",
+      "start_time": "08:00",
+      "location": {
+        "address": "경기도 수원시 팔달구 화서문로 수원화성",
+        "city": "수원",
+        "province": "경기",
+        "lat": 37.2884,
+        "lng": 127.0133
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "수원시체육회",
+      "contact": {
+        "phone": "031-228-4765"
+      },
+      "fee": {
+        "10K": 30000,
+        "5K": 25000
+      },
+      "registration_url": "https://suwonrun.kr",
+      "registration_start": "2026-04-01",
+      "registration_deadline": "2026-06-07",
+      "source_url": "https://suwonrun.kr",
       "status": "접수중",
-      "is_certified": false
+      "description": "수원화성 성벽을 배경으로 달리는 역사 테마 러닝."
+    },
+    {
+      "id": "incheon-songdo-run-2026",
+      "name": "2026 인천 송도 센트럴파크런",
+      "date": "2026-06-21",
+      "start_time": "07:30",
+      "location": {
+        "address": "인천광역시 연수구 센트럴로 160 송도센트럴파크",
+        "city": "인천",
+        "province": "인천",
+        "lat": 37.3926,
+        "lng": 126.6464
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "인천연수구체육회",
+      "contact": {
+        "phone": "032-749-7655"
+      },
+      "fee": {
+        "10K": 30000,
+        "5K": 25000
+      },
+      "registration_url": "https://songdorun.com",
+      "registration_start": "2026-04-15",
+      "registration_deadline": "2026-06-14",
+      "source_url": "https://songdorun.com",
+      "status": "접수중",
+      "description": "송도 센트럴파크를 한 바퀴 도는 도심 공원 러닝."
+    },
+    {
+      "id": "busan-haeundae-5k-2026",
+      "name": "해운대 비치런 5K",
+      "date": "2026-07-05",
+      "start_time": "07:00",
+      "location": {
+        "address": "부산광역시 해운대구 해운대해수욕장",
+        "city": "부산",
+        "province": "부산",
+        "lat": 35.1587,
+        "lng": 129.1603
+      },
+      "distances": [
+        "5K"
+      ],
+      "organizer": "해운대구체육회",
+      "contact": {
+        "phone": "051-749-4061"
+      },
+      "fee": {
+        "5K": 25000
+      },
+      "registration_url": "https://haeundaerun.kr",
+      "registration_start": "2026-05-01",
+      "registration_deadline": "2026-06-28",
+      "source_url": "https://haeundaerun.kr",
+      "status": "접수중",
+      "description": "이른 아침 해운대 백사장을 달리는 여름 특별 대회."
+    },
+    {
+      "id": "daejeon-expo-park-run-2026",
+      "name": "제5회 대전 엑스포공원 10K",
+      "date": "2026-09-06",
+      "start_time": "08:30",
+      "location": {
+        "address": "대전광역시 유성구 엑스포로 107 한빛탑 광장",
+        "city": "대전",
+        "province": "대전",
+        "lat": 36.3748,
+        "lng": 127.3868
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "대전유성구체육회",
+      "contact": {
+        "phone": "042-611-2871"
+      },
+      "fee": {
+        "10K": 30000,
+        "5K": 25000
+      },
+      "registration_url": "https://djexporun.kr",
+      "registration_start": "2026-07-01",
+      "registration_deadline": "2026-08-30",
+      "source_url": "https://djexporun.kr",
+      "status": "접수예정",
+      "description": "대전 엑스포공원 한빛탑 광장을 출발해 갑천변을 달리는 시민 대회."
+    },
+    {
+      "id": "gwangju-mudeungsan-run-2026",
+      "name": "무등산 둘레 10K 러닝",
+      "date": "2026-09-13",
+      "start_time": "08:00",
+      "location": {
+        "address": "광주광역시 동구 증심사길 무등산국립공원 주차장",
+        "city": "광주",
+        "province": "광주",
+        "lat": 35.1306,
+        "lng": 126.9974
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "광주광역시육상연맹",
+      "contact": {
+        "phone": "062-613-4582"
+      },
+      "fee": {
+        "10K": 35000,
+        "5K": 28000
+      },
+      "registration_url": "https://mudeungrun.kr",
+      "registration_start": "2026-07-15",
+      "registration_deadline": "2026-09-06",
+      "source_url": "https://mudeungrun.kr",
+      "status": "접수예정",
+      "description": "무등산국립공원 둘레길을 달리는 산악 인접 도로 러닝."
+    },
+    {
+      "id": "jeonju-hanok-run-2026",
+      "name": "제7회 전주한옥마을 10K",
+      "date": "2026-09-27",
+      "start_time": "08:30",
+      "location": {
+        "address": "전라북도 전주시 완산구 태조로 전주한옥마을 경기전 앞",
+        "city": "전주",
+        "province": "전북",
+        "lat": 35.8149,
+        "lng": 127.1538
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "전주시체육회",
+      "contact": {
+        "phone": "063-281-2114"
+      },
+      "fee": {
+        "10K": 30000,
+        "5K": 25000
+      },
+      "registration_url": "https://jjrun.kr",
+      "registration_start": "2026-07-20",
+      "registration_deadline": "2026-09-20",
+      "source_url": "https://jjrun.kr",
+      "status": "접수예정",
+      "description": "경기전 앞을 출발해 전주한옥마을 골목과 전주천변을 달리는 특색 있는 코스."
+    },
+    {
+      "id": "chuncheon-lake-run-2026",
+      "name": "춘천 의암호 가을런",
+      "date": "2026-10-11",
+      "start_time": "09:00",
+      "location": {
+        "address": "강원도 춘천시 스포츠타운길 46 춘천종합운동장",
+        "city": "춘천",
+        "province": "강원",
+        "lat": 37.8813,
+        "lng": 127.7298
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "춘천시육상연맹",
+      "contact": {
+        "phone": "033-251-3400"
+      },
+      "fee": {
+        "10K": 30000,
+        "5K": 25000
+      },
+      "registration_url": "https://chuncheonrun.kr",
+      "registration_start": "2026-08-01",
+      "registration_deadline": "2026-10-04",
+      "source_url": "https://chuncheonrun.kr",
+      "status": "접수예정",
+      "description": "의암호를 끼고 달리는 가을 단풍 러닝."
+    },
+    {
+      "id": "pohang-steelrun-2026",
+      "name": "제10회 포항 스틸런",
+      "date": "2026-10-25",
+      "start_time": "09:00",
+      "location": {
+        "address": "경상북도 포항시 남구 형산강 체육공원",
+        "city": "포항",
+        "province": "경북",
+        "lat": 36.0126,
+        "lng": 129.3572
+      },
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
+      "organizer": "포항시체육회",
+      "contact": {
+        "phone": "054-270-4061"
+      },
+      "fee": {
+        "하프": 45000,
+        "10K": 35000,
+        "5K": 28000
+      },
+      "registration_url": "https://pohangrun.kr",
+      "registration_start": "2026-08-10",
+      "registration_deadline": "2026-10-18",
+      "source_url": "https://pohangrun.kr",
+      "status": "접수예정",
+      "description": "형산강 체육공원을 중심으로 달리는 가을 대회."
+    },
+    {
+      "id": "changwon-yongji-run-2026",
+      "name": "창원 용지호수 10K",
+      "date": "2026-11-08",
+      "start_time": "09:00",
+      "location": {
+        "address": "경상남도 창원시 의창구 용지공원",
+        "city": "창원",
+        "province": "경남",
+        "lat": 35.2278,
+        "lng": 128.6813
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "창원시체육회",
+      "contact": {
+        "phone": "055-225-4051"
+      },
+      "fee": {
+        "10K": 30000,
+        "5K": 25000
+      },
+      "registration_url": "https://cwrun.kr",
+      "registration_start": "2026-09-01",
+      "registration_deadline": "2026-11-01",
+      "source_url": "https://cwrun.kr",
+      "status": "접수예정",
+      "description": "용지공원 호수 둘레를 달리는 도심 속 공원 러닝."
+    },
+    {
+      "id": "jeju-oreum-run-2026",
+      "name": "제주 오름 트레일런 10K",
+      "date": "2026-11-08",
+      "start_time": "09:30",
+      "location": {
+        "address": "제주특별자치도 제주시 조천읍 교래리 절물오름",
+        "city": "제주",
+        "province": "제주",
+        "lat": 33.4454,
+        "lng": 126.6765
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "제주시육상연맹",
+      "contact": {
+        "phone": "064-728-4651"
+      },
+      "fee": {
+        "10K": 40000,
+        "5K": 30000
+      },
+      "registration_url": "https://jejurun.kr",
+      "registration_start": "2026-09-01",
+      "registration_deadline": "2026-11-01",
+      "source_url": "https://jejurun.kr",
+      "status": "접수예정",
+      "description": "제주 절물오름 둘레를 달리는 가을 트레일런. 오름 능선과 제주 곶자왈을 지나는 자연 코스."
     }
   ]
 }

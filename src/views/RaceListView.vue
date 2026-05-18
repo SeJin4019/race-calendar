@@ -29,17 +29,6 @@
 
         <div class="w-px bg-gray-200 shrink-0"></div>
 
-        <!-- 공인대회 filter -->
-        <button
-          @click="filterCertified = !filterCertified"
-          class="shrink-0 px-3 py-1 rounded-full text-xs font-medium border transition-colors"
-          :class="filterCertified
-            ? 'bg-blue-600 text-white border-blue-600'
-            : 'bg-white text-blue-600 border-blue-200'"
-        >
-          🏅 공인대회
-        </button>
-
         <!-- 풀코스 filter -->
         <button
           @click="toggleFullOnly"
@@ -157,8 +146,7 @@
               <div class="flex-1 min-w-0">
                 <div class="flex items-center gap-1.5">
                   <p class="font-medium text-sm truncate">{{ race.name }}</p>
-                  <span v-if="race.is_certified" class="shrink-0 text-xs px-1 py-0 bg-blue-100 text-blue-600 rounded font-medium">공인</span>
-                  <span v-if="race.distances?.includes('풀')" class="shrink-0 text-xs px-1 py-0 bg-purple-100 text-purple-600 rounded font-medium">풀</span>
+<span v-if="race.distances?.includes('풀')" class="shrink-0 text-xs px-1 py-0 bg-purple-100 text-purple-600 rounded font-medium">풀</span>
                 </div>
                 <div class="flex items-center gap-1.5 mt-0.5">
                   <p class="text-xs text-gray-500">📍 {{ race.location?.city }}{{ race.start_time ? ' · ' + race.start_time : '' }}</p>
@@ -225,12 +213,10 @@ const racesStore = useRacesStore()
 const favoritesStore = useFavoritesStore()
 
 const filterFavorites = ref(false)
-const filterCertified = ref(false)
 
 const displayedRaces = computed(() => {
   let races = racesStore.filteredRaces
   if (filterFavorites.value) races = races.filter(r => favoritesStore.has(r.id))
-  if (filterCertified.value) races = races.filter(r => r.is_certified)
   return races
 })
 
@@ -242,7 +228,6 @@ const activeFilterCount = computed(() => {
   if (racesStore.filterDays.length) count++
   if (racesStore.searchQuery) count++
   if (filterFavorites.value) count++
-  if (filterCertified.value) count++
   return count
 })
 
@@ -298,7 +283,6 @@ function resetFilters() {
   racesStore.filterDays = []
   racesStore.searchQuery = ''
   filterFavorites.value = false
-  filterCertified.value = false
 }
 
 function regDday(race) {
