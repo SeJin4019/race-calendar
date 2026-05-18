@@ -136,7 +136,7 @@
               <div class="shrink-0 text-center w-12">
                 <div class="text-xl font-bold leading-tight">{{ dayStr(race.date) }}</div>
                 <div class="text-xs" :class="dayOfWeek(race.date) === '토' ? 'text-blue-500' : dayOfWeek(race.date) === '일' ? 'text-red-500' : 'text-gray-400'">{{ dayOfWeek(race.date) }}</div>
-                <div v-if="dday(race.date)" class="text-xs font-medium mt-0.5" :class="ddayClass(race.date)">대회 {{ dday(race.date) }}</div>
+                <div v-if="dday(race.date)" class="text-xs font-medium mt-0.5 whitespace-nowrap" :class="ddayClass(race.date)">대회 {{ dday(race.date) }}</div>
               </div>
 
               <!-- Info -->
