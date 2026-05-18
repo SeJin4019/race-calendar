@@ -1,19 +1,14 @@
 #!/usr/bin/env python3
 """
-Marathon Korea Scraper
-Scrapes marathon race data from marathon-online.co.kr and geocodes via Kakao API.
+Marathon Korea Scraper — roadrun.co.kr
+Scrapes race data from roadrun.co.kr/schedule/list.php
 
 Usage:
-    python scrape.py [--dry-run] [--output PATH]
-
-Environment variables (set in scraper/.env):
-    KAKAO_REST_API_KEY  Kakao REST API key for geocoding
+    python scrape.py [--dry-run] [--output PATH] [--max-detail N]
 
 Inclusion criteria:
     - At least one distance >= 5K
-    - Registration fee required (paid event)
-    - Excludes: children-only races, walking-only events, corporate-only events
-
+    - Excludes: children-only, walking-only, corporate-only, free events
 """
 
 import os
@@ -21,13 +16,12 @@ import sys
 import json
 import time
 import random
+import re
 import argparse
 import logging
-from datetime import datetime, timezone
+from datetime import datetime, timezone, date
 from pathlib import Path
-import hashlib
-from urllib.parse import urljoin, urlparse, parse_qs
-from urllib.robotparser import RobotFileParser
+from urllib.parse import urljoin
 
 try:
     import requests
@@ -36,101 +30,75 @@ except ImportError:
     print("Missing dependencies. Run: pip install requests beautifulsoup4")
     sys.exit(1)
 
-# ---------------------------------------------------------------------------
-# Config
-# ---------------------------------------------------------------------------
+BASE_URL = "http://www.roadrun.co.kr"
+LIST_URL = "http://www.roadrun.co.kr/schedule/list.php"
+DETAIL_URL = "http://www.roadrun.co.kr/schedule/view.php"
+ENCODING = "EUC-KR"
+USER_AGENT = "MarathonKoreaBot/2.0 (+https://github.com/SeJin4019/race-calendar)"
+DELAY_MIN = 0.8
+DELAY_MAX = 1.5
 
-BASE_URL = "https://www.marathon-online.co.kr"
-LIST_PATH = "/race/list.php"
-USER_AGENT = "MarathonKoreaBot/1.0 (+https://github.com/your-repo/marathon-korea)"
-DELAY_MIN = 1.0
-DELAY_MAX = 2.0
-
-# Minimum distance to include a race (km)
-MIN_DISTANCE_KM = 5
-
-# Race name/description keywords → exclude
 EXCLUDE_KEYWORDS = [
-    "걷기대회", "워킹대회", "워킹 대회", "파워워킹",
-    "사내대회", "임직원", "사내마라톤", "직원대회",
-    "어린이달리기", "어린이 달리기", "유아달리기",
+    "걷기대회", "워킹대회", "워킹 대회", "파워워킹", "걷기",
+    "사내대회", "임직원", "사내마라톤", "직원대회", "사내",
+    "어린이달리기", "어린이 달리기", "유아달리기", "어린이",
     "반려견", "강아지런",
     "무료참가", "참가비 없음", "참가비없음",
 ]
 
-# Keywords that suggest an officially certified race (대한육상연맹 공인)
-CERTIFIED_KEYWORDS = [
-    "공인", "육상연맹", "대한육상", "AAC", "AIMS",
-    "국제마라톤", "국제 마라톤",
-]
-
-# Distance string → km mapping
 DISTANCE_KM_MAP = {
-    "풀": 42.195, "풀코스": 42.195, "42km": 42.195, "42.195km": 42.195,
+    "풀": 42.195, "풀코스": 42.195, "42km": 42.195,
     "하프": 21.0975, "하프코스": 21.0975, "21km": 21.0975,
-    "10km": 10, "10k": 10, "10K": 10,
-    "5km": 5, "5k": 5, "5K": 5,
+    "10km": 10, "10k": 10,
+    "5km": 5, "5k": 5,
     "3km": 3, "3k": 3,
     "2km": 2, "1km": 1,
+}
+
+PROVINCE_MAP = {
+    "서울": "서울", "경기": "경기", "인천": "인천", "강원": "강원",
+    "충북": "충북", "충남": "충남", "대전": "대전", "세종": "세종",
+    "전북": "전북", "전남": "전남", "광주": "광주",
+    "경북": "경북", "경남": "경남", "대구": "대구",
+    "부산": "부산", "울산": "울산", "제주": "제주",
 }
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
 
 
-# ---------------------------------------------------------------------------
-# Filtering helpers
-# ---------------------------------------------------------------------------
-
-def should_exclude(name: str, raw_text: str) -> tuple[bool, str]:
-    """Return (True, reason) if this race should be excluded."""
-    combined = (name + " " + raw_text).lower()
+def should_exclude(name: str) -> tuple[bool, str]:
+    nl = name.lower()
     for kw in EXCLUDE_KEYWORDS:
-        if kw.lower() in combined:
-            return True, f"excluded keyword: {kw}"
+        if kw in name:
+            return True, f"keyword: {kw}"
     return False, ""
 
 
-def parse_distances(texts: list[str]) -> list[str]:
-    """Extract distance labels from cell texts."""
-    known = ["풀", "하프", "10K", "10km", "5K", "5km", "3K", "3km", "2K", "2km", "1K", "1km"]
-    found = []
-    combined = " ".join(texts)
-    for label in known:
-        if label.lower() in combined.lower() and label not in found:
-            found.append(label)
-    # Normalize labels
-    normalized = []
-    for d in found:
-        dl = d.lower()
-        if dl in ("풀", "풀코스", "42km", "42.195km"):
-            normalized.append("풀")
-        elif dl in ("하프", "하프코스", "21km"):
-            normalized.append("하프")
-        elif dl in ("10k", "10km"):
-            normalized.append("10K")
-        elif dl in ("5k", "5km"):
-            normalized.append("5K")
-        elif dl in ("3k", "3km"):
-            normalized.append("3K")
-        elif dl in ("2k", "2km"):
-            normalized.append("2K")
-        elif dl in ("1k", "1km"):
-            normalized.append("1K")
-        else:
-            normalized.append(d)
-    # Deduplicate preserving order
-    seen = set()
+def normalize_distances(raw: str) -> list[str]:
     result = []
-    for d in normalized:
-        if d not in seen:
-            seen.add(d)
-            result.append(d)
-    return result
+    parts = re.split(r"[,/\s]+", raw.strip())
+    for p in parts:
+        pl = p.strip().lower()
+        if pl in ("풀", "풀코스"):
+            result.append("풀")
+        elif pl in ("하프", "하프코스", "21km"):
+            result.append("하프")
+        elif pl in ("10km", "10k"):
+            result.append("10K")
+        elif pl in ("5km", "5k"):
+            result.append("5K")
+        elif pl in ("3km", "3k"):
+            result.append("3K")
+        elif pl in ("2km", "2k"):
+            result.append("2K")
+        elif pl in ("1km", "1k"):
+            result.append("1K")
+    seen = set()
+    return [d for d in result if not (d in seen or seen.add(d))]
 
 
 def max_distance_km(distances: list[str]) -> float:
-    """Return the longest distance in km from a distances list."""
     max_km = 0.0
     for d in distances:
         km = DISTANCE_KM_MAP.get(d, DISTANCE_KM_MAP.get(d.lower(), 0))
@@ -139,287 +107,313 @@ def max_distance_km(distances: list[str]) -> float:
     return max_km
 
 
-def is_certified_race(name: str, raw_text: str) -> bool:
-    """Return True if the race appears to be officially certified."""
-    combined = name + " " + raw_text
-    return any(kw in combined for kw in CERTIFIED_KEYWORDS)
+def parse_korean_date(text: str) -> str:
+    """Parse '2026년5월31일' → '2026-05-31'"""
+    m = re.search(r"(\d{4})년\s*(\d{1,2})월\s*(\d{1,2})일", text)
+    if m:
+        return f"{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d}"
+    return ""
 
 
-def is_free_race(raw_text: str) -> bool:
-    """Return True if the race appears to be free (no registration fee)."""
-    free_signals = ["무료", "참가비 없음", "참가비없음", "무료참가", "무료 참가"]
-    return any(s in raw_text for s in free_signals)
+def parse_start_time(text: str) -> str:
+    """Extract start time from '2026년5월31일 출발시간:08:00'"""
+    m = re.search(r"출발시간\s*[:：]\s*(\d{1,2}:\d{2})", text)
+    if m:
+        return m.group(1)
+    return ""
 
 
-# ---------------------------------------------------------------------------
-# robots.txt check
-# ---------------------------------------------------------------------------
-
-def check_robots(url: str) -> bool:
-    """Return True if scraping is allowed by robots.txt."""
-    rp = RobotFileParser()
-    robots_url = urljoin(BASE_URL, "/robots.txt")
-    try:
-        rp.set_url(robots_url)
-        rp.read()
-        allowed = rp.can_fetch(USER_AGENT, url)
-        if not allowed:
-            log.warning("robots.txt disallows scraping %s", url)
-        return allowed
-    except Exception as e:
-        log.warning("Could not read robots.txt: %s — proceeding cautiously", e)
-        return True
+def detect_province(text: str) -> str:
+    for k, v in PROVINCE_MAP.items():
+        if k in text:
+            return v
+    return ""
 
 
-# ---------------------------------------------------------------------------
-# HTTP helpers
-# ---------------------------------------------------------------------------
+def detect_status(reg_start: str, reg_end: str, race_date: str) -> str:
+    today = date.today().isoformat()
+    if race_date and race_date < today:
+        return "대회종료"
+    if reg_end and reg_end < today:
+        return "접수마감"
+    if reg_start and reg_start <= today and (not reg_end or reg_end >= today):
+        return "접수중"
+    if reg_start and reg_start > today:
+        return "접수예정"
+    if race_date and race_date >= today:
+        return "접수예정"
+    return "접수예정"
+
 
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": USER_AGENT})
 
 
-def get(url: str, **kwargs) -> requests.Response:
-    """GET with delay and error handling."""
+def get(url: str, **kwargs):
     time.sleep(random.uniform(DELAY_MIN, DELAY_MAX))
-    resp = SESSION.get(url, timeout=15, **kwargs)
+    resp = SESSION.get(url, timeout=20, **kwargs)
     resp.raise_for_status()
     return resp
 
 
-# ---------------------------------------------------------------------------
-# Kakao Geocoding
-# ---------------------------------------------------------------------------
-
-def geocode(address: str, api_key: str) -> tuple[float | None, float | None]:
-    """Return (lat, lng) for a Korean address via Kakao REST API."""
-    if not api_key or not address:
-        return None, None
-    try:
-        url = "https://dapi.kakao.com/v2/local/search/address.json"
-        headers = {"Authorization": f"KakaoAK {api_key}"}
-        params = {"query": address}
-        time.sleep(random.uniform(0.3, 0.6))
-        resp = requests.get(url, headers=headers, params=params, timeout=10)
-        resp.raise_for_status()
-        docs = resp.json().get("documents", [])
-        if docs:
-            return float(docs[0]["y"]), float(docs[0]["x"])
-    except Exception as e:
-        log.warning("Geocoding failed for '%s': %s", address, e)
-    return None, None
+def fetch_decoded(url: str, **kwargs) -> str:
+    resp = get(url, **kwargs)
+    return resp.content.decode(ENCODING, errors="replace")
 
 
-# ---------------------------------------------------------------------------
-# Scraping logic
-# ---------------------------------------------------------------------------
+def scrape_list() -> list[dict]:
+    log.info("Fetching list: %s", LIST_URL)
+    html = fetch_decoded(LIST_URL)
+    soup = BeautifulSoup(html, "html.parser")
 
-def scrape_race_list() -> list[dict]:
-    """
-    Scrape the race list from marathon-online.co.kr.
-    Applies inclusion/exclusion filters before returning.
-    """
     races = []
-    excluded_count = 0
-    page = 1
+    rows = soup.select("table tr")
+    current_date_str = ""
+    current_day = ""
 
-    while True:
-        url = urljoin(BASE_URL, LIST_PATH) + f"?page={page}"
-        log.info("Scraping page %d: %s", page, url)
+    for row in rows:
+        cells = row.find_all("td")
+        if len(cells) < 2:
+            continue
 
-        try:
-            resp = get(url)
-        except requests.exceptions.RequestException as e:
-            log.error("Request failed on page %d: %s", page, e)
-            break
+        # Date cell: contains font with M/D
+        first_cell = cells[0]
+        date_font = first_cell.find("font", attrs={"face": True})
+        if date_font and re.search(r"\d+/\d+", date_font.get_text()):
+            current_date_str = date_font.get_text(strip=True)
+            day_font = first_cell.find("font", color="#959595")
+            current_day = day_font.get_text(strip=True) if day_font else ""
 
-        soup = BeautifulSoup(resp.text, "html.parser")
+        if len(cells) < 4:
+            continue
 
-        rows = (
-            soup.select("table.race_list tr[onclick]") or
-            soup.select(".race_list .race_item") or
-            soup.select("table tbody tr") or
-            []
-        )
+        name_cell = cells[1]
+        name_link = name_cell.find("a")
+        if not name_link:
+            continue
 
-        if not rows:
-            log.info("No more rows on page %d — done", page)
-            break
+        name = name_link.get_text(strip=True)
+        if not name or len(name) < 3:
+            continue
 
-        for row in rows:
-            try:
-                race = parse_race_row(row, resp.url)
-                if race is None:
-                    continue
+        href = name_link.get("href", "")
+        no_match = re.search(r"view\.php\?no=(\d+)", href)
+        if not no_match:
+            continue
+        race_no = no_match.group(1)
 
-                # --- Exclusion filter ---
-                excluded, reason = should_exclude(race["name"], race.get("_raw_text", ""))
-                if excluded:
-                    log.info("Excluded '%s': %s", race["name"], reason)
-                    excluded_count += 1
-                    continue
+        dist_font = name_cell.find("font", color="#990000")
+        raw_distances = dist_font.get_text(strip=True) if dist_font else ""
+        distances = normalize_distances(raw_distances) if raw_distances else []
 
-                # --- Free race filter ---
-                if is_free_race(race.get("_raw_text", "")):
-                    log.info("Excluded '%s': free event", race["name"])
-                    excluded_count += 1
-                    continue
+        venue_cell = cells[2]
+        venue = venue_cell.get_text(strip=True)
 
-                # --- Distance filter (5K minimum) ---
-                if race["distances"] and max_distance_km(race["distances"]) < MIN_DISTANCE_KM:
-                    log.info("Excluded '%s': max distance < %dkm", race["name"], MIN_DISTANCE_KM)
-                    excluded_count += 1
-                    continue
+        org_cell = cells[3]
+        org_text = org_cell.get_text(" ", strip=True)
+        org_lines = [l.strip() for l in org_text.split() if l.strip()]
+        organizer = org_lines[0] if org_lines else ""
 
-                # Remove internal field before storing
-                race.pop("_raw_text", None)
-                races.append(race)
+        phone_m = re.search(r"☎\s*([\d\-]+)", org_text)
+        phone = phone_m.group(1) if phone_m else ""
 
-            except Exception as e:
-                log.warning("Failed to parse row: %s", e)
+        website_link = org_cell.find("a", href=lambda h: h and h.startswith("http") and "roadrun" not in h)
+        website = website_link["href"] if website_link else ""
 
-        if len(rows) < 10:
-            break
+        excluded, reason = should_exclude(name)
+        if excluded:
+            log.info("Excluded '%s': %s", name, reason)
+            continue
 
-        page += 1
-        if page > 50:
-            log.warning("Reached page limit (50). Stopping.")
-            break
+        if distances and max_distance_km(distances) < 5:
+            log.info("Excluded '%s': all distances < 5K", name)
+            continue
 
-    log.info("Kept %d races, excluded %d", len(races), excluded_count)
+        races.append({
+            "_no": race_no,
+            "_date_str": current_date_str,
+            "name": name,
+            "distances": distances,
+            "venue": venue,
+            "organizer": organizer,
+            "phone": phone,
+            "website": website,
+        })
+
+    log.info("Found %d races from list page", len(races))
     return races
 
 
-def parse_race_row(row, base_url: str) -> dict | None:
-    """Parse a single race row/item from the list page."""
-    cells = row.find_all(["td", "div"])
-    if not cells:
+def scrape_detail(race_no: str) -> dict:
+    url = f"{DETAIL_URL}?no={race_no}"
+    try:
+        html = fetch_decoded(url)
+    except Exception as e:
+        log.warning("Detail fetch failed for no=%s: %s", race_no, e)
+        return {}
+
+    soup = BeautifulSoup(html, "html.parser")
+    data = {}
+
+    rows = soup.select("table tr")
+    for row in rows:
+        cells = row.find_all("td")
+        if len(cells) < 2:
+            continue
+        label = cells[0].get_text(strip=True)
+        value = cells[1].get_text(" ", strip=True)
+        if "대회일시" in label:
+            data["date_raw"] = value
+        elif "대회종목" in label:
+            data["distances_raw"] = value
+        elif "대회지역" in label:
+            data["city"] = value.strip()
+        elif "대회장소" in label:
+            data["address"] = value.strip()
+        elif "주최단체" in label:
+            data["organizer"] = value.strip()
+        elif "접수기간" in label:
+            data["reg_period"] = value.strip()
+        elif "홈페이지" in label:
+            links = cells[1].find_all("a", href=True)
+            urls = [a["href"] for a in links if a["href"].startswith("http")]
+            data["reg_url"] = urls[0] if urls else ""
+
+    return data
+
+
+def guess_year(date_str: str, race_name: str) -> int:
+    m = re.search(r"(20\d{2})", race_name)
+    if m:
+        return int(m.group(1))
+    today = date.today()
+    if date_str:
+        parts = date_str.split("/")
+        if len(parts) == 2:
+            month = int(parts[0])
+            if month < today.month:
+                return today.year + 1
+    return today.year
+
+
+def build_race(raw: dict, detail: dict) -> dict | None:
+    name = raw["name"]
+    year = guess_year(raw["_date_str"], name)
+
+    date_iso = ""
+    start_time = ""
+    if detail.get("date_raw"):
+        date_iso = parse_korean_date(detail["date_raw"])
+        start_time = parse_start_time(detail["date_raw"])
+    elif raw["_date_str"]:
+        parts = raw["_date_str"].split("/")
+        if len(parts) == 2:
+            date_iso = f"{year}-{int(parts[0]):02d}-{int(parts[1]):02d}"
+
+    distances = normalize_distances(detail.get("distances_raw", "")) or raw["distances"]
+
+    if not distances:
+        log.info("No distances for '%s', skipping", name)
+        return None
+    if max_distance_km(distances) < 5:
+        log.info("Excluded '%s': max distance < 5K", name)
         return None
 
-    texts = [c.get_text(strip=True) for c in cells]
-    if len(texts) < 3:
-        return None
+    city = detail.get("city", "")
+    address = detail.get("address", raw.get("venue", ""))
+    province = detect_province(city + " " + address)
+    if not province:
+        province = detect_province(raw.get("venue", ""))
 
-    raw_text = " ".join(texts)
+    reg_period = detail.get("reg_period", "")
+    reg_start = ""
+    reg_end = ""
+    if reg_period:
+        parts = re.split(r"~|～", reg_period)
+        if len(parts) >= 1:
+            reg_start = parse_korean_date(parts[0])
+        if len(parts) >= 2:
+            reg_end = parse_korean_date(parts[1])
 
-    link = row.find("a")
-    detail_url = urljoin(base_url, link["href"]) if link and link.get("href") else ""
+    status = detect_status(reg_start, reg_end, date_iso)
 
-    race_id = None
-    if detail_url:
-        params = parse_qs(urlparse(detail_url).query)
-        for key in ('idx', 'id', 'no', 'seq', 'rno'):
-            if key in params:
-                race_id = f"mol-{params[key][0]}"
-                break
-    if not race_id:
-        race_id = f"mol-{hashlib.sha256(texts[0].encode()).hexdigest()[:8]}"
+    website = detail.get("reg_url", "") or raw.get("website", "")
+    source_url = f"{DETAIL_URL}?no={raw['_no']}"
 
-    status = "접수예정"
-    if "접수중" in raw_text or "신청중" in raw_text:
-        status = "접수중"
-    elif "마감" in raw_text or "접수마감" in raw_text:
-        status = "접수마감"
-    elif "종료" in raw_text or "완료" in raw_text:
-        status = "대회종료"
-
-    distances = parse_distances(texts)
-    name = texts[0] if texts else "이름 없음"
+    race_id = f"rrc-{raw['_no']}"
 
     return {
         "id": race_id,
         "name": name,
-        "date": "",
-        "is_certified": is_certified_race(name, raw_text),
+        "date": date_iso,
+        "start_time": start_time,
         "location": {
-            "address": "",
-            "city": "",
-            "province": "",
+            "address": address,
+            "city": city,
+            "province": province,
             "lat": None,
-            "lng": None
+            "lng": None,
         },
         "distances": distances,
-        "registration_url": detail_url,
-        "registration_deadline": "",
-        "source_url": detail_url,
+        "organizer": detail.get("organizer", raw.get("organizer", "")),
+        "contact": {"phone": raw.get("phone", "")},
+        "registration_url": website,
+        "registration_start": reg_start,
+        "registration_deadline": reg_end,
+        "source_url": source_url,
         "status": status,
-        "_raw_text": raw_text,  # Removed before storing
     }
 
-
-# ---------------------------------------------------------------------------
-# Output
-# ---------------------------------------------------------------------------
-
-def build_output(races: list[dict]) -> dict:
-    # Sort: certified first, then by date
-    races_sorted = sorted(races, key=lambda r: (not r.get("is_certified", False), r.get("date", "")))
-    return {
-        "last_updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "races": races_sorted
-    }
-
-
-def safe_write(path: Path, data: dict, dry_run: bool = False) -> None:
-    """Write JSON atomically."""
-    content = json.dumps(data, ensure_ascii=False, indent=2)
-    if dry_run:
-        log.info("[DRY RUN] Would write %d bytes to %s", len(content), path)
-        print(content[:500] + "\n...(truncated)")
-        return
-    tmp = path.with_suffix(".tmp")
-    tmp.write_text(content, encoding="utf-8")
-    tmp.replace(path)
-    log.info("Wrote %d races to %s", len(data["races"]), path)
-
-
-# ---------------------------------------------------------------------------
-# Main
-# ---------------------------------------------------------------------------
 
 def main():
-    parser = argparse.ArgumentParser(description="Marathon Korea scraper")
-    parser.add_argument("--dry-run", action="store_true", help="Print output without writing files")
-    parser.add_argument("--output", default=None, help="Output path (default: ../public/races.json)")
+    parser = argparse.ArgumentParser(description="Marathon Korea scraper (roadrun.co.kr)")
+    parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--output", default=None)
+    parser.add_argument("--max-detail", type=int, default=0,
+                        help="Max detail pages to fetch (0=all)")
     args = parser.parse_args()
 
-    env_file = Path(__file__).parent / ".env"
-    if env_file.exists():
-        for line in env_file.read_text().splitlines():
-            line = line.split("#")[0].strip()
-            if "=" in line:
-                k, v = line.split("=", 1)
-                os.environ.setdefault(k.strip(), v.strip())
+    output_path = (Path(args.output) if args.output
+                   else Path(__file__).parent.parent / "public" / "races.json")
 
-    kakao_key = os.environ.get("KAKAO_REST_API_KEY", "")
-    if not kakao_key:
-        log.warning("KAKAO_REST_API_KEY not set — geocoding will be skipped")
-
-    output_path = Path(args.output) if args.output else Path(__file__).parent.parent / "public" / "races.json"
-
-    list_url = urljoin(BASE_URL, LIST_PATH)
-    if not check_robots(list_url):
-        log.error("Scraping disallowed by robots.txt. Aborting.")
+    raw_races = scrape_list()
+    if not raw_races:
+        log.error("No races from list page — aborting")
         sys.exit(1)
 
-    log.info("Starting scrape of %s", BASE_URL)
-    races = scrape_race_list()
-    log.info("Scraped %d races after filtering", len(races))
+    limit = args.max_detail if args.max_detail > 0 else len(raw_races)
+    log.info("Fetching detail pages for %d races...", min(limit, len(raw_races)))
 
-    if not races:
-        log.error("No races scraped — keeping existing file intact")
+    built = []
+    for i, raw in enumerate(raw_races[:limit]):
+        log.info("[%d/%d] %s (no=%s)", i + 1, min(limit, len(raw_races)), raw["name"], raw["_no"])
+        detail = scrape_detail(raw["_no"])
+        race = build_race(raw, detail)
+        if race:
+            built.append(race)
+
+    built.sort(key=lambda r: r.get("date", ""))
+    log.info("Built %d races after filtering", len(built))
+
+    if not built:
+        log.error("No races built — keeping existing file")
         sys.exit(1)
 
-    if kakao_key:
-        log.info("Geocoding %d addresses...", len(races))
-        for race in races:
-            addr = race["location"].get("address", "")
-            if addr and race["location"]["lat"] is None:
-                race["location"]["lat"], race["location"]["lng"] = geocode(addr, kakao_key)
+    output = {
+        "last_updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "races": built,
+    }
+    content = json.dumps(output, ensure_ascii=False, indent=2)
 
-    output = build_output(races)
-    safe_write(output_path, output, dry_run=args.dry_run)
-    log.info("Done.")
+    if args.dry_run:
+        log.info("[DRY RUN] Would write %d bytes, %d races", len(content), len(built))
+        print(content[:2000])
+        return
+
+    tmp = output_path.with_suffix(".tmp")
+    tmp.write_text(content, encoding="utf-8")
+    tmp.replace(output_path)
+    log.info("Wrote %d races to %s", len(built), output_path)
 
 
 if __name__ == "__main__":
