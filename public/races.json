@@ -1,0 +1,277 @@
+{
+  "last_updated": "2026-05-18T00:00:00Z",
+  "races": [
+    {
+      "id": "seoul-marathon-2026",
+      "name": "JTBC 서울마라톤",
+      "date": "2026-03-15",
+      "location": {
+        "address": "서울특별시 강남구 올림픽공원",
+        "city": "서울",
+        "lat": 37.5213,
+        "lng": 127.0716
+      },
+      "distances": ["5K", "10K", "하프", "풀"],
+      "registration_url": "https://www.seoulmarathon.org",
+      "registration_deadline": "2026-02-28",
+      "source_url": "https://www.seoulmarathon.org",
+      "status": "접수마감"
+    },
+    {
+      "id": "dong-a-marathon-2026",
+      "name": "동아마라톤",
+      "date": "2026-03-22",
+      "location": {
+        "address": "서울특별시 광진구 광나루 한강공원",
+        "city": "서울",
+        "lat": 37.5387,
+        "lng": 127.1168
+      },
+      "distances": ["10K", "하프", "풀"],
+      "registration_url": "https://www.donga-marathon.com",
+      "registration_deadline": "2026-03-08",
+      "source_url": "https://www.donga-marathon.com",
+      "status": "접수마감"
+    },
+    {
+      "id": "chosun-ilbo-ttukseom-2026",
+      "name": "조선일보 춘마 (쌍둥이 마라톤)",
+      "date": "2026-04-05",
+      "location": {
+        "address": "서울특별시 중랑구 뚝섬 한강공원",
+        "city": "서울",
+        "lat": 37.5509,
+        "lng": 127.0758
+      },
+      "distances": ["5K", "10K", "하프", "풀"],
+      "registration_url": "https://www.ttukseommarathon.com",
+      "registration_deadline": "2026-03-22",
+      "source_url": "https://www.ttukseommarathon.com",
+      "status": "접수마감"
+    },
+    {
+      "id": "busan-marathon-2026",
+      "name": "부산마라톤",
+      "date": "2026-04-12",
+      "location": {
+        "address": "부산광역시 수영구 광안리해수욕장",
+        "city": "부산",
+        "lat": 35.1612,
+        "lng": 129.1196
+      },
+      "distances": ["5K", "10K", "하프", "풀"],
+      "registration_url": "https://www.busanmarathon.com",
+      "registration_deadline": "2026-03-29",
+      "source_url": "https://www.busanmarathon.com",
+      "status": "접수마감"
+    },
+    {
+      "id": "daegu-marathon-2026",
+      "name": "대구마라톤",
+      "date": "2026-04-19",
+      "location": {
+        "address": "대구광역시 수성구 대구스타디움",
+        "city": "대구",
+        "lat": 35.8714,
+        "lng": 128.6014
+      },
+      "distances": ["10K", "하프", "풀"],
+      "registration_url": "https://www.daeegumarathon.com",
+      "registration_deadline": "2026-04-05",
+      "source_url": "https://www.daeegumarathon.com",
+      "status": "접수마감"
+    },
+    {
+      "id": "gyeongju-marathon-2026",
+      "name": "경주마라톤",
+      "date": "2026-04-26",
+      "location": {
+        "address": "경상북도 경주시 대능동 불국사 주변",
+        "city": "경주",
+        "lat": 35.8562,
+        "lng": 129.2247
+      },
+      "distances": ["5K", "10K", "하프", "풀"],
+      "registration_url": "https://www.gyeongjumarathon.com",
+      "registration_deadline": "2026-04-12",
+      "source_url": "https://www.gyeongjumarathon.com",
+      "status": "접수마감"
+    },
+    {
+      "id": "incheon-marathon-2026",
+      "name": "인천마라톤",
+      "date": "2026-05-10",
+      "location": {
+        "address": "인천광역시 연수구 센트럴파크",
+        "city": "인천",
+        "lat": 37.3881,
+        "lng": 126.6545
+      },
+      "distances": ["5K", "10K", "하프"],
+      "registration_url": "https://www.incheonmarathon.com",
+      "registration_deadline": "2026-04-26",
+      "source_url": "https://www.incheonmarathon.com",
+      "status": "접수중"
+    },
+    {
+      "id": "gwangju-marathon-2026",
+      "name": "광주마라톤",
+      "date": "2026-05-17",
+      "location": {
+        "address": "광주광역시 동구 광주호 수변공원",
+        "city": "광주",
+        "lat": 35.1595,
+        "lng": 126.8526
+      },
+      "distances": ["5K", "10K", "하프", "풀"],
+      "registration_url": "https://www.gwangjumarathon.com",
+      "registration_deadline": "2026-05-03",
+      "source_url": "https://www.gwangjumarathon.com",
+      "status": "접수중"
+    },
+    {
+      "id": "jeonju-marathon-2026",
+      "name": "전주마라톤",
+      "date": "2026-05-24",
+      "location": {
+        "address": "전라북도 전주시 완산구 전주천",
+        "city": "전주",
+        "lat": 35.8242,
+        "lng": 127.1480
+      },
+      "distances": ["10K", "하프"],
+      "registration_url": "https://www.jeonjumarathon.com",
+      "registration_deadline": "2026-05-10",
+      "source_url": "https://www.jeonjumarathon.com",
+      "status": "접수중"
+    },
+    {
+      "id": "suwon-marathon-2026",
+      "name": "수원마라톤",
+      "date": "2026-06-07",
+      "location": {
+        "address": "경기도 수원시 권선구 광교호수공원",
+        "city": "수원",
+        "lat": 37.2897,
+        "lng": 127.0669
+      },
+      "distances": ["5K", "10K", "하프"],
+      "registration_url": "https://www.suwonmarathon.com",
+      "registration_deadline": "2026-05-24",
+      "source_url": "https://www.suwonmarathon.com",
+      "status": "접수중"
+    },
+    {
+      "id": "jeju-marathon-2026",
+      "name": "제주마라톤",
+      "date": "2026-06-21",
+      "location": {
+        "address": "제주특별자치도 제주시 해안 드라이브 코스",
+        "city": "제주",
+        "lat": 33.4996,
+        "lng": 126.5312
+      },
+      "distances": ["5K", "10K", "하프", "풀"],
+      "registration_url": "https://www.jejumarathon.com",
+      "registration_deadline": "2026-06-07",
+      "source_url": "https://www.jejumarathon.com",
+      "status": "접수중"
+    },
+    {
+      "id": "daejeon-marathon-2026",
+      "name": "대전마라톤",
+      "date": "2026-08-09",
+      "location": {
+        "address": "대전광역시 유성구 대전천",
+        "city": "대전",
+        "lat": 36.3504,
+        "lng": 127.3845
+      },
+      "distances": ["5K", "10K", "하프", "풀"],
+      "registration_url": "https://www.daejeonmarathon.com",
+      "registration_deadline": "2026-07-26",
+      "source_url": "https://www.daejeonmarathon.com",
+      "status": "접수예정"
+    },
+    {
+      "id": "ulsan-marathon-2026",
+      "name": "울산마라톤",
+      "date": "2026-08-30",
+      "location": {
+        "address": "울산광역시 남구 주전 해변공원",
+        "city": "울산",
+        "lat": 35.5384,
+        "lng": 129.3114
+      },
+      "distances": ["5K", "10K", "하프", "풀"],
+      "registration_url": "https://www.ulsanmarathon.com",
+      "registration_deadline": "2026-08-16",
+      "source_url": "https://www.ulsanmarathon.com",
+      "status": "접수예정"
+    },
+    {
+      "id": "seoul-women-marathon-2026",
+      "name": "서울국제여자마라톤",
+      "date": "2026-09-20",
+      "location": {
+        "address": "서울특별시 강남구 여의도공원",
+        "city": "서울",
+        "lat": 37.5271,
+        "lng": 126.9286
+      },
+      "distances": ["10K", "하프"],
+      "registration_url": "https://www.seoulwomensmarathon.com",
+      "registration_deadline": "2026-09-06",
+      "source_url": "https://www.seoulwomensmarathon.com",
+      "status": "접수예정"
+    },
+    {
+      "id": "chuncheon-marathon-2026",
+      "name": "춘천마라톤",
+      "date": "2026-10-11",
+      "location": {
+        "address": "강원도 춘천시 의암호 주변",
+        "city": "춘천",
+        "lat": 37.8747,
+        "lng": 127.7342
+      },
+      "distances": ["5K", "10K", "하프", "풀"],
+      "registration_url": "https://www.chuncheonmarathon.com",
+      "registration_deadline": "2026-09-27",
+      "source_url": "https://www.chuncheonmarathon.com",
+      "status": "접수예정"
+    },
+    {
+      "id": "seoul-autumn-marathon-2026",
+      "name": "서울가을마라톤",
+      "date": "2026-10-18",
+      "location": {
+        "address": "서울특별시 마포구 난지 한강공원",
+        "city": "서울",
+        "lat": 37.5704,
+        "lng": 126.8724
+      },
+      "distances": ["5K", "10K", "하프", "풀"],
+      "registration_url": "https://www.seoulautumnmarathon.com",
+      "registration_deadline": "2026-10-04",
+      "source_url": "https://www.seoulautumnmarathon.com",
+      "status": "접수예정"
+    },
+    {
+      "id": "namseoul-marathon-2026",
+      "name": "남서울마라톤",
+      "date": "2026-11-08",
+      "location": {
+        "address": "서울특별시 동작구 한강공원",
+        "city": "서울",
+        "lat": 37.5036,
+        "lng": 126.9594
+      },
+      "distances": ["10K", "하프"],
+      "registration_url": "https://www.namseoulmarthon.com",
+      "registration_deadline": "2026-10-25",
+      "source_url": "https://www.namseoulmarthon.com",
+      "status": "접수예정"
+    }
+  ]
+}
