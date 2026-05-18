@@ -10,26 +10,42 @@
         "address": "서울특별시 강남구 대치유수지체육공원",
         "city": "서울",
         "province": "서울",
-        "lat": 37.4910,
+        "lat": 37.491,
         "lng": 127.0531
       },
-      "distances": ["하프", "10K"],
+      "distances": [
+        "하프",
+        "10K"
+      ],
       "description": "초여름 시원한 바람과 함께 도심 속 푸른 양재천을 달리는 러닝 페스티벌.",
       "course": {
         "type": "강변",
         "terrain": "평탄",
         "surface": "아스팔트",
-        "highlights": ["대치유수지체육공원", "양재천", "강남 도심 도로"],
-        "images": ["https://marathongo.co.kr/assets/image/race/domestic/2026-gangnam-half.webp"]
+        "highlights": [
+          "대치유수지체육공원",
+          "양재천",
+          "강남 도심 도로"
+        ],
+        "images": [
+          "https://marathongo.co.kr/assets/image/race/domestic/2026-gangnam-half.webp"
+        ]
       },
       "organizer": "강남구체육회",
-      "contact": { "phone": "010-6364-4749", "email": "gangnam-marathon@naver.com" },
-      "fee": { "하프": 50000, "10K": 45000 },
+      "contact": {
+        "phone": "010-6364-4749",
+        "email": "gangnam-marathon@naver.com"
+      },
+      "fee": {
+        "하프": 50000,
+        "10K": 45000
+      },
       "registration_url": "https://gangnam-marathon.com",
       "registration_start": "2026-03-30",
       "registration_deadline": "2026-05-17",
       "source_url": "https://gorunning.kr/races/1037/",
-      "status": "접수마감"
+      "status": "접수마감",
+      "is_certified": false
     },
     {
       "id": "blue-sky-run-2026",
@@ -43,23 +59,41 @@
         "lat": 37.5697,
         "lng": 126.8949
       },
-      "distances": ["하프", "10K", "5K"],
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
       "description": "상암 월드컵공원 평화광장을 출발해 한강변과 공원 내부를 도는 평탄한 코스. 푸른 하늘 아래 한강 경관을 즐기며 달릴 수 있는 도심 속 자연 코스.",
       "course": {
         "type": "공원·강변",
         "terrain": "평탄",
         "surface": "아스팔트·공원로",
-        "highlights": ["월드컵공원 평화광장", "한강변", "하늘공원", "노을공원"],
-        "images": ["https://marathongo.co.kr/assets/image/race/domestic/2026-blue-sky-run.webp"]
+        "highlights": [
+          "월드컵공원 평화광장",
+          "한강변",
+          "하늘공원",
+          "노을공원"
+        ],
+        "images": [
+          "https://marathongo.co.kr/assets/image/race/domestic/2026-blue-sky-run.webp"
+        ]
       },
       "organizer": "(사)대한이에스지협회",
-      "contact": { "phone": "02-2606-8187" },
-      "fee": { "하프": 50000, "10K": 50000, "5K": 50000 },
+      "contact": {
+        "phone": "02-2606-8187"
+      },
+      "fee": {
+        "하프": 50000,
+        "10K": 50000,
+        "5K": 50000
+      },
       "registration_url": "https://blueskyrun.kr/",
       "registration_start": "2026-03-05",
       "registration_deadline": "2026-05-28",
       "source_url": "https://gorunning.kr/races/999/",
-      "status": "접수중"
+      "status": "접수중",
+      "is_certified": false
     },
     {
       "id": "daegu-masters-half-2026",
@@ -70,25 +104,38 @@
         "address": "대구광역시 수성구 신천동로 일원 (들안길삼거리 ↔ 산격대교)",
         "city": "대구",
         "province": "대구",
-        "lat": 35.8750,
-        "lng": 128.5960
+        "lat": 35.875,
+        "lng": 128.596
       },
-      "distances": ["하프", "10K"],
+      "distances": [
+        "하프",
+        "10K"
+      ],
       "description": "2026 대구세계마스터즈육상경기대회(8/22~9/3)의 일환으로 열리는 마라톤. 신천동로를 달리는 도심 코스로, 90개국 약 11,000명이 참가하는 국제 대회.",
       "course": {
         "type": "도심",
         "terrain": "평탄",
         "surface": "아스팔트",
-        "highlights": ["들안길삼거리", "신천동로", "산격대교"],
-        "images": ["https://marathongo.co.kr/assets/image/race/domestic/2026-daegu-masters-marathon.webp"]
+        "highlights": [
+          "들안길삼거리",
+          "신천동로",
+          "산격대교"
+        ],
+        "images": [
+          "https://marathongo.co.kr/assets/image/race/domestic/2026-daegu-masters-marathon.webp"
+        ]
       },
       "organizer": "대구광역시, WMA (세계마스터즈육상연맹)",
-      "contact": { "phone": "053-803-1834", "email": "wmac2026@daegu.go.kr" },
+      "contact": {
+        "phone": "053-803-1834",
+        "email": "wmac2026@daegu.go.kr"
+      },
       "registration_url": "https://wmac2026.com/kr/",
       "registration_start": "2025-12-23",
       "registration_deadline": "2026-06-23",
       "source_url": "https://gorunning.kr/races/929/",
-      "status": "접수중"
+      "status": "접수중",
+      "is_certified": true
     },
     {
       "id": "hangang-seoul-half-2026",
@@ -99,26 +146,45 @@
         "address": "서울특별시 영등포구 여의도 한강공원 물빛광장",
         "city": "서울",
         "province": "서울",
-        "lat": 37.5280,
-        "lng": 126.9320
+        "lat": 37.528,
+        "lng": 126.932
       },
-      "distances": ["하프", "10K", "5K"],
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
       "description": "여의도 한강공원 물빛광장을 출발해 한강변을 따라 달리는 강변 코스. 경사가 거의 없는 평탄한 노면으로 기록 단축에 유리하며, 한강의 탁 트인 경관을 즐길 수 있음.",
       "course": {
         "type": "강변",
         "terrain": "평탄",
         "surface": "자전거·보행 전용로",
-        "highlights": ["여의도 한강공원", "물빛광장", "한강 둔치", "여의도 둘레"],
-        "images": ["https://marathongo.co.kr/assets/image/race/domestic/2026-hangang-seoul-half.webp"]
+        "highlights": [
+          "여의도 한강공원",
+          "물빛광장",
+          "한강 둔치",
+          "여의도 둘레"
+        ],
+        "images": [
+          "https://marathongo.co.kr/assets/image/race/domestic/2026-hangang-seoul-half.webp"
+        ]
       },
       "organizer": "사단법인 국민성공시대",
-      "contact": { "phone": "02-888-8805", "email": "seoulhalf@gmail.com" },
-      "fee": { "하프": 50000, "10K": 50000, "5K": 50000 },
+      "contact": {
+        "phone": "02-888-8805",
+        "email": "seoulhalf@gmail.com"
+      },
+      "fee": {
+        "하프": 50000,
+        "10K": 50000,
+        "5K": 50000
+      },
       "registration_url": "http://seoulhalfrun.kr/",
       "registration_start": "2026-05-13",
       "registration_deadline": "2026-08-23",
       "source_url": "https://gorunning.kr/races/1112/",
-      "status": "접수중"
+      "status": "접수중",
+      "is_certified": false
     },
     {
       "id": "cheorwon-dmz-2026",
@@ -129,25 +195,40 @@
         "address": "강원도 철원군 동송읍 태봉로 1825 고석정",
         "city": "철원",
         "province": "강원",
-        "lat": 38.1340,
-        "lng": 127.3090
+        "lat": 38.134,
+        "lng": 127.309
       },
-      "distances": ["풀", "하프", "10K"],
+      "distances": [
+        "풀",
+        "하프",
+        "10K"
+      ],
       "description": "비무장지대(DMZ) 인근 철원 평야를 달리는 역사적 의미가 있는 대회. 한반도 유일의 DMZ 마라톤으로 용암대지 위 넓은 철원 평야를 달리는 평탄한 코스.",
       "course": {
         "type": "평야·도심",
         "terrain": "평탄",
         "surface": "아스팔트",
-        "highlights": ["고석정", "철원 평야", "DMZ 인근", "한탄강"],
-        "images": ["https://marathongo.co.kr/assets/image/race/domestic/2026-cheorwon-dmz.webp"]
+        "highlights": [
+          "고석정",
+          "철원 평야",
+          "DMZ 인근",
+          "한탄강"
+        ],
+        "images": [
+          "https://marathongo.co.kr/assets/image/race/domestic/2026-cheorwon-dmz.webp"
+        ]
       },
       "organizer": "철원군, 한국일보",
-      "contact": { "phone": "031-821-9902", "email": "dmzrun@gmail.com" },
+      "contact": {
+        "phone": "031-821-9902",
+        "email": "dmzrun@gmail.com"
+      },
       "registration_url": "https://dmzrun.kr",
       "registration_start": "2026-02-02",
       "registration_deadline": "2026-02-27",
       "source_url": "https://gorunning.kr/races/938/",
-      "status": "접수마감"
+      "status": "접수마감",
+      "is_certified": true
     },
     {
       "id": "hopestream-gangbyeon-2026",
@@ -161,23 +242,41 @@
         "lat": 37.5279,
         "lng": 126.8735
       },
-      "distances": ["하프", "10K", "5K"],
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
       "description": "목동종합운동장을 출발해 이른 새벽 강변을 달리는 코스. 새벽 특유의 청량한 공기 속에서 달리는 특별한 경험을 제공하는 자선 마라톤.",
       "course": {
         "type": "강변",
         "terrain": "평탄",
         "surface": "아스팔트·자전거 전용로",
-        "highlights": ["목동종합운동장", "목동 일대", "강변"],
-        "images": ["https://marathongo.co.kr/assets/image/race/domestic/2026-hopestream-gangbyeon.webp"]
+        "highlights": [
+          "목동종합운동장",
+          "목동 일대",
+          "강변"
+        ],
+        "images": [
+          "https://marathongo.co.kr/assets/image/race/domestic/2026-hopestream-gangbyeon.webp"
+        ]
       },
       "organizer": "(사)한국마라톤협회",
-      "contact": { "phone": "02-2647-4488", "email": "runsb@gmail.com" },
-      "fee": { "하프": 50000, "10K": 50000, "5K": 40000 },
+      "contact": {
+        "phone": "02-2647-4488",
+        "email": "runsb@gmail.com"
+      },
+      "fee": {
+        "하프": 50000,
+        "10K": 50000,
+        "5K": 40000
+      },
       "registration_url": "http://amarunsb.com/",
       "registration_start": "2026-02-10",
       "registration_deadline": "2026-05-01",
       "source_url": "https://gorunning.kr/races/700/",
-      "status": "접수마감"
+      "status": "접수마감",
+      "is_certified": true
     },
     {
       "id": "green-umbrella-run-2026",
@@ -189,24 +288,38 @@
         "city": "대전",
         "province": "대전",
         "lat": 36.3724,
-        "lng": 127.3870
+        "lng": 127.387
       },
-      "distances": ["하프", "10K", "5K"],
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
       "description": "대전엑스포시민광장 일대를 달리는 자선 마라톤. 어린이재단 초록우산과 함께하며 참가비 일부가 아동복지에 사용됨. 넓은 공원과 잘 정비된 도로가 특징.",
       "course": {
         "type": "공원",
         "terrain": "평탄",
         "surface": "아스팔트·공원로",
-        "highlights": ["대전엑스포시민광장", "엑스포다리", "갑천"],
-        "images": ["https://marathongo.co.kr/assets/image/race/domestic/2026-green-umbrella-run.webp"]
+        "highlights": [
+          "대전엑스포시민광장",
+          "엑스포다리",
+          "갑천"
+        ],
+        "images": [
+          "https://marathongo.co.kr/assets/image/race/domestic/2026-green-umbrella-run.webp"
+        ]
       },
       "organizer": "초록우산 대전세종지역본부",
-      "contact": { "phone": "042-638-1080", "email": "marathon@childfund.or.kr" },
+      "contact": {
+        "phone": "042-638-1080",
+        "email": "marathon@childfund.or.kr"
+      },
       "registration_url": "https://mara1080.com/event/9443583f-6577-466c-ab2f-43d1dbd820d4",
       "registration_start": "2026-04-13",
       "registration_deadline": "2026-08-01",
       "source_url": "https://gorunning.kr/races/1070/",
-      "status": "접수중"
+      "status": "접수중",
+      "is_certified": false
     },
     {
       "id": "gapyeong-jaraseom-2026",
@@ -220,24 +333,43 @@
         "lat": 37.8319,
         "lng": 127.5099
       },
-      "distances": ["하프", "10K", "5K"],
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
       "description": "가평종합운동장을 출발해 자라섬과 북한강변을 달리는 코스. 가을 단풍과 북한강의 아름다운 경치가 어우러지는 가장 인기 있는 가을 지방 마라톤 중 하나.",
       "course": {
         "type": "섬·강변",
         "terrain": "평탄",
         "surface": "아스팔트·잔디",
-        "highlights": ["가평종합운동장", "자라섬", "북한강", "자라섬 캠핑장"],
-        "images": ["https://marathongo.co.kr/assets/image/race/domestic/2026-gapyeong-jaraseom.webp"]
+        "highlights": [
+          "가평종합운동장",
+          "자라섬",
+          "북한강",
+          "자라섬 캠핑장"
+        ],
+        "images": [
+          "https://marathongo.co.kr/assets/image/race/domestic/2026-gapyeong-jaraseom.webp"
+        ]
       },
       "organizer": "가평군체육회, 세계일보",
-      "contact": { "phone": "02-2647-4488", "email": "gprun@naver.com" },
-      "fee": { "하프": 55000, "10K": 50000, "5K": 45000 },
+      "contact": {
+        "phone": "02-2647-4488",
+        "email": "gprun@naver.com"
+      },
+      "fee": {
+        "하프": 55000,
+        "10K": 50000,
+        "5K": 45000
+      },
       "registration_url": "https://gprun.com/",
       "registration_start": "2026-04-14",
       "registration_start_time": "10:00",
       "registration_deadline": "2026-05-30",
       "source_url": "https://gorunning.kr/races/927/",
-      "status": "접수중"
+      "status": "접수중",
+      "is_certified": false
     },
     {
       "id": "gongju-marathon-2026",
@@ -251,23 +383,42 @@
         "lat": 36.4542,
         "lng": 127.1277
       },
-      "distances": ["풀", "하프", "10K"],
+      "distances": [
+        "풀",
+        "하프",
+        "10K"
+      ],
       "description": "백제의 고도 공주를 무대로 금강변과 공주 시내를 달리는 역사 코스. 공산성, 금강교 등 백제 역사 유적지 주변을 지나며 가을 금강 경관을 즐길 수 있음.",
       "course": {
         "type": "역사유적·강변",
         "terrain": "완만",
         "surface": "아스팔트",
-        "highlights": ["공주시민운동장", "공산성", "금강교", "금강변"],
-        "images": ["https://marathongo.co.kr/assets/image/race/domestic/2026-gongju-marathon.webp"]
+        "highlights": [
+          "공주시민운동장",
+          "공산성",
+          "금강교",
+          "금강변"
+        ],
+        "images": [
+          "https://marathongo.co.kr/assets/image/race/domestic/2026-gongju-marathon.webp"
+        ]
       },
       "organizer": "동아일보",
-      "contact": { "phone": "02-361-1425", "email": "marathon@donga.com" },
-      "fee": { "풀": 70000, "하프": 60000, "10K": 50000 },
+      "contact": {
+        "phone": "02-361-1425",
+        "email": "marathon@donga.com"
+      },
+      "fee": {
+        "풀": 70000,
+        "하프": 60000,
+        "10K": 50000
+      },
       "registration_url": "http://www.gongjumarathon.com/",
       "registration_start": "2026-05-14",
       "registration_deadline": "2026-05-21",
       "source_url": "https://gorunning.kr/races/1119/",
-      "status": "접수중"
+      "status": "접수중",
+      "is_certified": false
     },
     {
       "id": "seosan-cosmos-2026",
@@ -281,22 +432,37 @@
         "lat": 36.7847,
         "lng": 126.4503
       },
-      "distances": ["하프", "10K", "5K"],
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
       "description": "가을 코스모스와 황금 들녘을 배경으로 달리는 코스. 서산스포츠테마파크를 출발해 서산 간척지의 넓은 농경지와 코스모스 꽃밭을 지나는 평탄한 코스.",
       "course": {
         "type": "농촌·들녘",
         "terrain": "평탄",
         "surface": "아스팔트",
-        "highlights": ["서산스포츠테마파크", "코스모스 꽃밭", "황금 들녘", "서산 간척지"],
-        "images": ["https://marathongo.co.kr/assets/image/race/domestic/2026-seosan-cosmos.webp"]
+        "highlights": [
+          "서산스포츠테마파크",
+          "코스모스 꽃밭",
+          "황금 들녘",
+          "서산 간척지"
+        ],
+        "images": [
+          "https://marathongo.co.kr/assets/image/race/domestic/2026-seosan-cosmos.webp"
+        ]
       },
       "organizer": "서산시체육회",
-      "contact": { "phone": "042-638-1080", "email": "seosanrun@gmail.com" },
+      "contact": {
+        "phone": "042-638-1080",
+        "email": "seosanrun@gmail.com"
+      },
       "registration_url": "https://mara1080.com/event/fcaa0bc8-1489-47c3-8fec-8e5a5c17284e",
       "registration_start": "2026-03-20",
       "registration_deadline": "2026-09-03",
       "source_url": "https://gorunning.kr/races/1036/",
-      "status": "접수중"
+      "status": "접수중",
+      "is_certified": false
     },
     {
       "id": "andong-marathon-2026",
@@ -310,23 +476,44 @@
         "lat": 36.5684,
         "lng": 128.7163
       },
-      "distances": ["풀", "하프", "10K", "5K"],
+      "distances": [
+        "풀",
+        "하프",
+        "10K",
+        "5K"
+      ],
       "description": "한국 정신문화의 수도 안동을 달리는 코스. 낙동강변과 안동댐 주변을 지나며 가을 단풍과 전통 문화의 도시 안동의 풍경을 감상할 수 있음.",
       "course": {
         "type": "역사유적·강변",
         "terrain": "완만",
         "surface": "아스팔트",
-        "highlights": ["안동시민운동장", "낙동강변", "안동댐", "월영교"],
-        "images": ["https://marathongo.co.kr/assets/image/race/domestic/2026-andong-marathon.webp"]
+        "highlights": [
+          "안동시민운동장",
+          "낙동강변",
+          "안동댐",
+          "월영교"
+        ],
+        "images": [
+          "https://marathongo.co.kr/assets/image/race/domestic/2026-andong-marathon.webp"
+        ]
       },
       "organizer": "안동시, 매일신문사",
-      "contact": { "phone": "031-575-7243", "email": "andong.marathon@gmail.com" },
-      "fee": { "풀": 65000, "하프": 55000, "10K": 50000, "5K": 45000 },
+      "contact": {
+        "phone": "031-575-7243",
+        "email": "andong.marathon@gmail.com"
+      },
+      "fee": {
+        "풀": 65000,
+        "하프": 55000,
+        "10K": 50000,
+        "5K": 45000
+      },
       "registration_url": "http://www.admarathon.kr",
       "registration_start": "2026-04-13",
       "registration_deadline": "2026-05-31",
       "source_url": "https://gorunning.kr/races/1056/",
-      "status": "접수중"
+      "status": "접수중",
+      "is_certified": false
     },
     {
       "id": "hongcheon-love-2026",
@@ -340,23 +527,42 @@
         "lat": 37.6969,
         "lng": 127.8885
       },
-      "distances": ["하프", "10K", "5K"],
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
       "description": "홍천종합운동장을 출발해 홍천강변을 따라 달리는 가을 코스. 맑은 홍천강과 주변 단풍을 감상하며 달릴 수 있는 강원도 특유의 자연 코스.",
       "course": {
         "type": "강변",
         "terrain": "평탄",
         "surface": "아스팔트",
-        "highlights": ["홍천종합운동장", "홍천강변", "홍천 시내", "가을 단풍"],
-        "images": ["https://marathongo.co.kr/assets/image/race/domestic/2026-hongcheon-marathon.webp"]
+        "highlights": [
+          "홍천종합운동장",
+          "홍천강변",
+          "홍천 시내",
+          "가을 단풍"
+        ],
+        "images": [
+          "https://marathongo.co.kr/assets/image/race/domestic/2026-hongcheon-marathon.webp"
+        ]
       },
       "organizer": "홍천군육상연맹",
-      "contact": { "phone": "1866-1718", "email": "hongcheonrun@gmail.com" },
-      "fee": { "하프": 50000, "10K": 50000, "5K": 45000 },
+      "contact": {
+        "phone": "1866-1718",
+        "email": "hongcheonrun@gmail.com"
+      },
+      "fee": {
+        "하프": 50000,
+        "10K": 50000,
+        "5K": 45000
+      },
       "registration_url": "http://www.hongcheonrun.net/",
       "registration_start": "2026-05-19",
       "registration_deadline": "2026-08-31",
       "source_url": "https://gorunning.kr/races/1105/",
-      "status": "접수예정"
+      "status": "접수예정",
+      "is_certified": false
     },
     {
       "id": "hongseong-marathon-2026",
@@ -370,24 +576,42 @@
         "lat": 36.6019,
         "lng": 126.6607
       },
-      "distances": ["하프", "10K", "5K"],
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
       "description": "홍주종합경기장을 출발해 홍성 시내를 달리는 코스. 이봉주 선수 보스턴마라톤 우승 기념 코스로 26회를 맞이하는 유서 깊은 지역 대회.",
       "course": {
         "type": "도심·농촌",
         "terrain": "완만",
         "surface": "아스팔트",
-        "highlights": ["홍주종합경기장", "홍성 시내", "이봉주 선수 기념 코스"],
-        "images": ["https://marathongo.co.kr/assets/image/race/domestic/2026-hongseong-marathon.webp"]
+        "highlights": [
+          "홍주종합경기장",
+          "홍성 시내",
+          "이봉주 선수 기념 코스"
+        ],
+        "images": [
+          "https://marathongo.co.kr/assets/image/race/domestic/2026-hongseong-marathon.webp"
+        ]
       },
       "organizer": "홍성군체육회",
-      "contact": { "phone": "02-2647-4488", "email": "hscwf@naver.com" },
-      "fee": { "하프": 50000, "10K": 50000, "5K": 45000 },
+      "contact": {
+        "phone": "02-2647-4488",
+        "email": "hscwf@naver.com"
+      },
+      "fee": {
+        "하프": 50000,
+        "10K": 50000,
+        "5K": 45000
+      },
       "registration_url": "https://amarunhs.com",
       "registration_start": "2026-03-25",
       "registration_start_time": "10:00",
       "registration_deadline": "2026-05-29",
       "source_url": "https://gorunning.kr/races/928/",
-      "status": "접수중"
+      "status": "접수중",
+      "is_certified": false
     },
     {
       "id": "naju-marathon-2026",
@@ -401,23 +625,44 @@
         "lat": 35.0278,
         "lng": 126.7199
       },
-      "distances": ["풀", "하프", "10K", "5K"],
+      "distances": [
+        "풀",
+        "하프",
+        "10K",
+        "5K"
+      ],
       "description": "나주종합스포츠파크를 출발해 영산강변과 꽃밭을 달리는 평탄한 코스. MBN·매일경제 후원 전국 규모 대회로 약 1만 명이 참가하는 호남 최대 마라톤.",
       "course": {
         "type": "강변",
         "terrain": "평탄",
         "surface": "아스팔트",
-        "highlights": ["나주종합스포츠파크", "영산강변", "영산강 꽃밭", "나주 시내"],
-        "images": ["https://marathongo.co.kr/assets/image/race/domestic/2026-naju-marathon.webp"]
+        "highlights": [
+          "나주종합스포츠파크",
+          "영산강변",
+          "영산강 꽃밭",
+          "나주 시내"
+        ],
+        "images": [
+          "https://marathongo.co.kr/assets/image/race/domestic/2026-naju-marathon.webp"
+        ]
       },
       "organizer": "나주시, MBN, 매일경제",
-      "contact": { "phone": "010-2426-1070", "email": "run@naju.go.kr" },
-      "fee": { "풀": 70000, "하프": 60000, "10K": 50000, "5K": 40000 },
+      "contact": {
+        "phone": "010-2426-1070",
+        "email": "run@naju.go.kr"
+      },
+      "fee": {
+        "풀": 70000,
+        "하프": 60000,
+        "10K": 50000,
+        "5K": 40000
+      },
       "registration_url": "http://najumbnmarathon.com/home/main.ubs",
       "registration_start": "2026-04-20",
       "registration_deadline": "2026-07-19",
       "source_url": "https://gorunning.kr/races/994/",
-      "status": "접수중"
+      "status": "접수중",
+      "is_certified": false
     },
     {
       "id": "seoul-race-2026",
@@ -431,23 +676,39 @@
         "lat": 37.5666,
         "lng": 126.9784
       },
-      "distances": ["하프", "10K"],
+      "distances": [
+        "하프",
+        "10K"
+      ],
       "description": "서울광장을 출발해 서울 도심을 달리는 코스. 동아일보 주최로 서울의 주요 랜드마크를 지나는 가을 도심 마라톤.",
       "course": {
         "type": "도심",
         "terrain": "평탄",
         "surface": "아스팔트",
-        "highlights": ["서울광장", "청계천", "서울 도심"],
-        "images": ["https://marathongo.co.kr/assets/image/race/domestic/2026-seoul-race.webp"]
+        "highlights": [
+          "서울광장",
+          "청계천",
+          "서울 도심"
+        ],
+        "images": [
+          "https://marathongo.co.kr/assets/image/race/domestic/2026-seoul-race.webp"
+        ]
       },
       "organizer": "동아일보",
-      "contact": { "phone": "02-312-1998", "email": "seoulrace@naver.com" },
-      "fee": { "하프": 55000, "10K": 50000 },
+      "contact": {
+        "phone": "02-312-1998",
+        "email": "seoulrace@naver.com"
+      },
+      "fee": {
+        "하프": 55000,
+        "10K": 50000
+      },
       "registration_url": "http://www.seoul-race.co.kr",
       "registration_start": "2026-05-11",
       "registration_deadline": "2026-05-27",
       "source_url": "https://gorunning.kr/races/1084/",
-      "status": "접수중"
+      "status": "접수중",
+      "is_certified": false
     },
     {
       "id": "gyeongpo-marathon-2026",
@@ -461,27 +722,43 @@
         "lat": 37.7996,
         "lng": 128.9009
       },
-      "distances": ["하프", "10K", "5K"],
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
       "description": "솔향, 바다향, 커피향이 가득한 강릉 해안선을 달리는 코스. 경포해변 중앙광장을 출발해 동해 바다와 경포호를 끼고 달리는 특별한 경험.",
       "course": {
         "type": "호수·해변",
         "terrain": "완만",
         "surface": "아스팔트",
-        "highlights": ["경포해변 중앙광장", "사근진해변", "순포습지", "경포인공폭포", "영진해변"],
+        "highlights": [
+          "경포해변 중앙광장",
+          "사근진해변",
+          "순포습지",
+          "경포인공폭포",
+          "영진해변"
+        ],
         "routes": {
           "5K": "경포해변 중앙광장 → 사근진 → 순포습지 인근 반환 → 경포해변 중앙광장",
           "10K": "경포해변 중앙광장 → 경포번영회 주차장 우회전 → 사천하평교 반환 → 경포인공폭포 → 경포해변 중앙광장",
           "하프": "경포해변 중앙광장 → 경포번영회 주차장 우회전 → 경포인공폭포 좌회전 → 영진해변 → 영진하수종말처리장 반환 → 경포인공폭포 → 경포해변 중앙광장"
         },
-        "images": ["https://marathongo.co.kr/assets/image/race/domestic/2026-gyeongpo-marathon.webp"]
+        "images": [
+          "https://marathongo.co.kr/assets/image/race/domestic/2026-gyeongpo-marathon.webp"
+        ]
       },
       "organizer": "(주)강원도민일보",
-      "contact": { "phone": "033-651-0112", "email": "kkang7705@naver.com" },
+      "contact": {
+        "phone": "033-651-0112",
+        "email": "kkang7705@naver.com"
+      },
       "registration_url": "http://www.경포마라톤.com",
       "registration_start": "2026-05-18",
       "registration_deadline": "2026-06-23",
       "source_url": "https://gorunning.kr/races/890/2026-gyeongpo-marathon/",
-      "status": "접수중"
+      "status": "접수중",
+      "is_certified": false
     },
     {
       "id": "gyeongju-marathon-2026",
@@ -495,23 +772,43 @@
         "lat": 35.8417,
         "lng": 129.2249
       },
-      "distances": ["풀", "하프", "10K"],
+      "distances": [
+        "풀",
+        "하프",
+        "10K"
+      ],
       "description": "천년 고도 경주를 달리는 역사 코스. 경주시민운동장을 출발해 첨성대, 안압지 등 신라 역사 유적지를 지나는 세계적으로 손꼽히는 경관 마라톤.",
       "course": {
         "type": "역사유적",
         "terrain": "완만",
         "surface": "아스팔트",
-        "highlights": ["경주시민운동장", "첨성대", "안압지(동궁과 월지)", "대릉원", "불국사 방향"],
-        "images": ["https://marathongo.co.kr/assets/image/race/domestic/2026-gyeongju-marathon.webp"]
+        "highlights": [
+          "경주시민운동장",
+          "첨성대",
+          "안압지(동궁과 월지)",
+          "대릉원",
+          "불국사 방향"
+        ],
+        "images": [
+          "https://marathongo.co.kr/assets/image/race/domestic/2026-gyeongju-marathon.webp"
+        ]
       },
       "organizer": "동아일보, 경북도, KAAF",
-      "contact": { "phone": "02-361-1425", "email": "marathon@donga.com" },
-      "fee": { "풀": 70000, "하프": 60000, "10K": 50000 },
+      "contact": {
+        "phone": "02-361-1425",
+        "email": "marathon@donga.com"
+      },
+      "fee": {
+        "풀": 70000,
+        "하프": 60000,
+        "10K": 50000
+      },
       "registration_url": "http://www.gyeongjumarathon.com/home",
       "registration_start": "2026-05-26",
       "registration_deadline": "2026-05-28",
       "source_url": "https://gorunning.kr/races/1118/",
-      "status": "접수중"
+      "status": "접수중",
+      "is_certified": false
     },
     {
       "id": "asia-open-marathon-2026",
@@ -525,23 +822,39 @@
         "lat": 37.5759,
         "lng": 126.9769
       },
-      "distances": ["하프", "10K"],
+      "distances": [
+        "하프",
+        "10K"
+      ],
       "description": "광화문광장을 출발해 서울 도심을 달리는 국제 오픈 대회. 아시아투데이 주최로 아시아 각국 선수들이 함께하는 가을 도심 마라톤.",
       "course": {
         "type": "도심",
         "terrain": "평탄",
         "surface": "아스팔트",
-        "highlights": ["광화문광장", "청계천", "서울 도심"],
-        "images": ["https://marathongo.co.kr/assets/image/race/domestic/2026-asia-open-marathon.webp"]
+        "highlights": [
+          "광화문광장",
+          "청계천",
+          "서울 도심"
+        ],
+        "images": [
+          "https://marathongo.co.kr/assets/image/race/domestic/2026-asia-open-marathon.webp"
+        ]
       },
       "organizer": "아시아투데이",
-      "contact": { "phone": "02-769-5000", "email": "aom@asiatoday.co.kr" },
-      "fee": { "하프": 55000, "10K": 50000 },
+      "contact": {
+        "phone": "02-769-5000",
+        "email": "aom@asiatoday.co.kr"
+      },
+      "fee": {
+        "하프": 55000,
+        "10K": 50000
+      },
       "registration_url": "http://aomseries.imweb.me",
       "registration_start": "2026-02-01",
       "registration_deadline": "2026-09-30",
       "source_url": "https://gorunning.kr/races/891/",
-      "status": "접수중"
+      "status": "접수중",
+      "is_certified": true
     },
     {
       "id": "jtbc-seoul-marathon-2026",
@@ -555,23 +868,39 @@
         "lat": 37.5684,
         "lng": 126.8974
       },
-      "distances": ["풀", "10K"],
+      "distances": [
+        "풀",
+        "10K"
+      ],
       "description": "서울월드컵경기장(상암)을 출발해 서울 도심을 달리는 국내 최대 규모 마라톤 중 하나. 국내외 수만 명의 러너가 참가하는 가을 최대 축제.",
       "course": {
         "type": "도심",
         "terrain": "평탄",
         "surface": "아스팔트",
-        "highlights": ["서울월드컵경기장", "상암 일대", "서울 도심"],
-        "images": ["https://marathongo.co.kr/assets/image/race/domestic/2026-jtbc-seoul-marathon.webp"]
+        "highlights": [
+          "서울월드컵경기장",
+          "상암 일대",
+          "서울 도심"
+        ],
+        "images": [
+          "https://marathongo.co.kr/assets/image/race/domestic/2026-jtbc-seoul-marathon.webp"
+        ]
       },
       "organizer": "JTBC",
-      "contact": { "phone": "02-2031-1935", "email": "marathon@jtbc.com" },
-      "fee": { "풀": 150000, "10K": 100000 },
+      "contact": {
+        "phone": "02-2031-1935",
+        "email": "marathon@jtbc.com"
+      },
+      "fee": {
+        "풀": 150000,
+        "10K": 100000
+      },
       "registration_url": "http://marathon.jtbc.com/",
       "registration_start": "2026-01-18",
       "registration_deadline": "2026-02-18",
       "source_url": "https://gorunning.kr/races/852/",
-      "status": "접수마감"
+      "status": "접수마감",
+      "is_certified": true
     },
     {
       "id": "ulsan-human-rights-2026",
@@ -585,23 +914,42 @@
         "lat": 35.5394,
         "lng": 129.3114
       },
-      "distances": ["하프", "10K", "5K"],
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
       "description": "태화강 둔치를 출발해 태화강변을 달리는 코스. '다르지만 차별없는 세상을 위해'를 주제로 한 인권 마라톤으로 태화강 십리대숲이 코스의 하이라이트.",
       "course": {
         "type": "강변·공원",
         "terrain": "평탄",
         "surface": "아스팔트·공원로",
-        "highlights": ["태화강 둔치", "태화강국가정원", "태화강 십리대숲", "울산 시내"],
-        "images": ["https://marathongo.co.kr/assets/image/race/domestic/2026-ulsan-human-rights.webp"]
+        "highlights": [
+          "태화강 둔치",
+          "태화강국가정원",
+          "태화강 십리대숲",
+          "울산 시내"
+        ],
+        "images": [
+          "https://marathongo.co.kr/assets/image/race/domestic/2026-ulsan-human-rights.webp"
+        ]
       },
       "organizer": "울산인권마라톤대회 조직위원회",
-      "contact": { "phone": "052-242-1119", "email": "humanrun@gmail.com" },
-      "fee": { "하프": 50000, "10K": 45000, "5K": 40000 },
+      "contact": {
+        "phone": "052-242-1119",
+        "email": "humanrun@gmail.com"
+      },
+      "fee": {
+        "하프": 50000,
+        "10K": 45000,
+        "5K": 40000
+      },
       "registration_url": "https://www.humanrun.org",
       "registration_start": "2026-08-18",
       "registration_deadline": "2026-09-18",
       "source_url": "https://gorunning.kr/races/1090/",
-      "status": "접수예정"
+      "status": "접수예정",
+      "is_certified": false
     },
     {
       "id": "sangju-gotgam-2026",
@@ -613,25 +961,44 @@
         "city": "상주",
         "province": "경북",
         "lat": 36.3954,
-        "lng": 128.1610
+        "lng": 128.161
       },
-      "distances": ["풀", "하프", "10K"],
+      "distances": [
+        "풀",
+        "하프",
+        "10K"
+      ],
       "description": "곶감의 고장 상주에서 열리는 늦가을 마라톤. 낙동강변을 달리는 완만한 코스로 완주 후 특산품 곶감을 제공하는 것으로 유명.",
       "course": {
         "type": "도심·강변",
         "terrain": "완만",
         "surface": "아스팔트",
-        "highlights": ["상주시민운동장", "낙동강변", "상주 시내", "곶감 시배지"],
-        "images": ["https://marathongo.co.kr/assets/image/race/domestic/2026-sangju-gotgam.webp"]
+        "highlights": [
+          "상주시민운동장",
+          "낙동강변",
+          "상주 시내",
+          "곶감 시배지"
+        ],
+        "images": [
+          "https://marathongo.co.kr/assets/image/race/domestic/2026-sangju-gotgam.webp"
+        ]
       },
       "organizer": "전국마라톤협회",
-      "contact": { "phone": "042-638-1080", "email": "sangju.marathon@gmail.com" },
-      "fee": { "풀": 65000, "하프": 55000, "10K": 50000 },
+      "contact": {
+        "phone": "042-638-1080",
+        "email": "sangju.marathon@gmail.com"
+      },
+      "fee": {
+        "풀": 65000,
+        "하프": 55000,
+        "10K": 50000
+      },
       "registration_url": "https://www.mara1080.com/event/c8dc2c22-a83a-4743-9e34-c884e9809dbb",
       "registration_start": "2026-05-06",
       "registration_deadline": "2026-10-15",
       "source_url": "https://gorunning.kr/races/1099/",
-      "status": "접수중"
+      "status": "접수중",
+      "is_certified": false
     }
   ]
 }
