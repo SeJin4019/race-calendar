@@ -109,70 +109,77 @@
           <span class="text-gray-400 text-sm">불러오는 중...</span>
         </div>
 
-        <template v-else-if="displayedRaces.length > 0">
-          <RouterLink
-            v-for="race in displayedRaces"
-            :key="race.id"
-            :to="`/races/${race.id}`"
-            class="flex items-center gap-3 pl-0 pr-4 py-3 border-b border-gray-100 bg-white hover:bg-gray-50 active:bg-gray-100"
-            :class="{ 'opacity-50': race.status === '접수마감' || race.status === '대회종료' }"
-          >
-            <!-- Status stripe -->
-            <div class="self-stretch w-1 shrink-0 rounded-r-full" :class="statusStripe(race.status)"></div>
-            <!-- Date block -->
-            <div class="shrink-0 text-center w-12">
-              <div class="text-xs text-gray-400">{{ monthStr(race.date) }}</div>
-              <div class="text-xl font-bold leading-tight">{{ dayStr(race.date) }}</div>
-              <div class="text-xs" :class="dayOfWeek(race.date) === '토' ? 'text-blue-500' : dayOfWeek(race.date) === '일' ? 'text-red-500' : 'text-gray-400'">{{ dayOfWeek(race.date) }}</div>
-              <div v-if="dday(race.date)" class="text-xs font-medium mt-0.5" :class="ddayClass(race.date)">{{ dday(race.date) }}</div>
+        <template v-else-if="groupedRaces.length > 0">
+          <template v-for="group in groupedRaces" :key="group.month">
+            <!-- Month header -->
+            <div class="sticky top-0 z-10 px-4 py-1.5 bg-gray-50 border-b border-gray-200 flex items-center gap-2">
+              <span class="text-sm font-bold text-gray-700">{{ group.label }}</span>
+              <span class="text-xs text-gray-400">{{ group.races.length }}개</span>
             </div>
 
-            <!-- Info -->
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-1.5">
-                <p class="font-medium text-sm truncate">{{ race.name }}</p>
-                <span v-if="race.distances?.includes('풀')" class="shrink-0 text-xs px-1 py-0 bg-purple-100 text-purple-600 rounded font-medium">풀</span>
+            <RouterLink
+              v-for="race in group.races"
+              :key="race.id"
+              :to="`/races/${race.id}`"
+              class="flex items-center gap-3 pl-0 pr-4 py-3 border-b border-gray-100 bg-white hover:bg-gray-50 active:bg-gray-100"
+              :class="{ 'opacity-50': race.status === '접수마감' || race.status === '대회종료' }"
+            >
+              <!-- Status stripe -->
+              <div class="self-stretch w-1 shrink-0 rounded-r-full" :class="statusStripe(race.status)"></div>
+              <!-- Date block -->
+              <div class="shrink-0 text-center w-12">
+                <div class="text-xl font-bold leading-tight">{{ dayStr(race.date) }}</div>
+                <div class="text-xs" :class="dayOfWeek(race.date) === '토' ? 'text-blue-500' : dayOfWeek(race.date) === '일' ? 'text-red-500' : 'text-gray-400'">{{ dayOfWeek(race.date) }}</div>
+                <div v-if="dday(race.date)" class="text-xs font-medium mt-0.5" :class="ddayClass(race.date)">{{ dday(race.date) }}</div>
               </div>
-              <div class="flex items-center gap-1.5 mt-0.5">
-                <p class="text-xs text-gray-500">📍 {{ race.location?.city }}{{ race.start_time ? ' · ' + race.start_time : '' }}</p>
+
+              <!-- Info -->
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-1.5">
+                  <p class="font-medium text-sm truncate">{{ race.name }}</p>
+                  <span v-if="race.distances?.includes('풀')" class="shrink-0 text-xs px-1 py-0 bg-purple-100 text-purple-600 rounded font-medium">풀</span>
+                </div>
+                <div class="flex items-center gap-1.5 mt-0.5">
+                  <p class="text-xs text-gray-500">📍 {{ race.location?.city }}{{ race.start_time ? ' · ' + race.start_time : '' }}</p>
+                </div>
+                <div v-if="race.registration_start || race.registration_deadline" class="flex items-center gap-1.5 mt-0.5 flex-wrap">
+                  <p class="text-xs text-gray-400">
+                    <span class="text-gray-300">접수</span>
+                    {{ race.registration_start ? monthStr(race.registration_start) + ' ' + dayStr(race.registration_start) + '일' + (race.registration_start_time ? ' ' + race.registration_start_time : '') : '-' }}
+                    ~
+                    {{ race.registration_deadline ? monthStr(race.registration_deadline) + ' ' + dayStr(race.registration_deadline) + '일' + (race.registration_deadline_time ? ' ' + race.registration_deadline_time : '') : '-' }}
+                  </p>
+                  <span v-if="regDday(race)" class="text-xs px-1.5 py-0 rounded-full font-medium" :class="regDdayClass(race)">
+                    접수 {{ regDday(race) }}
+                  </span>
+                </div>
+                <div class="flex items-center gap-1 mt-1 flex-wrap">
+                  <span v-for="d in race.distances" :key="d"
+                    class="text-xs px-1.5 py-0.5 bg-gray-100 text-gray-600 rounded">{{ d }}</span>
+                </div>
+                <div v-if="race.fee" class="flex items-center gap-1 mt-1 flex-wrap">
+                  <template v-for="d in race.distances" :key="d">
+                    <span v-if="race.fee[d]"
+                      class="text-xs px-1.5 py-0.5 bg-emerald-50 text-emerald-700 rounded font-medium">
+                      {{ d }} {{ (race.fee[d] / 10000).toFixed(0) }}만원
+                    </span>
+                  </template>
+                </div>
               </div>
-              <div v-if="race.registration_start || race.registration_deadline" class="flex items-center gap-1.5 mt-0.5 flex-wrap">
-                <p class="text-xs text-gray-400">
-                  <span class="text-gray-300">접수</span>
-                  {{ race.registration_start ? monthStr(race.registration_start) + ' ' + dayStr(race.registration_start) + '일' + (race.registration_start_time ? ' ' + race.registration_start_time : '') : '-' }}
-                  ~
-                  {{ race.registration_deadline ? monthStr(race.registration_deadline) + ' ' + dayStr(race.registration_deadline) + '일' + (race.registration_deadline_time ? ' ' + race.registration_deadline_time : '') : '-' }}
-                </p>
-                <span v-if="regDday(race)" class="text-xs px-1.5 py-0 rounded-full font-medium" :class="regDdayClass(race)">
-                  접수 {{ regDday(race) }}
+
+              <!-- Right: favorite + status -->
+              <div class="shrink-0 flex flex-col items-end gap-1.5">
+                <button
+                  @click.prevent.stop="favoritesStore.toggle(race.id)"
+                  class="text-lg leading-none transition-colors"
+                  :class="favoritesStore.has(race.id) ? 'text-yellow-400' : 'text-gray-200'"
+                >★</button>
+                <span class="text-xs px-2 py-1 rounded-full font-medium" :class="statusClass(race.status)">
+                  {{ race.status }}
                 </span>
               </div>
-              <div class="flex items-center gap-1 mt-1 flex-wrap">
-                <span v-for="d in race.distances" :key="d"
-                  class="text-xs px-1.5 py-0.5 bg-gray-100 text-gray-600 rounded">{{ d }}</span>
-              </div>
-              <div v-if="race.fee" class="flex items-center gap-1 mt-1 flex-wrap">
-                <template v-for="d in race.distances" :key="d">
-                  <span v-if="race.fee[d]"
-                    class="text-xs px-1.5 py-0.5 bg-emerald-50 text-emerald-700 rounded font-medium">
-                    {{ d }} {{ (race.fee[d] / 10000).toFixed(0) }}만원
-                  </span>
-                </template>
-              </div>
-            </div>
-
-            <!-- Right: favorite + status -->
-            <div class="shrink-0 flex flex-col items-end gap-1.5">
-              <button
-                @click.prevent.stop="favoritesStore.toggle(race.id)"
-                class="text-lg leading-none transition-colors"
-                :class="favoritesStore.has(race.id) ? 'text-yellow-400' : 'text-gray-200'"
-              >★</button>
-              <span class="text-xs px-2 py-1 rounded-full font-medium" :class="statusClass(race.status)">
-                {{ race.status }}
-              </span>
-            </div>
-          </RouterLink>
+            </RouterLink>
+          </template>
         </template>
 
         <div v-else class="flex flex-col items-center justify-center py-16 text-gray-400">
@@ -201,6 +208,21 @@ const filterFavorites = ref(false)
 const displayedRaces = computed(() => {
   if (!filterFavorites.value) return racesStore.filteredRaces
   return racesStore.filteredRaces.filter(r => favoritesStore.has(r.id))
+})
+
+const groupedRaces = computed(() => {
+  const groups = {}
+  for (const race of displayedRaces.value) {
+    const key = race.date ? race.date.slice(0, 7) : 'unknown'
+    if (!groups[key]) groups[key] = []
+    groups[key].push(race)
+  }
+  return Object.entries(groups)
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([month, races]) => {
+      const [year, m] = month.split('-')
+      return { month, label: `${year}년 ${parseInt(m)}월`, races }
+    })
 })
 
 const statusOptions = [
