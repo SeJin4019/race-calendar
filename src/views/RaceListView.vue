@@ -136,7 +136,7 @@
               <div class="shrink-0 text-center w-12">
                 <div class="text-xl font-bold leading-tight">{{ dayStr(race.date) }}</div>
                 <div class="text-xs" :class="dayOfWeek(race.date) === '토' ? 'text-blue-500' : dayOfWeek(race.date) === '일' ? 'text-red-500' : 'text-gray-400'">{{ dayOfWeek(race.date) }}</div>
-                <div v-if="dday(race.date)" class="text-xs font-medium mt-0.5" :class="ddayClass(race.date)">{{ dday(race.date) }}</div>
+                <div v-if="dday(race.date)" class="text-xs font-medium mt-0.5" :class="ddayClass(race.date)">대회 {{ dday(race.date) }}</div>
               </div>
 
               <!-- Info -->
@@ -155,8 +155,8 @@
                     ~
                     {{ race.registration_deadline ? monthStr(race.registration_deadline) + ' ' + dayStr(race.registration_deadline) + '일' + (race.registration_deadline_time ? ' ' + race.registration_deadline_time : '') : '-' }}
                   </p>
-                  <span v-if="regDday(race)" class="text-xs px-1.5 py-0 rounded-full font-medium" :class="regDdayClass(race)">
-                    접수 {{ regDday(race) }}
+                  <span v-if="regDdayLabel(race)" class="text-xs px-1.5 py-0 rounded-full font-medium" :class="regDdayClass(race)">
+                    {{ regDdayLabel(race) }}
                   </span>
                 </div>
                 <div class="flex items-center gap-1 mt-1 flex-wrap">
@@ -268,12 +268,26 @@ function resetFilters() {
 }
 
 function regDday(race) {
-  if (!race.registration_deadline) return null
-  if (race.status !== '접수중' && race.status !== '접수예정') return null
-  return dday(race.registration_deadline)
+  if (race.status === '접수중') {
+    return race.registration_deadline ? dday(race.registration_deadline) : null
+  }
+  if (race.status === '접수예정') {
+    return race.registration_start ? dday(race.registration_start) : null
+  }
+  return null
+}
+
+function regDdayLabel(race) {
+  if (race.status === '접수예정') {
+    const d = regDday(race)
+    return d ? `접수 예정 ${d}` : '접수예정'
+  }
+  const d = regDday(race)
+  return d ? `접수 마감 ${d}` : null
 }
 
 function regDdayClass(race) {
+  if (race.status === '접수예정' && !regDday(race)) return 'bg-blue-100 text-blue-700'
   const d = regDday(race)
   if (!d) return ''
   if (d === 'D-day') return 'bg-green-100 text-green-700'
