@@ -167,6 +167,14 @@
         신청하기 →
       </a>
 
+      <!-- Share button -->
+      <button
+        @click="shareRace"
+        class="block w-full text-center border border-gray-200 text-gray-600 py-3 rounded-2xl font-medium text-base bg-white"
+      >
+        공유하기 →
+      </button>
+
       <!-- Source link -->
       <a
         v-if="race.source_url"
@@ -251,6 +259,18 @@ function statusClass(status) {
     '대회종료': 'bg-gray-100 text-gray-500'
   }
   return map[status] || 'bg-gray-100 text-gray-600'
+}
+
+async function shareRace() {
+  if (!race.value) return
+  const text = `${race.value.name}\n📅 ${formatDate(race.value.date)}\n📍 ${race.value.location?.address || race.value.location?.city || ''}`
+  const url = race.value.registration_url || race.value.source_url || window.location.href
+  if (navigator.share) {
+    await navigator.share({ title: race.value.name, text, url }).catch(() => {})
+  } else {
+    await navigator.clipboard.writeText(`${text}\n${url}`)
+    alert('클립보드에 복사되었어요!')
+  }
 }
 
 onMounted(() => {
