@@ -17,7 +17,8 @@ export default defineConfig({
         background_color: '#ffffff',
         display: 'standalone',
         orientation: 'portrait',
-        start_url: '/',
+        start_url: process.env.VITE_BASE_PATH || '/',
+        scope: process.env.VITE_BASE_PATH || '/',
         icons: [
           { src: 'pwa-192x192.png', sizes: '192x192', type: 'image/png' },
           { src: 'pwa-512x512.png', sizes: '512x512', type: 'image/png' },
