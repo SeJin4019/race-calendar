@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen bg-gray-50">
+  <div class="flex flex-col min-h-screen bg-gray-50" style="padding-top: env(safe-area-inset-top)">
     <!-- Stale data warning -->
     <div v-if="racesStore.isStale" class="bg-yellow-50 border-b border-yellow-200 px-4 py-2 text-sm text-yellow-800 text-center">
       ⚠️ 데이터가 오래되었습니다. 새로고침 해보세요.
@@ -11,7 +11,7 @@
     </main>
 
     <!-- Bottom navigation -->
-    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 flex z-50">
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 flex z-50" style="padding-bottom: env(safe-area-inset-bottom)">
       <RouterLink
         v-for="item in navItems"
         :key="item.to"

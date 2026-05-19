@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-50">
     <!-- Header -->
-    <div class="bg-white sticky top-0 z-10 flex items-center gap-3 px-4 py-3 border-b border-gray-200">
+    <div class="bg-white sticky top-0 z-10 flex items-center gap-3 px-4 py-3 border-b border-gray-200" style="padding-top: max(0.75rem, env(safe-area-inset-top))">
       <button @click="router.back()" class="text-xl">←</button>
       <h1 class="font-bold text-base truncate flex-1">{{ race?.name || '대회 상세' }}</h1>
       <button v-if="race" @click="shareRace" class="text-gray-500 p-1">
