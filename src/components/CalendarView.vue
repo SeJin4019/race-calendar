@@ -12,13 +12,9 @@
         @cell-click="onCellClick"
         @view-change="onViewChange"
         locale="ko"
-        style="height: 330px"
+        style="height: 420px"
         events-on-month-view="short"
-      >
-        <template #event>
-          <span></span>
-        </template>
-      </vue-cal>
+      />
     </div>
 
     <!-- Section header -->
@@ -253,27 +249,22 @@ function statusEventClass(status) {
 /* ── 선택된 셀 ── */
 .vuecal--custom .vuecal__cell--selected { background: #dbeafe !important; }
 
-/* ── 이벤트 → 작은 컬러 도트 ── */
-.vuecal--custom .vuecal__events-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1px;
-  padding: 1px 3px;
-  align-items: center;
-}
+/* ── 이벤트 ── */
 .vuecal--custom .vuecal__event {
-  width: 6px !important;
-  height: 6px !important;
-  min-height: 6px !important;
-  border-radius: 50% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  flex-shrink: 0;
+  border-radius: 3px !important;
+  padding: 1px 3px !important;
+  font-size: 9px !important;
+  line-height: 1.3 !important;
+  margin: 0 2px 1px 2px !important;
+  color: white;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-.vuecal--custom .vuecal__event:hover { opacity: 0.75; transform: scale(1.3); transition: transform 0.1s; }
 
 .event-open   { background-color: #22c55e !important; }
 .event-closed { background-color: #ef4444 !important; }
 .event-upcoming { background-color: #f59e0b !important; }
-.event-done   { background-color: #d1d5db !important; }
+.event-done   { background-color: #d1d5db !important; color: #9ca3af !important; }
 </style>
