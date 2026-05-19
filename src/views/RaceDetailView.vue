@@ -4,12 +4,6 @@
     <div class="bg-white sticky top-0 z-10 flex items-center gap-3 px-4 py-3 border-b border-gray-200">
       <button @click="router.back()" class="text-xl">←</button>
       <h1 class="font-bold text-base truncate flex-1">{{ race?.name || '대회 상세' }}</h1>
-      <button
-        v-if="race"
-        @click="favoritesStore.toggle(race.id)"
-        class="text-2xl leading-none transition-colors"
-        :class="favoritesStore.has(race.id) ? 'text-yellow-400' : 'text-gray-300'"
-      >★</button>
     </div>
 
     <div v-if="race" class="p-4 space-y-4">
@@ -202,13 +196,11 @@
 import { computed, onMounted } from 'vue'
 import { useRoute, useRouter, RouterLink } from 'vue-router'
 import { useRacesStore } from '../stores/races'
-import { useFavoritesStore } from '../stores/favorites'
 import { formatDate, formatDateWithTime } from '../utils/date'
 
 const route = useRoute()
 const router = useRouter()
 const racesStore = useRacesStore()
-const favoritesStore = useFavoritesStore()
 
 const race = computed(() => racesStore.getRaceById(route.params.id))
 
