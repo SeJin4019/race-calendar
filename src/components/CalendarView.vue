@@ -12,9 +12,13 @@
         @cell-click="onCellClick"
         @view-change="onViewChange"
         locale="ko"
-        style="height: 340px"
+        style="height: 330px"
         events-on-month-view="short"
-      />
+      >
+        <template #event>
+          <span></span>
+        </template>
+      </vue-cal>
     </div>
 
     <!-- Section header -->
@@ -197,11 +201,79 @@ function statusEventClass(status) {
 </script>
 
 <style>
-.vuecal--custom .vuecal__title-bar { background-color: #2563eb; color: white; }
-.vuecal--custom .vuecal__cell--today { background-color: #eff6ff; }
-.vuecal--custom .vuecal__cell--selected { background-color: #dbeafe !important; }
-.event-open { background-color: #22c55e !important; color: white; border-radius: 4px; }
-.event-closed { background-color: #ef4444 !important; color: white; border-radius: 4px; }
-.event-upcoming { background-color: #f59e0b !important; color: white; border-radius: 4px; }
-.event-done { background-color: #d1d5db !important; color: #6b7280; border-radius: 4px; }
+/* ── 뷰 선택 탭 숨기기 ── */
+.vuecal--custom .vuecal__menu { display: none !important; }
+
+/* ── 타이틀 바 ── */
+.vuecal--custom .vuecal__title-bar {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+  padding: 10px 16px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+}
+.vuecal--custom .vuecal__arrow { color: rgba(255,255,255,0.85); font-size: 16px; }
+.vuecal--custom .vuecal__arrow:hover { color: white; }
+
+/* ── 요일 헤더 ── */
+.vuecal--custom .vuecal__weekdays-headings {
+  background: #fafafa;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 2px 0;
+}
+.vuecal--custom .vuecal__heading {
+  font-size: 11px;
+  font-weight: 700;
+  color: #aaa;
+  letter-spacing: 0.3px;
+}
+.vuecal--custom .vuecal__heading:nth-child(6) { color: #60a5fa; }
+.vuecal--custom .vuecal__heading:nth-child(7) { color: #f87171; }
+
+/* ── 셀 ── */
+.vuecal--custom .vuecal__cell {
+  border-color: #f3f4f6 !important;
+}
+.vuecal--custom .vuecal__cell-date {
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+  padding: 3px 5px;
+}
+.vuecal--custom .vuecal__cell--out-of-scope .vuecal__cell-date { color: #d1d5db; }
+
+/* ── 오늘 ── */
+.vuecal--custom .vuecal__cell--today { background: #eff6ff !important; }
+.vuecal--custom .vuecal__cell--today .vuecal__cell-date {
+  color: #2563eb;
+  font-weight: 800;
+}
+
+/* ── 선택된 셀 ── */
+.vuecal--custom .vuecal__cell--selected { background: #dbeafe !important; }
+
+/* ── 이벤트 → 작은 컬러 도트 ── */
+.vuecal--custom .vuecal__events-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  padding: 1px 3px;
+  align-items: center;
+}
+.vuecal--custom .vuecal__event {
+  width: 6px !important;
+  height: 6px !important;
+  min-height: 6px !important;
+  border-radius: 50% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex-shrink: 0;
+}
+.vuecal--custom .vuecal__event:hover { opacity: 0.75; transform: scale(1.3); transition: transform 0.1s; }
+
+.event-open   { background-color: #22c55e !important; }
+.event-closed { background-color: #ef4444 !important; }
+.event-upcoming { background-color: #f59e0b !important; }
+.event-done   { background-color: #d1d5db !important; }
 </style>
