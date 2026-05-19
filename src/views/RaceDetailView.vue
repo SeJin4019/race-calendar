@@ -260,12 +260,23 @@ function statusClass(status) {
 
 async function shareRace() {
   if (!race.value) return
-  const text = `${race.value.name}\n📅 ${formatDate(race.value.date)}\n📍 ${race.value.location?.address || race.value.location?.city || ''}`
-  const url = race.value.registration_url || race.value.source_url || window.location.href
+  const { name, date, location, status, registration_deadline, registration_url, source_url } = race.value
+  const place = location?.city || location?.address || ''
+
+  const statusLine = {
+    '접수중': `⏰ 접수 마감 ${registration_deadline ? formatDate(registration_deadline) : '임박'}! 빨리 신청해 🔥`,
+    '접수예정': `👀 곧 접수 시작! 미리 봐둬`,
+    '접수마감': `😤 나는 이미 신청함. 다음엔 같이 가자!`,
+    '대회종료': `🏅 이런 대회 있었어. 다음엔 같이 나가자!`
+  }[status] || ''
+
+  const text = `🏃 나 이 대회 나가는데 같이 달릴 사람?!\n\n${name}\n📅 ${formatDate(date)}${place ? `\n📍 ${place}` : ''}\n\n${statusLine}`
+  const url = registration_url || source_url || window.location.href
+
   if (navigator.share) {
-    await navigator.share({ title: race.value.name, text, url }).catch(() => {})
+    await navigator.share({ title: `같이 달리자! ${name}`, text, url }).catch(() => {})
   } else {
-    await navigator.clipboard.writeText(`${text}\n${url}`)
+    await navigator.clipboard.writeText(`${text}\n\n👉 ${url}`)
     alert('클립보드에 복사되었어요!')
   }
 }
