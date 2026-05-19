@@ -147,7 +147,7 @@ function onEventClick(event) {
   if (race) selectedDate.value = race.date
 }
 
-function onCellClick({ date }) {
+function onCellClick(date) {
   const dateStr = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`
   selectedDate.value = selectedDate.value === dateStr ? null : dateStr
 }
