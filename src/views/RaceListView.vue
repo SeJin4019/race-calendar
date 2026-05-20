@@ -129,7 +129,7 @@
       <!-- Race list -->
       <div
         ref="listEl"
-        class="flex-1 overflow-y-auto pb-20 overscroll-y-contain"
+        class="flex-1 overflow-x-hidden overflow-y-auto pb-20 overscroll-y-contain"
         @touchstart="onTouchStart"
         @touchend="onTouchEnd"
       >
