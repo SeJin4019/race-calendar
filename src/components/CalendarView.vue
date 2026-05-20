@@ -33,7 +33,7 @@
     </div>
 
     <!-- Race list -->
-    <div class="flex-1 overflow-y-auto px-3 pt-3 pb-4 space-y-2.5">
+    <div class="flex-1 overflow-y-auto px-3 pt-3 pb-20 space-y-2.5">
 
       <div
         v-for="race in listRaces"

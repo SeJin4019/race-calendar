@@ -1,6 +1,6 @@
 <template>
   <AppLayout>
-    <div class="flex flex-col" style="height: calc(100vh - 57px)">
+    <div class="flex flex-col h-full">
       <CalendarView class="flex-1 overflow-hidden" />
     </div>
   </AppLayout>

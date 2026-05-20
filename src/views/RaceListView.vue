@@ -109,8 +109,30 @@
         </button>
       </div>
 
+      <!-- Pull-to-refresh indicator -->
+      <div
+        class="flex items-center justify-center overflow-hidden bg-white"
+        :style="{
+          height: isRefreshing ? '52px' : isPulling ? Math.min(pullY, pullThreshold) + 'px' : '0px',
+          transition: isPulling ? 'none' : 'height 0.2s ease'
+        }"
+      >
+        <div v-if="isRefreshing" class="flex items-center gap-2 text-blue-500 text-sm">
+          <span class="inline-block animate-spin text-lg leading-none">↻</span>
+          <span>새로고침 중...</span>
+        </div>
+        <div v-else-if="pullY >= 20" class="text-gray-400 text-sm">
+          {{ pullY >= pullThreshold ? '손 놓으면 새로고침' : '당겨서 새로고침' }}
+        </div>
+      </div>
+
       <!-- Race list -->
-      <div class="flex-1 overflow-y-auto">
+      <div
+        ref="listEl"
+        class="flex-1 overflow-y-auto pb-20 overscroll-y-contain"
+        @touchstart="onTouchStart"
+        @touchend="onTouchEnd"
+      >
         <div v-if="racesStore.loading" class="flex justify-center p-8">
           <span class="text-gray-400 text-sm">불러오는 중...</span>
         </div>
@@ -194,13 +216,59 @@
 </template>
 
 <script setup>
-import { computed, onMounted } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import { useRacesStore } from '../stores/races'
 import AppLayout from '../components/AppLayout.vue'
 import { monthStr, dayStr, dayOfWeek, dday } from '../utils/date'
 
 const racesStore = useRacesStore()
+
+// Pull-to-refresh
+const listEl = ref(null)
+const isPulling = ref(false)
+const isRefreshing = ref(false)
+const pullY = ref(0)
+const pullThreshold = 70
+let touchStartY = 0
+let startedAtTop = false
+
+function onTouchStart(e) {
+  isPulling.value = false
+  pullY.value = 0
+  startedAtTop = (listEl.value?.scrollTop ?? 0) === 0
+  if (startedAtTop) touchStartY = e.touches[0].clientY
+}
+
+function onTouchMove(e) {
+  if (!startedAtTop || isRefreshing.value) return
+  if ((listEl.value?.scrollTop ?? 0) > 0) {
+    isPulling.value = false
+    return
+  }
+  const delta = e.touches[0].clientY - touchStartY
+  if (delta > 5) {
+    isPulling.value = true
+    pullY.value = Math.min(delta * 0.5, pullThreshold * 1.5)
+    e.preventDefault()
+  } else if (delta < -5) {
+    isPulling.value = false
+    pullY.value = 0
+  }
+}
+
+async function onTouchEnd() {
+  if (pullY.value >= pullThreshold && !isRefreshing.value) {
+    isRefreshing.value = true
+    isPulling.value = false
+    pullY.value = 0
+    await racesStore.loadRaces()
+    isRefreshing.value = false
+  } else {
+    isPulling.value = false
+    pullY.value = 0
+  }
+}
 
 const displayedRaces = computed(() => racesStore.filteredRaces)
 
@@ -330,5 +398,10 @@ function statusStripe(status) {
 
 onMounted(() => {
   if (racesStore.races.length === 0) racesStore.loadRaces()
+  listEl.value?.addEventListener('touchmove', onTouchMove, { passive: false })
+})
+
+onUnmounted(() => {
+  listEl.value?.removeEventListener('touchmove', onTouchMove)
 })
 </script>
