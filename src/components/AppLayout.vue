@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col h-screen overflow-hidden bg-gray-50" style="padding-top: env(safe-area-inset-top)">
+  <div class="flex flex-col overflow-hidden bg-gray-50" style="position: fixed; inset: 0; padding-top: env(safe-area-inset-top)">
     <!-- Stale data warning -->
     <div v-if="racesStore.isStale" class="bg-yellow-50 border-b border-yellow-200 px-4 py-2 text-sm text-yellow-800 text-center">
       ⚠️ 데이터가 오래되었습니다. 새로고침 해보세요.
