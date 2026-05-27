@@ -34,9 +34,13 @@ export function dayStr(dateStr) {
 }
 
 export function effectiveStatus(race) {
-  if (race.status === '접수중' && race.registration_deadline) {
-    const today = new Date().toISOString().slice(0, 10)
-    if (race.registration_deadline < today) return '접수마감'
+  const today = new Date().toISOString().slice(0, 10)
+  if (race.status === '접수예정' && race.registration_start && race.registration_start <= today) {
+    if (!race.registration_deadline || race.registration_deadline >= today) return '접수중'
+    return '접수마감'
+  }
+  if (race.status === '접수중' && race.registration_deadline && race.registration_deadline < today) {
+    return '접수마감'
   }
   return race.status
 }
