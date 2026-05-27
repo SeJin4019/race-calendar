@@ -14,8 +14,8 @@
     <div v-if="race" class="p-4 space-y-4">
       <!-- Status badge -->
       <div class="flex items-center gap-2 flex-wrap">
-        <span class="inline-block text-sm px-3 py-1 rounded-full font-medium" :class="statusClass(race.status)">
-          {{ race.status }}
+        <span class="inline-block text-sm px-3 py-1 rounded-full font-medium" :class="statusClass(effectiveStatus(race))">
+          {{ effectiveStatus(race) }}
         </span>
         <span v-if="registrationCountdown" class="text-sm font-semibold" :class="registrationCountdown.colorClass">
           {{ registrationCountdown.text }}
@@ -201,7 +201,7 @@
 import { computed, onMounted } from 'vue'
 import { useRoute, useRouter, RouterLink } from 'vue-router'
 import { useRacesStore } from '../stores/races'
-import { formatDate, formatDateWithTime } from '../utils/date'
+import { formatDate, formatDateWithTime, effectiveStatus } from '../utils/date'
 
 const route = useRoute()
 const router = useRouter()

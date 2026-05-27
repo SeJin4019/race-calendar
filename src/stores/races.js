@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
+import { effectiveStatus } from '../utils/date'
 
 const STALE_THRESHOLD_MS = 30 * 24 * 60 * 60 * 1000 // 30 days
 
@@ -35,7 +36,7 @@ export const useRacesStore = defineStore('races', () => {
       if (hideEnded.value && race.date < todayStr) return false
       if (filterCity.value.length > 0 && !filterCity.value.includes(race.location?.province)) return false
       if (filterDistances.value.length > 0 && !filterDistances.value.some(d => race.distances?.includes(d))) return false
-      if (filterStatus.value && race.status !== filterStatus.value) return false
+      if (filterStatus.value && effectiveStatus(race) !== filterStatus.value) return false
       if (filterDateFrom.value && race.date < filterDateFrom.value) return false
       if (filterDateTo.value && race.date > filterDateTo.value) return false
       if (filterDays.value.length > 0) {

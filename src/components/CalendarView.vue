@@ -40,7 +40,7 @@
         :key="race.id"
         @click="goToDetail(race.id)"
         class="bg-white rounded-2xl overflow-hidden shadow-sm cursor-pointer active:scale-95 transition-transform border-l-4 flex"
-        :class="statusBorderClass(race.status)"
+        :class="statusBorderClass(effectiveStatus(race))"
       >
         <!-- Date badge (월별 보기일 때) -->
         <div
@@ -64,8 +64,8 @@
             <p class="font-bold text-sm text-gray-900 leading-snug line-clamp-2">{{ race.name }}</p>
             <span
               class="text-xs px-2 py-0.5 rounded-full font-semibold shrink-0 mt-0.5"
-              :class="statusClass(race.status)"
-            >{{ race.status }}</span>
+              :class="statusClass(effectiveStatus(race))"
+            >{{ effectiveStatus(race) }}</span>
           </div>
           <p class="text-xs text-gray-400 mt-1">📍 {{ race.location?.city }}{{ race.start_time ? ' · ' + race.start_time : '' }}</p>
           <div v-if="race.distances?.length" class="flex gap-1 mt-1.5 flex-wrap">
@@ -106,7 +106,7 @@ import { useRouter } from 'vue-router'
 import VueCal from 'vue-cal'
 import 'vue-cal/dist/vuecal.css'
 import { useRacesStore } from '../stores/races'
-import { formatDate, dayStr, dayOfWeek } from '../utils/date'
+import { formatDate, dayStr, dayOfWeek, effectiveStatus } from '../utils/date'
 
 const racesStore = useRacesStore()
 const router = useRouter()
@@ -122,7 +122,7 @@ const calEvents = computed(() =>
       start: r.date,
       end: r.date,
       title: r.name,
-      class: statusEventClass(r.status),
+      class: statusEventClass(effectiveStatus(r)),
       raceId: r.id
     }))
 )

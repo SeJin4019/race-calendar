@@ -33,6 +33,14 @@ export function dayStr(dateStr) {
   return parseInt(dateStr.substring(8, 10))
 }
 
+export function effectiveStatus(race) {
+  if (race.status === '접수중' && race.registration_deadline) {
+    const today = new Date().toISOString().slice(0, 10)
+    if (race.registration_deadline < today) return '접수마감'
+  }
+  return race.status
+}
+
 export function dayOfWeek(dateStr) {
   if (!dateStr) return ''
   const d = new Date(dateStr + 'T00:00:00')

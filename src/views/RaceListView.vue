@@ -150,10 +150,10 @@
               :key="race.id"
               :to="`/races/${race.id}`"
               class="flex items-center gap-3 pl-0 pr-4 py-3 border-b border-gray-100 bg-white hover:bg-gray-50 active:bg-gray-100"
-              :class="{ 'opacity-50': race.status === '접수마감' || race.status === '대회종료' }"
+              :class="{ 'opacity-50': effectiveStatus(race) === '접수마감' || effectiveStatus(race) === '대회종료' }"
             >
               <!-- Status stripe -->
-              <div class="self-stretch w-1 shrink-0 rounded-r-full" :class="statusStripe(race.status)"></div>
+              <div class="self-stretch w-1 shrink-0 rounded-r-full" :class="statusStripe(effectiveStatus(race))"></div>
               <!-- Date block -->
               <div class="shrink-0 text-center w-12">
                 <div class="text-xl font-bold leading-tight">{{ dayStr(race.date) }}</div>
@@ -197,8 +197,8 @@
 
               <!-- Right: status -->
               <div class="shrink-0 flex flex-col items-end gap-1.5">
-                <span class="text-xs px-2 py-1 rounded-full font-medium" :class="statusClass(race.status)">
-                  {{ race.status }}
+                <span class="text-xs px-2 py-1 rounded-full font-medium" :class="statusClass(effectiveStatus(race))">
+                  {{ effectiveStatus(race) }}
                 </span>
               </div>
             </RouterLink>
@@ -220,7 +220,7 @@ import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import { useRacesStore } from '../stores/races'
 import AppLayout from '../components/AppLayout.vue'
-import { monthStr, dayStr, dayOfWeek, dday } from '../utils/date'
+import { monthStr, dayStr, dayOfWeek, dday, effectiveStatus } from '../utils/date'
 
 const racesStore = useRacesStore()
 
