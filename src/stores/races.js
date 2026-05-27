@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 
-const STALE_THRESHOLD_MS = 7 * 24 * 60 * 60 * 1000 // 7 days
+const STALE_THRESHOLD_MS = 30 * 24 * 60 * 60 * 1000 // 30 days
 
 export const useRacesStore = defineStore('races', () => {
   const races = ref([])
