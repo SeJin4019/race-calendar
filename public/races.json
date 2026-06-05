@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-03T04:41:58Z",
+  "last_updated": "2026-06-05T04:09:53Z",
   "races": [
     {
       "id": "rrc-41545",
@@ -319,7 +319,7 @@
       "date": "2026-06-13",
       "start_time": "09:00",
       "location": {
-        "address": "포항 영일대 해상누각 앞",
+        "address": "포항수협송도활어회센터 앞",
         "city": "경북",
         "province": "경북",
         "lat": null,
@@ -684,7 +684,7 @@
       "registration_start": "2026-02-05",
       "registration_deadline": "2026-06-03",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41406",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41383",
@@ -1943,7 +1943,7 @@
       "registration_start": "2026-06-04",
       "registration_deadline": "2026-09-30",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41608",
-      "status": "접수예정"
+      "status": "접수중"
     },
     {
       "id": "rrc-41574",
