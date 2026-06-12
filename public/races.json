@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-10T04:07:28Z",
+  "last_updated": "2026-06-12T04:23:14Z",
   "races": [
     {
       "id": "rrc-41545",
@@ -657,7 +657,7 @@
       "registration_start": "2026-03-11",
       "registration_deadline": "2026-06-11",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41467",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41406",
@@ -1231,7 +1231,7 @@
         "phone": "070-4443-4392"
       },
       "registration_url": "http://www.trailrun.kr",
-      "registration_start": "2026-06-08",
+      "registration_start": "2026-06-12",
       "registration_deadline": "2026-06-25",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41619",
       "status": "접수중"
@@ -1336,7 +1336,7 @@
       "registration_start": "2026-06-12",
       "registration_deadline": "2026-07-31",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41625",
-      "status": "접수예정"
+      "status": "접수중"
     },
     {
       "id": "rrc-41504",
@@ -1619,6 +1619,32 @@
       "registration_deadline": "2026-04-05",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41365",
       "status": "접수마감"
+    },
+    {
+      "id": "rrc-41635",
+      "name": "2026 전마협회장배 청주마라톤",
+      "date": "2026-09-06",
+      "start_time": "",
+      "location": {
+        "address": "청주 무심천 체육공원",
+        "city": "충북",
+        "province": "충북",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "전국마라톤협회",
+      "contact": {
+        "phone": "042-638-108"
+      },
+      "registration_url": "http://mara1080.com/event/a9780087-8fc3-4849-a234-7659978f6792",
+      "registration_start": "2026-06-10",
+      "registration_deadline": "2026-08-06",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41635",
+      "status": "접수중"
     },
     {
       "id": "rrc-41628",
@@ -2043,7 +2069,7 @@
       "registration_start": "2026-06-08",
       "registration_deadline": "2026-06-11",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41594",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41605",
@@ -2388,10 +2414,10 @@
         "phone": "010-3504-1206"
       },
       "registration_url": "http://cafe.naver.com/gumitrailrunnerclub",
-      "registration_start": "2026-06-01",
+      "registration_start": "2026-06-15",
       "registration_deadline": "2026-07-31",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41601",
-      "status": "접수중"
+      "status": "접수예정"
     },
     {
       "id": "rrc-41567",
@@ -2769,6 +2795,32 @@
       "status": "접수예정"
     },
     {
+      "id": "rrc-41636",
+      "name": "2026 춘천마라톤",
+      "date": "2026-10-25",
+      "start_time": "09:00",
+      "location": {
+        "address": "춘천 공지천공원",
+        "city": "강원",
+        "province": "강원",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "풀",
+        "10K"
+      ],
+      "organizer": "조선일보",
+      "contact": {
+        "phone": "02-724-6333"
+      },
+      "registration_url": "http://www.chuncheonmarathon.com",
+      "registration_start": "2026-06-16",
+      "registration_deadline": "2026-07-23",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41636",
+      "status": "접수예정"
+    },
+    {
       "id": "rrc-41477",
       "name": "2026 청송사과트레일런",
       "date": "2026-10-25",
@@ -2873,6 +2925,32 @@
       "registration_start": "2026-09-01",
       "registration_deadline": "2026-09-30",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41539",
+      "status": "접수예정"
+    },
+    {
+      "id": "rrc-41634",
+      "name": "2026 양산 배내골 애플 런",
+      "date": "2026-11-08",
+      "start_time": "09:00",
+      "location": {
+        "address": "장선마을 회관 앞 운동장",
+        "city": "경남",
+        "province": "경남",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "배내골 주민자치위원회",
+      "contact": {
+        "phone": "070-7766-1238"
+      },
+      "registration_url": "http://k-marathon.or.kr/main.php",
+      "registration_start": "2026-06-15",
+      "registration_deadline": "2026-07-15",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41634",
       "status": "접수예정"
     },
     {
