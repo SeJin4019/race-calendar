@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-15T04:52:17Z",
+  "last_updated": "2026-06-17T04:29:52Z",
   "races": [
     {
       "id": "rrc-41545",
@@ -944,9 +944,9 @@
       },
       "registration_url": "http://thepacerseries.com",
       "registration_start": "2026-05-04",
-      "registration_deadline": "2026-06-14",
+      "registration_deadline": "2026-06-27",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41561",
-      "status": "접수마감"
+      "status": "접수중"
     },
     {
       "id": "rrc-41542",
@@ -1961,9 +1961,9 @@
       },
       "registration_url": "http://www.cyber-run.com",
       "registration_start": "2026-06-17",
-      "registration_deadline": "2026-08-03",
+      "registration_deadline": "2026-08-12",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41629",
-      "status": "접수예정"
+      "status": "접수중"
     },
     {
       "id": "rrc-41541",
@@ -2817,7 +2817,7 @@
       "registration_start": "2026-06-16",
       "registration_deadline": "2026-07-23",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41636",
-      "status": "접수예정"
+      "status": "접수중"
     },
     {
       "id": "rrc-41477",
