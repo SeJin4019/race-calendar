@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22T04:52:51Z",
+  "last_updated": "2026-06-24T03:58:38Z",
   "races": [
     {
       "id": "rrc-41545",
@@ -1461,7 +1461,7 @@
       "registration_start": "2025-12-23",
       "registration_deadline": "2026-06-23",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41500",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41624",
@@ -1589,7 +1589,7 @@
       "registration_start": "2025-12-23",
       "registration_deadline": "2026-06-23",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41353",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41639",
@@ -1619,7 +1619,7 @@
     },
     {
       "id": "rrc-41650",
-      "name": "2026 JUST RUN10 하반기 세종",
+      "name": "2026 하반기 JUST RUN10 세종",
       "date": "2026-09-05",
       "start_time": "08:00",
       "location": {
@@ -2626,7 +2626,7 @@
       "registration_start": "2026-05-18",
       "registration_deadline": "2026-06-23",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41300",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41546",
@@ -2971,7 +2971,7 @@
         "phone": "00-1600-3949"
       },
       "registration_url": "http://청도반시마라톤.kr",
-      "registration_start": "2026-07-20",
+      "registration_start": "2026-07-01",
       "registration_deadline": "2026-08-28",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41621",
       "status": "접수예정"
