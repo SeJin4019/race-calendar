@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-24T03:58:38Z",
+  "last_updated": "2026-06-26T04:06:38Z",
   "races": [
     {
       "id": "rrc-41545",
@@ -1207,7 +1207,7 @@
       "registration_start": "2026-06-12",
       "registration_deadline": "2026-06-25",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41619",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41645",
@@ -1787,8 +1787,7 @@
         "lng": null
       },
       "distances": [
-        "하프",
-        "10K"
+        "하프"
       ],
       "organizer": "YTN",
       "contact": {
@@ -1988,6 +1987,33 @@
       "status": "접수예정"
     },
     {
+      "id": "rrc-41652",
+      "name": "2026포항이차전지전국마라톤",
+      "date": "2026-09-13",
+      "start_time": "08:00",
+      "location": {
+        "address": "포항운하관주차장",
+        "city": "경북",
+        "province": "경북",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
+      "organizer": "매일신사",
+      "contact": {
+        "phone": "054-1600-4525"
+      },
+      "registration_url": "http://energyrun.co.kr/",
+      "registration_start": "2026-06-29",
+      "registration_deadline": "2026-07-20",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41652",
+      "status": "접수예정"
+    },
+    {
       "id": "rrc-41643",
       "name": "2026 런서울런",
       "date": "2026-09-13",
@@ -2044,7 +2070,7 @@
       "id": "rrc-41591",
       "name": "제 16회 스마일 런 페스티벌(예정)",
       "date": "2026-09-13",
-      "start_time": "08:30",
+      "start_time": "08:00",
       "location": {
         "address": "상암동 평화의공원 평화광장",
         "city": "서울",
@@ -2148,6 +2174,32 @@
       "status": "접수중"
     },
     {
+      "id": "rrc-41657",
+      "name": "제2회 마포구청장배 마라톤 대회",
+      "date": "2026-09-20",
+      "start_time": "",
+      "location": {
+        "address": "평화의 공원 평화광장",
+        "city": "서울",
+        "province": "서울",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "마포구체육회",
+      "contact": {
+        "phone": "042-638-1080"
+      },
+      "registration_url": "http://mara1080.com/event/53b338c6-d38a-47b3-9479-080b00c6113a",
+      "registration_start": "2026-06-23",
+      "registration_deadline": "2026-08-20",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41657",
+      "status": "접수중"
+    },
+    {
       "id": "rrc-41630",
       "name": "2026 한돈런",
       "date": "2026-09-20",
@@ -2168,7 +2220,7 @@
         "phone": "070-1566-1936"
       },
       "registration_url": "http://handonrun.com/",
-      "registration_start": "2026-06-26",
+      "registration_start": "2026-07-13",
       "registration_deadline": "2026-08-30",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41630",
       "status": "접수예정"
@@ -2439,9 +2491,9 @@
       },
       "registration_url": "http://www.달서하프마라톤.kr",
       "registration_start": "2026-05-20",
-      "registration_deadline": "2026-06-30",
+      "registration_deadline": "2026-06-17",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41332",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41571",
@@ -2738,6 +2790,33 @@
       "status": "접수중"
     },
     {
+      "id": "rrc-41655",
+      "name": "2026 정선동강 마라톤",
+      "date": "2026-10-17",
+      "start_time": "",
+      "location": {
+        "address": "정선생태체험학습장",
+        "city": "강원",
+        "province": "강원",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
+      "organizer": "정선군",
+      "contact": {
+        "phone": "00-1600-3962"
+      },
+      "registration_url": "http://jsrun.kr",
+      "registration_start": "2026-06-23",
+      "registration_deadline": "2026-07-22",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41655",
+      "status": "접수중"
+    },
+    {
       "id": "rrc-41587",
       "name": "2026 경주마라톤",
       "date": "2026-10-17",
@@ -2951,6 +3030,33 @@
       "status": "접수중"
     },
     {
+      "id": "rrc-41653",
+      "name": "K-RUN 챌린지",
+      "date": "2026-10-25",
+      "start_time": "",
+      "location": {
+        "address": "서울 뚝섬한강공원 수변광장",
+        "city": "서울",
+        "province": "서울",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
+      "organizer": "K-RUN챌린지조직위",
+      "contact": {
+        "phone": "02-3210-1666"
+      },
+      "registration_url": "http://www.irunman.kr",
+      "registration_start": "2026-06-22",
+      "registration_deadline": "2026-09-30",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41653",
+      "status": "접수중"
+    },
+    {
       "id": "rrc-41621",
       "name": "제19회 청도반시 전국마라톤",
       "date": "2026-10-25",
@@ -3028,6 +3134,33 @@
       "registration_deadline": "2026-08-30",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41477",
       "status": "접수중"
+    },
+    {
+      "id": "rrc-41654",
+      "name": "2026 김천전국마라톤대회",
+      "date": "2026-11-01",
+      "start_time": "09:30",
+      "location": {
+        "address": "김천종합스포츠타운",
+        "city": "경북",
+        "province": "경북",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
+      "organizer": "김천시체육회, 매일신문사",
+      "contact": {
+        "phone": "00-1600-3949"
+      },
+      "registration_url": "http://gcmarathon.co.kr",
+      "registration_start": "2026-07-06",
+      "registration_deadline": "2026-09-18",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41654",
+      "status": "접수예정"
     },
     {
       "id": "rrc-41552",
@@ -3162,6 +3295,31 @@
       "status": "접수중"
     },
     {
+      "id": "rrc-41658",
+      "name": "제5회 거제시체육회장배 거제앵산트레일레이스",
+      "date": "2026-11-08",
+      "start_time": "09:00",
+      "location": {
+        "address": "경남 거제시 하청면스포츠타운",
+        "city": "경남",
+        "province": "경남",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K"
+      ],
+      "organizer": "하청면체육회",
+      "contact": {
+        "phone": "010-5636-5708"
+      },
+      "registration_url": "http://www.거제앵산트레일레이스.com",
+      "registration_start": "2026-06-01",
+      "registration_deadline": "2026-09-30",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41658",
+      "status": "접수중"
+    },
+    {
       "id": "rrc-41528",
       "name": "2026 포항마라톤챔피언십",
       "date": "2026-11-14",
@@ -3261,7 +3419,7 @@
       },
       "registration_url": "http://mbn-seoulmarathon.com",
       "registration_start": "2026-06-22",
-      "registration_deadline": "2026-06-25",
+      "registration_deadline": "2026-07-03",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41600",
       "status": "접수중"
     },
