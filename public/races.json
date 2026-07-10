@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-08T03:16:23Z",
+  "last_updated": "2026-07-10T03:42:01Z",
   "races": [
     {
       "id": "rrc-41611",
@@ -1784,7 +1784,7 @@
       "registration_start": "2026-07-10",
       "registration_deadline": "2026-08-30",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41665",
-      "status": "접수예정"
+      "status": "접수중"
     },
     {
       "id": "rrc-41601",
@@ -1916,7 +1916,7 @@
       "registration_start": "2026-07-10",
       "registration_deadline": "2026-08-28",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41683",
-      "status": "접수예정"
+      "status": "접수중"
     },
     {
       "id": "rrc-41546",
@@ -2557,7 +2557,7 @@
       "registration_start": "2026-07-10",
       "registration_deadline": "2026-07-31",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41659",
-      "status": "접수예정"
+      "status": "접수중"
     },
     {
       "id": "rrc-41552",
@@ -3036,12 +3036,38 @@
       "status": "접수중"
     },
     {
+      "id": "rrc-41685",
+      "name": "목욕런 2026",
+      "date": "2026-11-28",
+      "start_time": "7:30",
+      "location": {
+        "address": "월드컵공원 평화의 광장",
+        "city": "서울",
+        "province": "서울",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "사우나 민족",
+      "contact": {
+        "phone": "070-4571-8805"
+      },
+      "registration_url": "http://mokyokrun.shop",
+      "registration_start": "2026-08-10",
+      "registration_deadline": "2026-08-30",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41685",
+      "status": "접수예정"
+    },
+    {
       "id": "rrc-41676",
       "name": "2026 전국마라톤협회 금산 골드런 마라톤",
       "date": "2026-12-05",
       "start_time": "",
       "location": {
-        "address": "금산",
+        "address": "금산 엑스포 주차장",
         "city": "충남",
         "province": "충남",
         "lat": null,
