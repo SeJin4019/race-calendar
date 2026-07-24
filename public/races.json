@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-22T02:57:43Z",
+  "last_updated": "2026-07-24T02:58:01Z",
   "races": [
     {
       "id": "rrc-41611",
@@ -697,7 +697,7 @@
       "id": "rrc-41595",
       "name": "제2회 2026 Vrun",
       "date": "2026-09-05",
-      "start_time": "09:00",
+      "start_time": "08:30",
       "location": {
         "address": "신정교하부육상트랙구장",
         "city": "서울",
@@ -901,7 +901,7 @@
       "registration_start": "2026-04-13",
       "registration_deadline": "2026-07-22",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41032",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41708",
@@ -2044,7 +2044,7 @@
       "registration_start": "2026-07-22",
       "registration_deadline": "2026-07-22",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41690",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41677",
@@ -2337,6 +2337,33 @@
       "status": "접수마감"
     },
     {
+      "id": "rrc-41727",
+      "name": "2026 울산마라톤대회",
+      "date": "2026-10-11",
+      "start_time": "",
+      "location": {
+        "address": "울산종합운동장",
+        "city": "울산",
+        "province": "울산",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
+      "organizer": "울산광역시 육상연맹",
+      "contact": {
+        "phone": "052-286-6605"
+      },
+      "registration_url": "http://www.uaf.co.kr/",
+      "registration_start": "2026-07-27",
+      "registration_deadline": "2026-08-31",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41727",
+      "status": "접수예정"
+    },
+    {
       "id": "rrc-41683",
       "name": "2026 문경 오미자 하프마라톤",
       "date": "2026-10-11",
@@ -2499,6 +2526,31 @@
       "status": "접수중"
     },
     {
+      "id": "rrc-41724",
+      "name": "제2회 10.19 평화마라톤",
+      "date": "2026-10-17",
+      "start_time": "09:00",
+      "location": {
+        "address": "여수진남경기장 주경기장",
+        "city": "전남",
+        "province": "경기",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "5K"
+      ],
+      "organizer": "뉴스탑전남",
+      "contact": {
+        "phone": "061-921-9900"
+      },
+      "registration_url": "http://ys1019.kr/",
+      "registration_start": "2026-07-24",
+      "registration_deadline": "2026-09-20",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41724",
+      "status": "접수중"
+    },
+    {
       "id": "rrc-41681",
       "name": "2026 경청마라톤",
       "date": "2026-10-17",
@@ -2577,7 +2629,7 @@
       "registration_start": "2026-06-23",
       "registration_deadline": "2026-07-22",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41655",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41706",
@@ -2842,7 +2894,7 @@
       "registration_start": "2026-07-24",
       "registration_deadline": "2026-09-19",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41721",
-      "status": "접수예정"
+      "status": "접수중"
     },
     {
       "id": "rrc-41682",
@@ -3077,7 +3129,7 @@
       "registration_start": "2026-06-16",
       "registration_deadline": "2026-07-23",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41636",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41477",
@@ -3233,7 +3285,7 @@
         "phone": "031-821-9949"
       },
       "registration_url": "http://runfesta.co.kr",
-      "registration_start": "2026-07-27",
+      "registration_start": "2026-07-31",
       "registration_deadline": "2026-10-16",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41719",
       "status": "접수예정"
@@ -3292,6 +3344,33 @@
       "registration_deadline": "2026-09-30",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41539",
       "status": "접수예정"
+    },
+    {
+      "id": "rrc-41726",
+      "name": "경주시육상연맹회장배 마라톤대회",
+      "date": "2026-11-08",
+      "start_time": "",
+      "location": {
+        "address": "경주서천둔치(생활체육광장)",
+        "city": "경북",
+        "province": "경북",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
+      "organizer": "경주시육상연맹",
+      "contact": {
+        "phone": "010-9190-2204"
+      },
+      "registration_url": "http://xn--289a04w1ifu9bvwfi4b78e.com/resv/competition.php",
+      "registration_start": "2026-07-21",
+      "registration_deadline": "2026-10-08",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41726",
+      "status": "접수중"
     },
     {
       "id": "rrc-41671",
@@ -3422,6 +3501,34 @@
       "registration_deadline": "2026-09-30",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41658",
       "status": "접수중"
+    },
+    {
+      "id": "rrc-41725",
+      "name": "제26회 순천 남승룡마라톤대회",
+      "date": "2026-11-14",
+      "start_time": "08:20",
+      "location": {
+        "address": "전남광주 순천시 팔마로 333",
+        "city": "전남",
+        "province": "전남",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "풀",
+        "하프",
+        "10K",
+        "5K"
+      ],
+      "organizer": "순천시체육회",
+      "contact": {
+        "phone": "061-749-5009"
+      },
+      "registration_url": "http://sc-marathon.kr",
+      "registration_start": "2026-08-03",
+      "registration_deadline": "2026-10-16",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41725",
+      "status": "접수예정"
     },
     {
       "id": "rrc-41528",
