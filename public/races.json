@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-27T03:33:36Z",
+  "last_updated": "2026-07-29T02:57:28Z",
   "races": [
     {
       "id": "rrc-41611",
@@ -741,7 +741,7 @@
       },
       "registration_url": "http://vrun.kr/index.asp",
       "registration_start": "2026-05-26",
-      "registration_deadline": "2026-08-12",
+      "registration_deadline": "2026-08-18",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41595",
       "status": "접수중"
     },
@@ -900,7 +900,7 @@
       "registration_start": "2026-02-03",
       "registration_deadline": "2026-07-27",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41368",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41032",
@@ -928,6 +928,32 @@
       "registration_deadline": "2026-07-22",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41032",
       "status": "접수마감"
+    },
+    {
+      "id": "rrc-41735",
+      "name": "2026 굿네이버스 레이스",
+      "date": "2026-09-12",
+      "start_time": "",
+      "location": {
+        "address": "여의도 한강공원 물빛무대 앞",
+        "city": "서울",
+        "province": "서울",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "굿네이버스",
+      "contact": {
+        "phone": "070-4350-5635"
+      },
+      "registration_url": "http://goodneighbors001.cafe24.com",
+      "registration_start": "2026-07-27",
+      "registration_deadline": "2026-08-12",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41735",
+      "status": "접수중"
     },
     {
       "id": "rrc-41708",
@@ -1299,6 +1325,32 @@
       "registration_deadline": "2026-06-30",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41137",
       "status": "접수마감"
+    },
+    {
+      "id": "rrc-41743",
+      "name": "2026 무한도전 Run in 경주",
+      "date": "2026-09-19",
+      "start_time": "16:30",
+      "location": {
+        "address": "경주시민운동장",
+        "city": "경북",
+        "province": "경북",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K"
+      ],
+      "organizer": "MBC",
+      "contact": {
+        "phone": "00-000-0000"
+      },
+      "registration_url": "http://www.coupangplay.com/promotion/2026-Mudorun-Gyeongju/",
+      "registration_start": "2026-07-30",
+      "registration_deadline": "2026-08-09",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41743",
+      "status": "접수예정"
     },
     {
       "id": "rrc-41704",
@@ -2414,6 +2466,33 @@
       "status": "접수마감"
     },
     {
+      "id": "rrc-41742",
+      "name": "2026 천안 이봉주 마라톤",
+      "date": "2026-10-11",
+      "start_time": "",
+      "location": {
+        "address": "천안종합운동장 일원",
+        "city": "충남",
+        "province": "충남",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
+      "organizer": "천안시체육회",
+      "contact": {
+        "phone": "00-1600-3962"
+      },
+      "registration_url": "http://bjlee.casports.or.kr",
+      "registration_start": "2026-07-31",
+      "registration_deadline": "2026-08-28",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41742",
+      "status": "접수예정"
+    },
+    {
       "id": "rrc-41727",
       "name": "2026 울산마라톤대회",
       "date": "2026-10-11",
@@ -2434,7 +2513,7 @@
       "contact": {
         "phone": "052-286-6605"
       },
-      "registration_url": "http://www.uaf.co.kr/",
+      "registration_url": "http://run.uaf.co.kr/",
       "registration_start": "2026-07-27",
       "registration_deadline": "2026-08-31",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41727",
@@ -2817,7 +2896,7 @@
     },
     {
       "id": "rrc-41712",
-      "name": "제19회 중랑구청장배 장미 마라톤 준비중",
+      "name": "제19회 중랑구청장배 마라톤 8월5일 접수시작",
       "date": "2026-10-18",
       "start_time": "09:00",
       "location": {
@@ -2837,7 +2916,7 @@
         "phone": "02-3285-5556"
       },
       "registration_url": "http://www.jnrun.co.kr",
-      "registration_start": "2026-07-30",
+      "registration_start": "2026-08-05",
       "registration_deadline": "2026-10-11",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41712",
       "status": "접수예정"
@@ -3028,7 +3107,7 @@
     },
     {
       "id": "rrc-41682",
-      "name": "2026 하남 어텀 패밀리 마라톤",
+      "name": "해당 대회는 취소되었습니다",
       "date": "2026-10-24",
       "start_time": "09:00",
       "location": {
@@ -3048,9 +3127,9 @@
       },
       "registration_url": "http://hnrun.kr",
       "registration_start": "2026-07-07",
-      "registration_deadline": "2026-10-14",
+      "registration_deadline": "2026-07-28",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41682",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41688",
@@ -3153,7 +3232,7 @@
       "registration_start": "2026-07-28",
       "registration_deadline": "2026-08-18",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41718",
-      "status": "접수예정"
+      "status": "접수중"
     },
     {
       "id": "rrc-41661",
@@ -3286,6 +3365,32 @@
       "registration_start": "2026-03-16",
       "registration_deadline": "2026-08-30",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41477",
+      "status": "접수중"
+    },
+    {
+      "id": "rrc-41740",
+      "name": "2026 오티즘 레이스",
+      "date": "2026-10-31",
+      "start_time": "09:00",
+      "location": {
+        "address": "월드컵공원 평화의 광장",
+        "city": "서울",
+        "province": "서울",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K"
+      ],
+      "organizer": "한국자폐인사랑협회",
+      "contact": {
+        "phone": "070-7725-3462"
+      },
+      "registration_url": "http://autismrace.com",
+      "registration_start": "2026-07-08",
+      "registration_deadline": "2026-09-30",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41740",
       "status": "접수중"
     },
     {
@@ -4054,6 +4159,32 @@
       "registration_start": "2026-08-10",
       "registration_deadline": "2026-08-30",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41685",
+      "status": "접수예정"
+    },
+    {
+      "id": "rrc-41741",
+      "name": "제2회 천안독립기념관 마라톤대회",
+      "date": "2026-11-29",
+      "start_time": "09:00",
+      "location": {
+        "address": "천안 독립기념관",
+        "city": "충남",
+        "province": "충남",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "주식회사 오소컴퍼니",
+      "contact": {
+        "phone": "010-4985-5878"
+      },
+      "registration_url": "http://https://peacewalk.imweb.me/",
+      "registration_start": "2026-07-31",
+      "registration_deadline": "2026-11-28",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41741",
       "status": "접수예정"
     },
     {
