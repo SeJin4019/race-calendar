@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-29T02:57:28Z",
+  "last_updated": "2026-07-31T03:23:35Z",
   "races": [
     {
       "id": "rrc-41611",
@@ -306,7 +306,7 @@
       "registration_start": "2026-03-26",
       "registration_deadline": "2026-07-30",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41504",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41617",
@@ -930,6 +930,32 @@
       "status": "접수마감"
     },
     {
+      "id": "rrc-41750",
+      "name": "2026 나이트런 플러스 청주",
+      "date": "2026-09-12",
+      "start_time": "18:00",
+      "location": {
+        "address": "청주시 무심천체육공원",
+        "city": "충북",
+        "province": "충북",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "청주청년회의소/주식회사 유고",
+      "contact": {
+        "phone": "00-1666-9975"
+      },
+      "registration_url": "http://n-runplus.co.kr",
+      "registration_start": "2026-07-29",
+      "registration_deadline": "2026-08-23",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41750",
+      "status": "접수중"
+    },
+    {
       "id": "rrc-41735",
       "name": "2026 굿네이버스 레이스",
       "date": "2026-09-12",
@@ -1243,7 +1269,7 @@
       "registration_start": "2026-06-29",
       "registration_deadline": "2026-07-29",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41643",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41606",
@@ -1295,7 +1321,7 @@
       },
       "registration_url": "http://www.smilerun.co.kr",
       "registration_start": "2026-06-29",
-      "registration_deadline": "2026-07-31",
+      "registration_deadline": "2026-08-18",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41591",
       "status": "접수중"
     },
@@ -1344,13 +1370,13 @@
       ],
       "organizer": "MBC",
       "contact": {
-        "phone": "00-000-0000"
+        "phone": "00-1899-7466"
       },
       "registration_url": "http://www.coupangplay.com/promotion/2026-Mudorun-Gyeongju/",
       "registration_start": "2026-07-30",
       "registration_deadline": "2026-08-09",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41743",
-      "status": "접수예정"
+      "status": "접수중"
     },
     {
       "id": "rrc-41704",
@@ -1560,7 +1586,7 @@
       "registration_start": "2026-07-15",
       "registration_deadline": "2026-07-30",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41684",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41670",
@@ -1985,7 +2011,7 @@
       "registration_start": "2026-07-31",
       "registration_deadline": "2026-08-02",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41733",
-      "status": "접수예정"
+      "status": "접수중"
     },
     {
       "id": "rrc-41711",
@@ -2490,7 +2516,7 @@
       "registration_start": "2026-07-31",
       "registration_deadline": "2026-08-28",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41742",
-      "status": "접수예정"
+      "status": "접수중"
     },
     {
       "id": "rrc-41727",
@@ -3106,32 +3132,6 @@
       "status": "접수중"
     },
     {
-      "id": "rrc-41682",
-      "name": "해당 대회는 취소되었습니다",
-      "date": "2026-10-24",
-      "start_time": "09:00",
-      "location": {
-        "address": "하남 미사 경정 공원",
-        "city": "경기",
-        "province": "경기",
-        "lat": null,
-        "lng": null
-      },
-      "distances": [
-        "10K",
-        "5K"
-      ],
-      "organizer": "청운의꿈(주)",
-      "contact": {
-        "phone": "02-2606-8187"
-      },
-      "registration_url": "http://hnrun.kr",
-      "registration_start": "2026-07-07",
-      "registration_deadline": "2026-07-28",
-      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41682",
-      "status": "접수마감"
-    },
-    {
       "id": "rrc-41688",
       "name": "2026 경기옛길 함께RUN",
       "date": "2026-10-24",
@@ -3520,7 +3520,7 @@
         "phone": "031-821-9949"
       },
       "registration_url": "http://runfesta.co.kr",
-      "registration_start": "2026-07-31",
+      "registration_start": "2026-08-07",
       "registration_deadline": "2026-10-16",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41719",
       "status": "접수예정"
@@ -3895,7 +3895,7 @@
       "registration_start": "2026-06-20",
       "registration_deadline": "2026-07-29",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41602",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41614",
@@ -4181,11 +4181,11 @@
       "contact": {
         "phone": "010-4985-5878"
       },
-      "registration_url": "http://https://peacewalk.imweb.me/",
+      "registration_url": "http://runwithus.co.kr",
       "registration_start": "2026-07-31",
       "registration_deadline": "2026-11-28",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41741",
-      "status": "접수예정"
+      "status": "접수중"
     },
     {
       "id": "rrc-41720",
