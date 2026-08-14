@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-12T02:15:04Z",
+  "last_updated": "2026-08-14T02:15:23Z",
   "races": [
     {
       "id": "rrc-41504",
@@ -433,9 +433,9 @@
       },
       "registration_url": "http://runten.co.kr",
       "registration_start": "2026-06-19",
-      "registration_deadline": "2026-08-14",
+      "registration_deadline": "2026-08-13",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41650",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41595",
@@ -750,7 +750,7 @@
       "registration_start": "2026-07-27",
       "registration_deadline": "2026-08-12",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41735",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41773",
@@ -958,7 +958,7 @@
       },
       "registration_url": "http://cafe.daum.net/guro-run/LvM7/45",
       "registration_start": "2026-08-03",
-      "registration_deadline": "2026-08-14",
+      "registration_deadline": "2026-08-31",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41734",
       "status": "접수중"
     },
@@ -1280,7 +1280,7 @@
     },
     {
       "id": "rrc-41693",
-      "name": "제2회 경기신문 씨사이드 마라톤",
+      "name": "제2회 경기신문 씨사이드 마라톤(대회취소)",
       "date": "2026-09-19",
       "start_time": "",
       "location": {
@@ -1328,7 +1328,7 @@
       },
       "registration_url": "http://www.cyber-run.com",
       "registration_start": "2026-06-17",
-      "registration_deadline": "2026-08-12",
+      "registration_deadline": "2026-09-08",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41629",
       "status": "접수중"
     },
@@ -1407,9 +1407,9 @@
       },
       "registration_url": "http://songdorun.net",
       "registration_start": "2026-07-08",
-      "registration_deadline": "2026-08-07",
+      "registration_deadline": "2026-08-28",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41670",
-      "status": "접수마감"
+      "status": "접수중"
     },
     {
       "id": "rrc-41666",
@@ -1996,7 +1996,7 @@
       "registration_start": "2026-08-10",
       "registration_deadline": "2026-08-13",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41782",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41690",
@@ -3032,7 +3032,7 @@
       "registration_start": "2026-08-13",
       "registration_deadline": "2026-08-31",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41798",
-      "status": "접수예정"
+      "status": "접수중"
     },
     {
       "id": "rrc-41756",
@@ -3212,7 +3212,7 @@
       },
       "registration_url": "http://xn--439a68tboh.kr/index.asp",
       "registration_start": "2026-06-18",
-      "registration_deadline": "2026-09-07",
+      "registration_deadline": "2026-09-23",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41637",
       "status": "접수중"
     },
@@ -3688,7 +3688,7 @@
         "phone": "055-210-6103"
       },
       "registration_url": "http://www.jinhaemarathon.co.kr",
-      "registration_start": "2026-08-19",
+      "registration_start": "2026-08-24",
       "registration_deadline": "2026-10-09",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41754",
       "status": "접수예정"
@@ -4563,6 +4563,33 @@
       "status": "접수중"
     },
     {
+      "id": "rrc-41803",
+      "name": "2026 김대중마라톤대회",
+      "date": "2026-11-22",
+      "start_time": "09:00",
+      "location": {
+        "address": "목포종합경기장",
+        "city": "전남",
+        "province": "경기",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
+      "organizer": "김대중마라톤대회 조직위원회",
+      "contact": {
+        "phone": "061-375-1201"
+      },
+      "registration_url": "http://www.djrun.kr/",
+      "registration_start": "2026-09-01",
+      "registration_deadline": "2026-10-01",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41803",
+      "status": "접수예정"
+    },
+    {
       "id": "rrc-41766",
       "name": "2026 평화런",
       "date": "2026-11-28",
@@ -4640,6 +4667,33 @@
       "registration_start": "2026-08-10",
       "registration_deadline": "2026-08-30",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41685",
+      "status": "접수중"
+    },
+    {
+      "id": "rrc-41804",
+      "name": "가야왕도 김해 전국어울림 마라톤대회",
+      "date": "2026-11-29",
+      "start_time": "",
+      "location": {
+        "address": "롯데워터파크 제3주차장",
+        "city": "경남",
+        "province": "경남",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
+      "organizer": "김해시장애인육상연맹",
+      "contact": {
+        "phone": "010-5397-8890"
+      },
+      "registration_url": "http://gimhaemarathon.imweb.me/",
+      "registration_start": "2026-08-13",
+      "registration_deadline": "2026-10-25",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41804",
       "status": "접수중"
     },
     {
@@ -4773,6 +4827,32 @@
       "status": "접수중"
     },
     {
+      "id": "rrc-41802",
+      "name": "2026 황영조 로드레이스",
+      "date": "2026-12-06",
+      "start_time": "09:00",
+      "location": {
+        "address": "정서진 아라타워",
+        "city": "인천",
+        "province": "인천",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K"
+      ],
+      "organizer": "인천광역시육상연맹",
+      "contact": {
+        "phone": "00-1866-1718"
+      },
+      "registration_url": "http://roadracing.co.kr/",
+      "registration_start": "2026-08-14",
+      "registration_deadline": "2026-10-30",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41802",
+      "status": "접수중"
+    },
+    {
       "id": "rrc-41710",
       "name": "2026 부산브릿지 마라톤",
       "date": "2026-12-06",
@@ -4852,6 +4932,33 @@
       "registration_deadline": "2026-11-16",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41745",
       "status": "접수예정"
+    },
+    {
+      "id": "rrc-41801",
+      "name": "제2회 청춘 릴레이 마라톤",
+      "date": "2026-12-19",
+      "start_time": "08:00",
+      "location": {
+        "address": "상암월드컵공원 평화의광장",
+        "city": "서울",
+        "province": "서울",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
+      "organizer": "(사)재한다문화총연합회",
+      "contact": {
+        "phone": "02-2636-7775"
+      },
+      "registration_url": "http://youngrun.kr",
+      "registration_start": "2026-08-12",
+      "registration_deadline": "2026-12-09",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41801",
+      "status": "접수중"
     }
   ]
 }
