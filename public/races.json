@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-24T01:32:56Z",
+  "last_updated": "2026-08-26T01:33:49Z",
   "races": [
     {
       "id": "rrc-41504",
@@ -983,9 +983,9 @@
       },
       "registration_url": "http://cafe.daum.net/guro-run/LvM7/45",
       "registration_start": "2026-08-03",
-      "registration_deadline": "2026-08-18",
+      "registration_deadline": "2026-08-31",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41734",
-      "status": "접수마감"
+      "status": "접수중"
     },
     {
       "id": "rrc-41702",
@@ -1299,9 +1299,9 @@
       },
       "registration_url": "http://runten.co.kr",
       "registration_start": "2026-07-03",
-      "registration_deadline": "2026-08-31",
+      "registration_deadline": "2026-08-24",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41668",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41693",
@@ -2211,6 +2211,32 @@
       "status": "접수마감"
     },
     {
+      "id": "rrc-41822",
+      "name": "2026 하트런",
+      "date": "2026-10-10",
+      "start_time": "10:00",
+      "location": {
+        "address": "올림픽공원 피크닉장",
+        "city": "서울",
+        "province": "서울",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "하트-하트재단",
+      "contact": {
+        "phone": "070-4350-5663"
+      },
+      "registration_url": "http://heartrun.co.kr/",
+      "registration_start": "2026-08-24",
+      "registration_deadline": "2026-09-11",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41822",
+      "status": "접수중"
+    },
+    {
       "id": "rrc-41813",
       "name": "카카오프렌즈런 2026",
       "date": "2026-10-10",
@@ -3032,7 +3058,7 @@
       "registration_start": "2026-08-03",
       "registration_deadline": "2026-08-24",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41596",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41548",
@@ -3927,7 +3953,7 @@
       "registration_start": "2026-08-26",
       "registration_deadline": "2026-09-23",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41815",
-      "status": "접수예정"
+      "status": "접수중"
     },
     {
       "id": "rrc-41539",
@@ -4193,7 +4219,7 @@
       "registration_start": "2026-08-25",
       "registration_deadline": "2026-10-09",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41696",
-      "status": "접수예정"
+      "status": "접수중"
     },
     {
       "id": "rrc-41647",
@@ -4848,33 +4874,6 @@
       "registration_start": "2026-09-01",
       "registration_deadline": "2026-10-01",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41803",
-      "status": "접수예정"
-    },
-    {
-      "id": "rrc-41820",
-      "name": "2026 인천마라톤",
-      "date": "2026-11-22",
-      "start_time": "08:00",
-      "location": {
-        "address": "인천아시아드 주경기장",
-        "city": "인천",
-        "province": "경기",
-        "lat": null,
-        "lng": null
-      },
-      "distances": [
-        "풀",
-        "10K",
-        "5K"
-      ],
-      "organizer": "인천시,대한육연",
-      "contact": {
-        "phone": "00-1866-1718"
-      },
-      "registration_url": "http://incheonmarathn.or.kr",
-      "registration_start": "2026-09-21",
-      "registration_deadline": "2026-09-21",
-      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41820",
       "status": "접수예정"
     },
     {
