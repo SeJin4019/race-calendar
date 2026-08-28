@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-26T01:33:49Z",
+  "last_updated": "2026-08-28T10:25:54Z",
   "races": [
     {
       "id": "rrc-41504",
@@ -358,32 +358,6 @@
       "registration_deadline": "2026-06-23",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41353",
       "status": "접수마감"
-    },
-    {
-      "id": "rrc-41672",
-      "name": "사우나런 in 뚝섬한강공원",
-      "date": "2026-08-31",
-      "start_time": "",
-      "location": {
-        "address": "뚝섬한강공원 인근",
-        "city": "서울",
-        "province": "서울",
-        "lat": null,
-        "lng": null
-      },
-      "distances": [
-        "10K",
-        "5K"
-      ],
-      "organizer": "사우나런",
-      "contact": {
-        "phone": "070-4571-8805"
-      },
-      "registration_url": "http://saunarun.com",
-      "registration_start": "2026-07-06",
-      "registration_deadline": "2026-08-31",
-      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41672",
-      "status": "접수중"
     },
     {
       "id": "rrc-41707",
@@ -749,7 +723,7 @@
       "registration_start": "2026-08-06",
       "registration_deadline": "2026-08-26",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41772",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41735",
@@ -2099,7 +2073,7 @@
       },
       "registration_url": "http://www.runsense.co.kr",
       "registration_start": "2026-07-08",
-      "registration_deadline": "2026-08-27",
+      "registration_deadline": "2026-09-27",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41677",
       "status": "접수중"
     },
@@ -2825,7 +2799,7 @@
       "date": "2026-10-17",
       "start_time": "09:00",
       "location": {
-        "address": "신정교 하부 영롱이 억새구장",
+        "address": "도림천역 600미터 영롱이 억새구장",
         "city": "서울",
         "province": "서울",
         "lat": null,
@@ -2979,6 +2953,32 @@
       "registration_deadline": "2026-06-12",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41255",
       "status": "접수마감"
+    },
+    {
+      "id": "rrc-41823",
+      "name": "2026 하남시 시장기 당정마라톤",
+      "date": "2026-10-18",
+      "start_time": "",
+      "location": {
+        "address": "하남스타필드 앞 당정뜰",
+        "city": "경기",
+        "province": "경기",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "하남시육상연맹",
+      "contact": {
+        "phone": "02-515-9033"
+      },
+      "registration_url": "http://runcop.com/event/hanam",
+      "registration_start": "2026-09-02",
+      "registration_deadline": "2026-09-18",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41823",
+      "status": "접수예정"
     },
     {
       "id": "rrc-41712",
@@ -3503,9 +3503,9 @@
       },
       "registration_url": "http://청도반시마라톤.kr",
       "registration_start": "2026-07-01",
-      "registration_deadline": "2026-08-28",
+      "registration_deadline": "2026-07-31",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41621",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41636",
@@ -3716,9 +3716,9 @@
       },
       "registration_url": "http://gcmarathon.co.kr",
       "registration_start": "2026-07-15",
-      "registration_deadline": "2026-09-18",
+      "registration_deadline": "2026-08-24",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41654",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41659",
@@ -4299,6 +4299,59 @@
       "status": "접수중"
     },
     {
+      "id": "rrc-41831",
+      "name": "2026 통큰런",
+      "date": "2026-11-14",
+      "start_time": "08:00",
+      "location": {
+        "address": "상암 월드컵공원 평화광장",
+        "city": "서울",
+        "province": "서울",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "롯데마트, 롯데슈퍼, 기아대책",
+      "contact": {
+        "phone": "070-8656-9035"
+      },
+      "registration_url": "http://tongkeun-run.com",
+      "registration_start": "2026-09-14",
+      "registration_deadline": "2026-10-23",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41831",
+      "status": "접수예정"
+    },
+    {
+      "id": "rrc-41825",
+      "name": "2026 영종 하늘길 마라톤",
+      "date": "2026-11-14",
+      "start_time": "08:30",
+      "location": {
+        "address": "인천, 영종 씨사이드파크 일대",
+        "city": "인천",
+        "province": "인천",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
+      "organizer": "리빗",
+      "contact": {
+        "phone": "02-852-0077"
+      },
+      "registration_url": "http://www.leaveit.co.kr/",
+      "registration_start": "2026-08-24",
+      "registration_deadline": "2026-10-08",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41825",
+      "status": "접수중"
+    },
+    {
       "id": "rrc-41760",
       "name": "제2회 안양천 단풍길 마라톤",
       "date": "2026-11-14",
@@ -4667,6 +4720,32 @@
       "registration_deadline": "2026-07-09",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41644",
       "status": "접수마감"
+    },
+    {
+      "id": "rrc-41830",
+      "name": "제16회 대전서구청장배 마라톤대회",
+      "date": "2026-11-15",
+      "start_time": "09:00",
+      "location": {
+        "address": "대전 유성구  엑스포 다리밑",
+        "city": "대전",
+        "province": "대전",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "대전서구육상연맹/중걷마런",
+      "contact": {
+        "phone": "042-543-5210"
+      },
+      "registration_url": "http://JGMRUN.COM",
+      "registration_start": "2026-08-28",
+      "registration_deadline": "2026-10-28",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41830",
+      "status": "접수중"
     },
     {
       "id": "rrc-41522",
@@ -5327,8 +5406,35 @@
       "status": "접수중"
     },
     {
+      "id": "rrc-41824",
+      "name": "2026 코리아 시즌 레이스",
+      "date": "2026-12-26",
+      "start_time": "08:00",
+      "location": {
+        "address": "상암월드컵공원 평화광장",
+        "city": "서울",
+        "province": "서울",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
+      "organizer": "(사)한국경비원협회중앙회",
+      "contact": {
+        "phone": "02-888-8875"
+      },
+      "registration_url": "http://k-run.kr",
+      "registration_start": "2026-08-25",
+      "registration_deadline": "2026-12-16",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41824",
+      "status": "접수중"
+    },
+    {
       "id": "rrc-41806",
-      "name": "2026 한강런",
+      "name": "2026 한강런 준비중",
       "date": "2026-12-28",
       "start_time": "09:00",
       "location": {
