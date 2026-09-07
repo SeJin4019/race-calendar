@@ -1,31 +1,6 @@
 {
-  "last_updated": "2026-09-04T03:45:09Z",
+  "last_updated": "2026-09-07T03:45:44Z",
   "races": [
-    {
-      "id": "rrc-41707",
-      "name": "2026 이일선마라톤",
-      "date": "2026-09-05",
-      "start_time": "16:30",
-      "location": {
-        "address": "울릉도내 나리분지",
-        "city": "경북",
-        "province": "경북",
-        "lat": null,
-        "lng": null
-      },
-      "distances": [
-        "10K"
-      ],
-      "organizer": "이일선기념사업회",
-      "contact": {
-        "phone": "010-6353-7227"
-      },
-      "registration_url": "http://forms.gle/6Y88RJqW6QCZkZoE7",
-      "registration_start": "2026-07-14",
-      "registration_deadline": "2026-08-18",
-      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41707",
-      "status": "접수마감"
-    },
     {
       "id": "rrc-41639",
       "name": "제12회 I LOVE 방송대 마라톤",
@@ -50,7 +25,7 @@
       "registration_start": "2026-06-30",
       "registration_deadline": "2026-07-31",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41639",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41650",
@@ -76,7 +51,7 @@
       "registration_start": "2026-06-19",
       "registration_deadline": "2026-08-13",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41650",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41595",
@@ -102,7 +77,7 @@
       "registration_start": "2026-05-26",
       "registration_deadline": "2026-08-18",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41595",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41365",
@@ -129,7 +104,7 @@
       "registration_start": "2026-02-02",
       "registration_deadline": "2026-04-05",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41365",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41635",
@@ -155,7 +130,7 @@
       "registration_start": "2026-06-10",
       "registration_deadline": "2026-08-06",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41635",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41628",
@@ -180,7 +155,7 @@
       "registration_start": "2026-06-10",
       "registration_deadline": "2026-06-16",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41628",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41582",
@@ -207,7 +182,7 @@
       "registration_start": "2026-05-13",
       "registration_deadline": "2026-08-30",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41582",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41556",
@@ -232,7 +207,7 @@
       "registration_start": "2026-06-17",
       "registration_deadline": "2026-07-15",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41556",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41368",
@@ -259,7 +234,7 @@
       "registration_start": "2026-02-03",
       "registration_deadline": "2026-07-27",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41368",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41032",
@@ -286,7 +261,7 @@
       "registration_start": "2026-04-13",
       "registration_deadline": "2026-07-22",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41032",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41791",
@@ -1266,6 +1241,31 @@
       "status": "접수마감"
     },
     {
+      "id": "rrc-41707",
+      "name": "2026 이일선마라톤",
+      "date": "2026-10-03",
+      "start_time": "08:30",
+      "location": {
+        "address": "울릉도내 나리분지",
+        "city": "경북",
+        "province": "경북",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K"
+      ],
+      "organizer": "이일선기념사업회",
+      "contact": {
+        "phone": "010-6353-7227"
+      },
+      "registration_url": "http://forms.gle/6Y88RJqW6QCZkZoE7",
+      "registration_start": "2026-07-14",
+      "registration_deadline": "2026-08-18",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41707",
+      "status": "접수마감"
+    },
+    {
       "id": "rrc-41700",
       "name": "2026 하반기 JUST RUN10 청주",
       "date": "2026-10-03",
@@ -1902,7 +1902,7 @@
       "registration_start": "2026-07-08",
       "registration_deadline": "2026-09-04",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41716",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41701",
@@ -2063,6 +2063,32 @@
       "status": "접수마감"
     },
     {
+      "id": "rrc-41852",
+      "name": "함께런 러닝 페스티벌",
+      "date": "2026-10-11",
+      "start_time": "",
+      "location": {
+        "address": "미사경정공원 관리동 광장",
+        "city": "경기",
+        "province": "경기",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "미사강변종합사회복지관, 진선재",
+      "contact": {
+        "phone": "02-515-9033"
+      },
+      "registration_url": "http://runcop.com/event/hamkkerun",
+      "registration_start": "2026-09-04",
+      "registration_deadline": "2026-09-20",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41852",
+      "status": "접수중"
+    },
+    {
       "id": "rrc-41835",
       "name": "제22회  금천구청장배 건강달리기",
       "date": "2026-10-11",
@@ -2112,7 +2138,7 @@
       "registration_start": "2026-08-07",
       "registration_deadline": "2026-09-04",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41769",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41785",
@@ -2408,6 +2434,32 @@
       "registration_deadline": "2026-09-15",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41422",
       "status": "접수중"
+    },
+    {
+      "id": "rrc-41857",
+      "name": "2026 억새노을마라톤대회",
+      "date": "2026-10-17",
+      "start_time": "16:00",
+      "location": {
+        "address": "상무시민공원",
+        "city": "광주",
+        "province": "광주",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "전남광주통합특별시 서구",
+      "contact": {
+        "phone": "061-375-1201"
+      },
+      "registration_url": "http://xn--o80b37in2b02lesgqqcj12a.kr/index.asp",
+      "registration_start": "2026-09-08",
+      "registration_deadline": "2026-09-28",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41857",
+      "status": "접수예정"
     },
     {
       "id": "rrc-41800",
@@ -2832,6 +2884,31 @@
       "registration_start": "2026-06-02",
       "registration_deadline": "2026-06-29",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41610",
+      "status": "접수마감"
+    },
+    {
+      "id": "rrc-41858",
+      "name": "불닭 버닝 트레일런",
+      "date": "2026-10-24",
+      "start_time": "11:00",
+      "location": {
+        "address": "대관령 삼양라운드힐",
+        "city": "강원",
+        "province": "강원",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "5K"
+      ],
+      "organizer": "프립, 러너킹",
+      "contact": {
+        "phone": "070-8843-0320"
+      },
+      "registration_url": "http://burningfesta.com",
+      "registration_start": "2026-09-06",
+      "registration_deadline": "2026-09-06",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41858",
       "status": "접수마감"
     },
     {
@@ -3496,6 +3573,32 @@
       "status": "접수마감"
     },
     {
+      "id": "rrc-41849",
+      "name": "런텐 13차 레이스 JUST RUN10 대전",
+      "date": "2026-11-07",
+      "start_time": "09:00",
+      "location": {
+        "address": "엑스포다리 인근",
+        "city": "대전",
+        "province": "대전",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "(주)러닝브레이커,전국러닝협회",
+      "contact": {
+        "phone": "042-710-2058"
+      },
+      "registration_url": "http://runten.co.kr",
+      "registration_start": "2026-09-02",
+      "registration_deadline": "2026-10-10",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41849",
+      "status": "접수중"
+    },
+    {
       "id": "rrc-41819",
       "name": "SaveRace 2026",
       "date": "2026-11-07",
@@ -3698,9 +3801,9 @@
       },
       "registration_url": "http://cymarathon.imweb.me/index?preview_mode=1",
       "registration_start": "2026-09-02",
-      "registration_deadline": "2026-09-02",
+      "registration_deadline": "2026-10-15",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41846",
-      "status": "접수마감"
+      "status": "접수중"
     },
     {
       "id": "rrc-41844",
@@ -4358,7 +4461,7 @@
       "registration_start": "2026-08-24",
       "registration_deadline": "2026-09-06",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41817",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41699",
@@ -4802,7 +4905,7 @@
       "registration_start": "2026-09-07",
       "registration_deadline": "2026-09-08",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41832",
-      "status": "접수예정"
+      "status": "접수중"
     },
     {
       "id": "rrc-41768",
@@ -5201,6 +5304,31 @@
       "registration_deadline": "2026-10-28",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41720",
       "status": "접수중"
+    },
+    {
+      "id": "rrc-41856",
+      "name": "사바스티안 사웨 초청기념 월드레코드 마라톤축제",
+      "date": "2026-12-06",
+      "start_time": "",
+      "location": {
+        "address": "금산세계인삼엑스포광장",
+        "city": "충남",
+        "province": "충남",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K"
+      ],
+      "organizer": "전국마라톤협회",
+      "contact": {
+        "phone": "042-"
+      },
+      "registration_url": "http://www.mara1080.com/event/ccf77de8-1b14-4170-afcb-c2eeaee1a78d",
+      "registration_start": "2026-09-08",
+      "registration_deadline": "2026-10-30",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41856",
+      "status": "접수예정"
     },
     {
       "id": "rrc-41851",
