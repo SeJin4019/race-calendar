@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-11T03:51:17Z",
+  "last_updated": "2026-09-14T04:10:33Z",
   "races": [
     {
       "id": "rrc-41639",
@@ -287,7 +287,7 @@
       "registration_start": "2026-08-10",
       "registration_deadline": "2026-08-23",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41791",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41750",
@@ -313,7 +313,7 @@
       "registration_start": "2026-07-29",
       "registration_deadline": "2026-08-23",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41750",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41772",
@@ -340,7 +340,7 @@
       "registration_start": "2026-08-06",
       "registration_deadline": "2026-08-26",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41772",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41735",
@@ -366,7 +366,7 @@
       "registration_start": "2026-07-27",
       "registration_deadline": "2026-08-12",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41735",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41773",
@@ -392,7 +392,7 @@
       "registration_start": "2026-08-05",
       "registration_deadline": "2026-08-05",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41773",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41708",
@@ -418,7 +418,7 @@
       "registration_start": "2026-07-27",
       "registration_deadline": "2026-08-31",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41708",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41709",
@@ -444,7 +444,7 @@
       "registration_start": "2026-07-16",
       "registration_deadline": "2026-08-31",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41709",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41549",
@@ -470,7 +470,7 @@
       "registration_start": "2026-04-27",
       "registration_deadline": "2026-08-14",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41549",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41532",
@@ -498,7 +498,7 @@
       "registration_start": "2026-04-13",
       "registration_deadline": "2026-06-16",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41532",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41420",
@@ -525,7 +525,7 @@
       "registration_start": "2026-02-27",
       "registration_deadline": "2026-05-31",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41420",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41354",
@@ -550,7 +550,7 @@
       "registration_start": "2026-03-31",
       "registration_deadline": "2026-09-12",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41354",
-      "status": "접수중"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41734",
@@ -576,7 +576,7 @@
       "registration_start": "2026-08-03",
       "registration_deadline": "2026-08-31",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41734",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41702",
@@ -602,7 +602,7 @@
       "registration_start": "2026-07-15",
       "registration_deadline": "2026-09-01",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41702",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41652",
@@ -629,7 +629,7 @@
       "registration_start": "2026-06-29",
       "registration_deadline": "2026-08-31",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41652",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41643",
@@ -655,7 +655,7 @@
       "registration_start": "2026-06-29",
       "registration_deadline": "2026-08-14",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41643",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41606",
@@ -682,7 +682,7 @@
       "registration_start": "2026-06-08",
       "registration_deadline": "2026-07-31",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41606",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41591",
@@ -709,7 +709,7 @@
       "registration_start": "2026-06-29",
       "registration_deadline": "2026-08-18",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41591",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41137",
@@ -736,7 +736,7 @@
       "registration_start": "2026-01-01",
       "registration_deadline": "2026-06-30",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41137",
-      "status": "접수마감"
+      "status": "대회종료"
     },
     {
       "id": "rrc-41743",
@@ -839,7 +839,7 @@
       "registration_start": "2026-07-13",
       "registration_deadline": "2026-09-11",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41694",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41674",
@@ -1287,7 +1287,7 @@
       },
       "registration_url": "http://runten.co.kr",
       "registration_start": "2026-07-14",
-      "registration_deadline": "2026-09-07",
+      "registration_deadline": "2026-09-11",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41700",
       "status": "접수마감"
     },
@@ -1314,7 +1314,7 @@
       },
       "registration_url": "http://mastershalf.kr/",
       "registration_start": "2026-07-07",
-      "registration_deadline": "2026-09-21",
+      "registration_deadline": "2026-09-27",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41680",
       "status": "접수중"
     },
@@ -1850,7 +1850,7 @@
       "registration_start": "2026-08-24",
       "registration_deadline": "2026-09-11",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41822",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41813",
@@ -2112,7 +2112,7 @@
       "registration_start": "2026-09-01",
       "registration_deadline": "2026-09-11",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41835",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41769",
@@ -2433,7 +2433,7 @@
       "registration_start": "2026-02-23",
       "registration_deadline": "2026-09-13",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41422",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41857",
@@ -2486,7 +2486,7 @@
       "registration_start": "2026-08-12",
       "registration_deadline": "2026-09-11",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41800",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41731",
@@ -3360,7 +3360,7 @@
     },
     {
       "id": "rrc-41795",
-      "name": "2026 JUST RUN10 포천",
+      "name": "런텐 12차 레이스 JUST RUN10 포천",
       "date": "2026-10-31",
       "start_time": "09:00",
       "location": {
@@ -3695,8 +3695,8 @@
       "contact": {
         "phone": "061-921-6600"
       },
-      "registration_url": "http://marathontest1.s3-website.ap-northeast-2.amazonaws.com/",
-      "registration_start": "2026-09-14",
+      "registration_url": "http://11bridge.com",
+      "registration_start": "2026-09-16",
       "registration_deadline": "2026-09-23",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41864",
       "status": "접수예정"
@@ -4353,7 +4353,7 @@
       "registration_start": "2026-09-14",
       "registration_deadline": "2026-10-23",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41831",
-      "status": "접수예정"
+      "status": "접수중"
     },
     {
       "id": "rrc-41825",
@@ -4616,7 +4616,7 @@
       "registration_start": "2026-09-14",
       "registration_deadline": "2026-10-23",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41842",
-      "status": "접수예정"
+      "status": "접수중"
     },
     {
       "id": "rrc-41695",
@@ -4643,7 +4643,7 @@
       "registration_start": "2026-07-06",
       "registration_deadline": "2026-09-11",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41695",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41602",
@@ -4907,6 +4907,32 @@
       "status": "접수중"
     },
     {
+      "id": "rrc-41868",
+      "name": "런텐 14차 레이스 JUST RUN10 대구",
+      "date": "2026-11-21",
+      "start_time": "09:00",
+      "location": {
+        "address": "금호강 러닝성지",
+        "city": "대구",
+        "province": "대구",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "(주)러닝브레이커,전국러닝협회",
+      "contact": {
+        "phone": "042-710-2058"
+      },
+      "registration_url": "http://runten.co.kr",
+      "registration_start": "2026-09-11",
+      "registration_deadline": "2026-10-20",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41868",
+      "status": "접수중"
+    },
+    {
       "id": "rrc-41863",
       "name": "2026 전마협 보성녹차 Autumn 마라톤",
       "date": "2026-11-21",
@@ -5009,6 +5035,32 @@
       "registration_start": "2026-07-08",
       "registration_deadline": "2026-11-07",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41673",
+      "status": "접수중"
+    },
+    {
+      "id": "rrc-41865",
+      "name": "2026 아식스 서울신문 고프리런",
+      "date": "2026-11-21",
+      "start_time": "07:30",
+      "location": {
+        "address": "여의도공원 문화의마당",
+        "city": "서울",
+        "province": "서울",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K"
+      ],
+      "organizer": "서울신문/ 아식스",
+      "contact": {
+        "phone": "02-785-1915"
+      },
+      "registration_url": "http://gofree.seoul.co.kr/",
+      "registration_start": "2026-09-01",
+      "registration_deadline": "2026-10-21",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41865",
       "status": "접수중"
     },
     {
@@ -5410,6 +5462,33 @@
       "status": "접수중"
     },
     {
+      "id": "rrc-41867",
+      "name": "제4회 가든파이브 라이프 레이스",
+      "date": "2026-12-05",
+      "start_time": "",
+      "location": {
+        "address": "서울 가든파이브라이프 중앙광장",
+        "city": "서울",
+        "province": "서울",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
+      "organizer": "스포테인",
+      "contact": {
+        "phone": "02-3210-1666"
+      },
+      "registration_url": "http://www.irunman.kr",
+      "registration_start": "2026-09-10",
+      "registration_deadline": "2026-11-16",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41867",
+      "status": "접수중"
+    },
+    {
       "id": "rrc-41833",
       "name": "사바스티안 사웨 초청기념 월드레코드 마라톤축제",
       "date": "2026-12-05",
@@ -5672,6 +5751,33 @@
       "status": "접수중"
     },
     {
+      "id": "rrc-41866",
+      "name": "2026 ONE MORE RUN",
+      "date": "2026-12-12",
+      "start_time": "",
+      "location": {
+        "address": "영종구 씨사이드파크 일원",
+        "city": "인천",
+        "province": "인천",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
+      "organizer": "새마펄스",
+      "contact": {
+        "phone": "00-1811-7978"
+      },
+      "registration_url": "http://www.omrun.co.kr",
+      "registration_start": "2026-09-14",
+      "registration_deadline": "2026-11-20",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41866",
+      "status": "접수중"
+    },
+    {
       "id": "rrc-41784",
       "name": "제5회 밤섬 마라톤",
       "date": "2026-12-13",
@@ -5718,13 +5824,13 @@
       ],
       "organizer": "진주시육상연맹",
       "contact": {
-        "phone": "010-3931-1356"
+        "phone": "010-5521-3720"
       },
       "registration_url": "http://www.jinma.co.kr",
       "registration_start": "2026-09-14",
       "registration_deadline": "2026-09-21",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41745",
-      "status": "접수예정"
+      "status": "접수중"
     },
     {
       "id": "rrc-41801",
