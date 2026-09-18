@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-16T04:06:13Z",
+  "last_updated": "2026-09-18T03:59:20Z",
   "races": [
     {
       "id": "rrc-41639",
@@ -2001,7 +2001,7 @@
       ],
       "organizer": "성동구체육회 / 성동구육상연맹",
       "contact": {
-        "phone": "010-7469-1526"
+        "phone": "010-0000-0000"
       },
       "registration_url": "http://samsamis.com/57",
       "registration_start": "2026-07-10",
@@ -2539,7 +2539,7 @@
       "registration_start": "2026-07-10",
       "registration_deadline": "2026-09-17",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41731",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41724",
@@ -2618,7 +2618,7 @@
       "registration_start": "2026-07-22",
       "registration_deadline": "2026-09-17",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41679",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41655",
@@ -2643,9 +2643,9 @@
       },
       "registration_url": "http://jsrun.kr",
       "registration_start": "2026-06-23",
-      "registration_deadline": "2026-08-31",
+      "registration_deadline": "2026-09-25",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41655",
-      "status": "접수마감"
+      "status": "접수중"
     },
     {
       "id": "rrc-41706",
@@ -2913,6 +2913,32 @@
       "status": "접수마감"
     },
     {
+      "id": "rrc-41874",
+      "name": "TOUR 5K & Beach Ploggin망상",
+      "date": "2026-10-24",
+      "start_time": "08:00",
+      "location": {
+        "address": "동해시 망상해수욕장",
+        "city": "강원",
+        "province": "강원",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "5K",
+        "2K"
+      ],
+      "organizer": "스포노베이션",
+      "contact": {
+        "phone": "010-5535-2432"
+      },
+      "registration_url": "http://mypb.info/competition/666",
+      "registration_start": "2026-09-16",
+      "registration_deadline": "2026-10-17",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41874",
+      "status": "접수중"
+    },
+    {
       "id": "rrc-41858",
       "name": "불닭 버닝 트레일런",
       "date": "2026-10-24",
@@ -3141,7 +3167,7 @@
       },
       "registration_url": "http://xn--439a68tboh.kr/index.asp",
       "registration_start": "2026-06-18",
-      "registration_deadline": "2026-09-23",
+      "registration_deadline": "2026-10-08",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41637",
       "status": "접수중"
     },
@@ -3673,6 +3699,31 @@
       "registration_start": "2026-09-10",
       "registration_deadline": "2026-11-05",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41862",
+      "status": "접수중"
+    },
+    {
+      "id": "rrc-41873",
+      "name": "2026 EGG RUN",
+      "date": "2026-11-07",
+      "start_time": "07:30",
+      "location": {
+        "address": "국립세종수목원 축제마당",
+        "city": "세종",
+        "province": "세종",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "5K"
+      ],
+      "organizer": "굿네이버스충청권역,국립세종수목원",
+      "contact": {
+        "phone": "041-575-9601"
+      },
+      "registration_url": "http://eggrun2026.imweb.me",
+      "registration_start": "2026-09-07",
+      "registration_deadline": "2026-10-07",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41873",
       "status": "접수중"
     },
     {
@@ -5293,7 +5344,7 @@
       ],
       "organizer": "무주마라톤협회/평화마라톤조직위",
       "contact": {
-        "phone": "010-7469-1526"
+        "phone": "010-0000-0000"
       },
       "registration_url": "http://mujumarathon.com",
       "registration_start": "2026-09-01",
@@ -5408,6 +5459,33 @@
       "status": "접수마감"
     },
     {
+      "id": "rrc-41879",
+      "name": "2026 원주 치악마라톤",
+      "date": "2026-11-29",
+      "start_time": "",
+      "location": {
+        "address": "원주종합운동장",
+        "city": "강원",
+        "province": "강원",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
+      "organizer": "강원도민일보, 원주시육상연맹",
+      "contact": {
+        "phone": "031-821-9951"
+      },
+      "registration_url": "http://wonju.raceplan.co.kr/",
+      "registration_start": "2026-09-17",
+      "registration_deadline": "2026-10-30",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41879",
+      "status": "접수중"
+    },
+    {
       "id": "rrc-41804",
       "name": "가야왕도 김해 전국어울림 마라톤대회",
       "date": "2026-11-29",
@@ -5432,6 +5510,31 @@
       "registration_start": "2026-08-13",
       "registration_deadline": "2026-10-25",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41804",
+      "status": "접수중"
+    },
+    {
+      "id": "rrc-41744",
+      "name": "2026 대전보문산트레일",
+      "date": "2026-11-29",
+      "start_time": "09:00",
+      "location": {
+        "address": "오월드 주차장",
+        "city": "전남",
+        "province": "전남",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K"
+      ],
+      "organizer": "명품 파브코리아",
+      "contact": {
+        "phone": "010-3526-9120"
+      },
+      "registration_url": "http://www.mtrailrun.kr/",
+      "registration_start": "2026-08-28",
+      "registration_deadline": "2026-11-28",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41744",
       "status": "접수중"
     },
     {
