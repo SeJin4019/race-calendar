@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-25T04:13:40Z",
+  "last_updated": "2026-09-28T04:34:40Z",
   "races": [
     {
       "id": "rrc-41639",
@@ -1316,7 +1316,7 @@
       "registration_start": "2026-07-07",
       "registration_deadline": "2026-09-27",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41680",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41608",
@@ -1717,7 +1717,7 @@
       "registration_start": "2026-07-08",
       "registration_deadline": "2026-09-27",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41677",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41698",
@@ -2087,6 +2087,32 @@
       "registration_deadline": "2026-06-23",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41300",
       "status": "접수마감"
+    },
+    {
+      "id": "rrc-41897",
+      "name": "독립유공자후손 기부마라톤 2026대학생RUN",
+      "date": "2026-10-11",
+      "start_time": "08:30",
+      "location": {
+        "address": "서울시 구로구 안양천 축구장A",
+        "city": "서울",
+        "province": "서울",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "대학문화유니온, 사단법인 독립",
+      "contact": {
+        "phone": "010-7937-2087"
+      },
+      "registration_url": "http://www.univrun.co.kr/index.php",
+      "registration_start": "2026-09-21",
+      "registration_deadline": "2026-10-04",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41897",
+      "status": "접수중"
     },
     {
       "id": "rrc-41852",
@@ -2487,6 +2513,31 @@
       "status": "접수마감"
     },
     {
+      "id": "rrc-41896",
+      "name": "2026 원주 바람길숲 기부런",
+      "date": "2026-10-17",
+      "start_time": "09:20",
+      "location": {
+        "address": "강원도 원주 치악산 바람길숲",
+        "city": "강원",
+        "province": "강원",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K"
+      ],
+      "organizer": "한국관광공사",
+      "contact": {
+        "phone": "010-8566-8705"
+      },
+      "registration_url": "http://cltoo.com/ko/product/379?category=CL_TO_EDITION",
+      "registration_start": "2026-09-23",
+      "registration_deadline": "2026-10-13",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41896",
+      "status": "접수중"
+    },
+    {
       "id": "rrc-41857",
       "name": "2026 억새노을마라톤대회",
       "date": "2026-10-17",
@@ -2670,7 +2721,7 @@
       "registration_start": "2026-06-23",
       "registration_deadline": "2026-09-25",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41655",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41706",
@@ -3512,7 +3563,7 @@
       "registration_start": "2026-08-11",
       "registration_deadline": "2026-09-25",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41795",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41781",
@@ -4587,6 +4638,32 @@
       "status": "접수중"
     },
     {
+      "id": "rrc-41895",
+      "name": "서울 빵빵런 2026",
+      "date": "2026-11-14",
+      "start_time": "08:30",
+      "location": {
+        "address": "뚝섬한강공원 수변무대",
+        "city": "서울",
+        "province": "서울",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "(주)1986프로덕션",
+      "contact": {
+        "phone": "02-364-1986"
+      },
+      "registration_url": "http://seoul.bbangrun.com",
+      "registration_start": "2026-09-21",
+      "registration_deadline": "2026-11-13",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41895",
+      "status": "접수중"
+    },
+    {
       "id": "rrc-41872",
       "name": "그 시절 스타들과 달리는 레트로 런 IN 증평",
       "date": "2026-11-14",
@@ -5212,6 +5289,33 @@
       "registration_start": "2026-09-11",
       "registration_deadline": "2026-10-30",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41885",
+      "status": "접수중"
+    },
+    {
+      "id": "rrc-41894",
+      "name": "2026 서울 라이프마라톤(가을)",
+      "date": "2026-11-21",
+      "start_time": "07:50",
+      "location": {
+        "address": "평화의공원 평화광장",
+        "city": "서울",
+        "province": "서울",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
+      "organizer": "(주)1986프로덕션",
+      "contact": {
+        "phone": "02-364-1986"
+      },
+      "registration_url": "http://seoul.lifemarathon.co.kr",
+      "registration_start": "2026-08-10",
+      "registration_deadline": "2026-11-20",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41894",
       "status": "접수중"
     },
     {
