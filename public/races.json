@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-14T04:13:58Z",
+  "last_updated": "2026-10-16T03:52:23Z",
   "races": [
     {
       "id": "rrc-41722",
@@ -2483,7 +2483,7 @@
       "registration_start": "2026-09-21",
       "registration_deadline": "2026-10-14",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41871",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41790",
@@ -2952,6 +2952,32 @@
       "registration_deadline": "2026-09-30",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41539",
       "status": "접수마감"
+    },
+    {
+      "id": "rrc-41926",
+      "name": "2026전국 체육회장배 안산 RUN 마라톤",
+      "date": "2026-11-08",
+      "start_time": "09:00",
+      "location": {
+        "address": "안산 호수공원(중앙무대)인근",
+        "city": "경기",
+        "province": "경기",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "안산시체육회/안산시육상연맹",
+      "contact": {
+        "phone": "031-339-6338"
+      },
+      "registration_url": "http://aaaf.koreashout.com/bbs/board.php?bo_table=cp_list&wr_id=60",
+      "registration_start": "2026-10-14",
+      "registration_deadline": "2026-10-24",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41926",
+      "status": "접수중"
     },
     {
       "id": "rrc-41846",
@@ -4314,7 +4340,7 @@
       "registration_start": "2026-08-10",
       "registration_deadline": "2026-10-15",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41748",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41899",
@@ -4391,6 +4417,31 @@
       "registration_start": "2026-09-01",
       "registration_deadline": "2026-10-21",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41865",
+      "status": "접수중"
+    },
+    {
+      "id": "rrc-41925",
+      "name": "제19회 대구광역시장기 생활체육 육상대회",
+      "date": "2026-11-22",
+      "start_time": "9:00",
+      "location": {
+        "address": "대구스타디움",
+        "city": "대구",
+        "province": "대구",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K"
+      ],
+      "organizer": "대구광역시체육회",
+      "contact": {
+        "phone": "010-3503-4558"
+      },
+      "registration_url": "http://www.daegutf.co.kr/front/board/view.php?code=game&tab=%EB%8C%80%EA%B5%AC&mid=0003%2C0014&no=722",
+      "registration_start": "2026-10-15",
+      "registration_deadline": "2026-11-05",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41925",
       "status": "접수중"
     },
     {
@@ -5030,6 +5081,33 @@
       "status": "접수중"
     },
     {
+      "id": "rrc-41923",
+      "name": "2026 화순고인돌마라톤",
+      "date": "2026-12-06",
+      "start_time": "08:30",
+      "location": {
+        "address": "화순공설운동장",
+        "city": "전남",
+        "province": "전남",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
+      "organizer": "화순군체육회, 화순군육상연맹",
+      "contact": {
+        "phone": "061-375-1201"
+      },
+      "registration_url": "http://xn--299a84k68cg1cr8pi6h5qsd0i.kr/index.asp",
+      "registration_start": "2026-10-20",
+      "registration_deadline": "2026-11-10",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41923",
+      "status": "접수예정"
+    },
+    {
       "id": "rrc-41851",
       "name": "제20회 양산전국하프마라톤",
       "date": "2026-12-06",
@@ -5132,6 +5210,31 @@
       "registration_start": "2026-09-09",
       "registration_deadline": "2026-11-08",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41860",
+      "status": "접수중"
+    },
+    {
+      "id": "rrc-41642",
+      "name": "대전보문산트레일런",
+      "date": "2026-12-06",
+      "start_time": "09:00",
+      "location": {
+        "address": "수서역6번출구",
+        "city": "대전",
+        "province": "대전",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K"
+      ],
+      "organizer": "파브코리아/명품트레일",
+      "contact": {
+        "phone": "010-3526-9120"
+      },
+      "registration_url": "http://www.mtrailrun.kr/",
+      "registration_start": "2026-08-15",
+      "registration_deadline": "2026-12-05",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41642",
       "status": "접수중"
     },
     {
