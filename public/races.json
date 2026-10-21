@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-19T03:58:17Z",
+  "last_updated": "2026-10-21T03:59:34Z",
   "races": [
     {
       "id": "rrc-41722",
@@ -2273,7 +2273,7 @@
       "registration_start": "2026-09-01",
       "registration_deadline": "2026-10-20",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41882",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41880",
@@ -2481,9 +2481,9 @@
       },
       "registration_url": "http://justicerun.kr/",
       "registration_start": "2026-09-21",
-      "registration_deadline": "2026-10-14",
+      "registration_deadline": "2026-10-21",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41871",
-      "status": "접수마감"
+      "status": "접수중"
     },
     {
       "id": "rrc-41790",
@@ -2692,7 +2692,7 @@
       "registration_start": "2026-09-20",
       "registration_deadline": "2026-10-20",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41886",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41873",
@@ -2743,7 +2743,7 @@
       "registration_start": "2026-09-02",
       "registration_deadline": "2026-10-20",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41849",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41864",
@@ -3135,7 +3135,7 @@
       "registration_start": "2026-08-13",
       "registration_deadline": "2026-10-19",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41808",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41755",
@@ -3766,7 +3766,7 @@
       "registration_start": "2026-08-09",
       "registration_deadline": "2026-10-20",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41845",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41838",
@@ -4106,7 +4106,7 @@
       "registration_start": "2026-05-06",
       "registration_deadline": "2026-10-20",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41563",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41686",
@@ -4338,9 +4338,9 @@
       },
       "registration_url": "http://rocknrun.kr",
       "registration_start": "2026-08-10",
-      "registration_deadline": "2026-10-15",
+      "registration_deadline": "2026-11-15",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41748",
-      "status": "접수마감"
+      "status": "접수중"
     },
     {
       "id": "rrc-41899",
@@ -5131,7 +5131,7 @@
       "registration_start": "2026-10-20",
       "registration_deadline": "2026-11-10",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41923",
-      "status": "접수예정"
+      "status": "접수중"
     },
     {
       "id": "rrc-41851",
@@ -5158,7 +5158,7 @@
       "registration_start": "2026-10-01",
       "registration_deadline": "2026-10-20",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41851",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41802",
