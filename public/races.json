@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-21T03:59:34Z",
+  "last_updated": "2026-10-23T04:03:29Z",
   "races": [
     {
       "id": "rrc-41722",
@@ -2271,9 +2271,9 @@
       },
       "registration_url": "http://icnr.kr",
       "registration_start": "2026-09-01",
-      "registration_deadline": "2026-10-20",
+      "registration_deadline": "2026-10-30",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41882",
-      "status": "접수마감"
+      "status": "접수중"
     },
     {
       "id": "rrc-41880",
@@ -2317,15 +2317,15 @@
         "10K",
         "5K"
       ],
-      "organizer": "원유니버스",
+      "organizer": "원유니버스스튜디오",
       "contact": {
         "phone": "02-338-0344"
       },
       "registration_url": "http://marvelrunkorea2026.com/",
       "registration_start": "2026-09-22",
-      "registration_deadline": "2026-10-12",
+      "registration_deadline": "2026-10-26",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41861",
-      "status": "접수마감"
+      "status": "접수중"
     },
     {
       "id": "rrc-41795",
@@ -2483,7 +2483,7 @@
       "registration_start": "2026-09-21",
       "registration_deadline": "2026-10-21",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41871",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41790",
@@ -3008,7 +3008,7 @@
       "id": "rrc-41844",
       "name": "2026 경상북도 신도시 마라톤",
       "date": "2026-11-08",
-      "start_time": "09:10",
+      "start_time": "09:00",
       "location": {
         "address": "경북도청 천년숲 앞",
         "city": "경북",
@@ -3027,9 +3027,9 @@
       },
       "registration_url": "http://1004.tbc.co.kr/",
       "registration_start": "2026-09-01",
-      "registration_deadline": "2026-10-16",
+      "registration_deadline": "2026-10-25",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41844",
-      "status": "접수마감"
+      "status": "접수중"
     },
     {
       "id": "rrc-41843",
@@ -3764,9 +3764,9 @@
       },
       "registration_url": "http://sonkeechungrun.com",
       "registration_start": "2026-08-09",
-      "registration_deadline": "2026-10-20",
+      "registration_deadline": "2026-10-27",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41845",
-      "status": "접수마감"
+      "status": "접수중"
     },
     {
       "id": "rrc-41838",
@@ -3949,7 +3949,7 @@
       "registration_start": "2026-10-06",
       "registration_deadline": "2026-10-21",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41902",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41602",
@@ -4417,7 +4417,7 @@
       "registration_start": "2026-09-01",
       "registration_deadline": "2026-10-21",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41865",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41925",
@@ -5370,6 +5370,32 @@
       "status": "접수중"
     },
     {
+      "id": "rrc-41936",
+      "name": "2026 성남 헤리티지 런",
+      "date": "2026-12-12",
+      "start_time": "08:30",
+      "location": {
+        "address": "탄천종합운동장",
+        "city": "경기",
+        "province": "경기",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "채널A",
+      "contact": {
+        "phone": "031-821-9940"
+      },
+      "registration_url": "http://charun.co.kr",
+      "registration_start": "2026-10-21",
+      "registration_deadline": "2026-11-20",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41936",
+      "status": "접수중"
+    },
+    {
       "id": "rrc-41784",
       "name": "제5회 밤섬 마라톤",
       "date": "2026-12-13",
@@ -5392,7 +5418,7 @@
       },
       "registration_url": "http://bamseom.com/",
       "registration_start": "2026-08-07",
-      "registration_deadline": "2026-11-22",
+      "registration_deadline": "2026-12-06",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41784",
       "status": "접수중"
     },
@@ -5423,6 +5449,33 @@
       "registration_deadline": "2026-09-14",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41745",
       "status": "접수마감"
+    },
+    {
+      "id": "rrc-41935",
+      "name": "2026 시즌마감마라톤대회",
+      "date": "2026-12-13",
+      "start_time": "",
+      "location": {
+        "address": "인천아사이드 경기장 북측 광장",
+        "city": "인천",
+        "province": "경기",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "하프",
+        "10K",
+        "5K"
+      ],
+      "organizer": "기호일보, 로드스포츠",
+      "contact": {
+        "phone": "00-1600-3962"
+      },
+      "registration_url": "http://42195race.com/",
+      "registration_start": "2026-10-20",
+      "registration_deadline": "2026-11-23",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41935",
+      "status": "접수중"
     },
     {
       "id": "rrc-41801",
@@ -5506,7 +5559,7 @@
     },
     {
       "id": "rrc-41806",
-      "name": "2026 한강런 준비중",
+      "name": "2026 한강런 (대회취소)",
       "date": "2026-12-28",
       "start_time": "09:00",
       "location": {
@@ -5526,9 +5579,9 @@
       },
       "registration_url": "http://hgrun.kr",
       "registration_start": "2026-09-20",
-      "registration_deadline": "2026-12-12",
+      "registration_deadline": "2026-10-15",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41806",
-      "status": "접수중"
+      "status": "접수마감"
     }
   ]
 }
