@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-26T04:00:59Z",
+  "last_updated": "2026-10-28T04:52:26Z",
   "races": [
     {
       "id": "rrc-41722",
@@ -2325,7 +2325,7 @@
       "registration_start": "2026-09-22",
       "registration_deadline": "2026-10-26",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41861",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41795",
@@ -3246,7 +3246,7 @@
     },
     {
       "id": "rrc-41729",
-      "name": "제20회 자원봉사 사랑 굿펀 마라톤",
+      "name": "제20회 자원봉사 사랑 굿펀 마라톤(취소)",
       "date": "2026-11-08",
       "start_time": "09:00",
       "location": {
@@ -3766,7 +3766,7 @@
       "registration_start": "2026-08-09",
       "registration_deadline": "2026-10-27",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41845",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41838",
@@ -3947,7 +3947,7 @@
       },
       "registration_url": "http://bithumbnanumrun.com",
       "registration_start": "2026-10-06",
-      "registration_deadline": "2026-10-21",
+      "registration_deadline": "2026-10-27",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41902",
       "status": "접수마감"
     },
@@ -4050,7 +4050,7 @@
       },
       "registration_url": "http://happytrailrun.com",
       "registration_start": "2026-07-19",
-      "registration_deadline": "2026-10-30",
+      "registration_deadline": "2026-11-02",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41585",
       "status": "접수중"
     },
@@ -4130,7 +4130,7 @@
       },
       "registration_url": "http://seoultongilrun.org",
       "registration_start": "2026-07-08",
-      "registration_deadline": "2026-10-26",
+      "registration_deadline": "2026-11-14",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41686",
       "status": "접수중"
     },
@@ -4313,9 +4313,9 @@
       },
       "registration_url": "http://giverun.kr",
       "registration_start": "2026-09-16",
-      "registration_deadline": "2026-10-16",
+      "registration_deadline": "2026-11-08",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41789",
-      "status": "접수마감"
+      "status": "접수중"
     },
     {
       "id": "rrc-41748",
@@ -4348,7 +4348,7 @@
       "date": "2026-11-21",
       "start_time": "09:00",
       "location": {
-        "address": "가례초등학교(경남 의령)",
+        "address": "의령여자중학교(경남 의령)",
         "city": "경남",
         "province": "경남",
         "lat": null,
@@ -4520,7 +4520,7 @@
       },
       "registration_url": "http://ssrun.kr/",
       "registration_start": "2026-08-20",
-      "registration_deadline": "2026-10-30",
+      "registration_deadline": "2026-11-02",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41774",
       "status": "접수중"
     },
@@ -4811,9 +4811,9 @@
       },
       "registration_url": "http://wonju.raceplan.co.kr/",
       "registration_start": "2026-09-17",
-      "registration_deadline": "2026-10-30",
+      "registration_deadline": "2026-10-26",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41879",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41804",
@@ -4971,6 +4971,31 @@
       "registration_start": "2026-08-18",
       "registration_deadline": "2026-11-15",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41810",
+      "status": "접수중"
+    },
+    {
+      "id": "rrc-41941",
+      "name": "2026 모악트레일런",
+      "date": "2026-12-05",
+      "start_time": "08:00",
+      "location": {
+        "address": "대한민국술테마박물관",
+        "city": "전북",
+        "province": "전북",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K"
+      ],
+      "organizer": "완주군/완주군체육회",
+      "contact": {
+        "phone": "010-2116-0148"
+      },
+      "registration_url": "http://samsam3315.imweb.me/75",
+      "registration_start": "2026-10-26",
+      "registration_deadline": "2026-11-20",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41941",
       "status": "접수중"
     },
     {
@@ -5182,7 +5207,7 @@
       },
       "registration_url": "http://roadracing.co.kr/",
       "registration_start": "2026-08-14",
-      "registration_deadline": "2026-10-30",
+      "registration_deadline": "2026-11-20",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41802",
       "status": "접수중"
     },
@@ -5214,7 +5239,7 @@
     },
     {
       "id": "rrc-41860",
-      "name": "2026 청춘런",
+      "name": "제6회 2026 청춘런",
       "date": "2026-12-06",
       "start_time": "",
       "location": {
@@ -5559,11 +5584,11 @@
     },
     {
       "id": "rrc-41806",
-      "name": "2026 한강런 (대회취소)",
+      "name": "대회취소",
       "date": "2026-12-28",
       "start_time": "09:00",
       "location": {
-        "address": "안양천다목적광장",
+        "address": "대회취소",
         "city": "서울",
         "province": "서울",
         "lat": null,
@@ -5573,11 +5598,11 @@
         "10K",
         "5K"
       ],
-      "organizer": "한강런(주)",
+      "organizer": "대회취소",
       "contact": {
-        "phone": "02-888-8805"
+        "phone": "02-0000-0000"
       },
-      "registration_url": "http://hgrun.kr",
+      "registration_url": "http://hgru",
       "registration_start": "2026-09-20",
       "registration_deadline": "2026-10-15",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41806",
