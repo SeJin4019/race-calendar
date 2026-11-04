@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-02T05:10:04Z",
+  "last_updated": "2026-11-04T05:31:59Z",
   "races": [
     {
       "id": "rrc-41871",
@@ -1177,7 +1177,7 @@
       "registration_start": "2026-04-13",
       "registration_deadline": "2026-11-03",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41528",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41910",
@@ -1306,7 +1306,7 @@
       },
       "registration_url": "http://sonkeechungrun.com",
       "registration_start": "2026-08-09",
-      "registration_deadline": "2026-11-02",
+      "registration_deadline": "2026-11-04",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41845",
       "status": "접수중"
     },
@@ -1594,7 +1594,7 @@
       "registration_start": "2026-07-19",
       "registration_deadline": "2026-11-02",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41585",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41565",
@@ -2062,7 +2062,7 @@
       },
       "registration_url": "http://ssrun.kr/",
       "registration_start": "2026-08-20",
-      "registration_deadline": "2026-11-02",
+      "registration_deadline": "2026-11-16",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41774",
       "status": "접수중"
     },
@@ -2353,7 +2353,7 @@
       },
       "registration_url": "http://wonju.raceplan.co.kr/",
       "registration_start": "2026-09-17",
-      "registration_deadline": "2026-10-26",
+      "registration_deadline": "2026-11-03",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41879",
       "status": "접수마감"
     },
