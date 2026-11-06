@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-04T05:31:59Z",
+  "last_updated": "2026-11-06T05:47:56Z",
   "races": [
     {
       "id": "rrc-41871",
@@ -184,7 +184,7 @@
       "registration_start": "2026-09-10",
       "registration_deadline": "2026-11-05",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41862",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41892",
@@ -788,7 +788,7 @@
     },
     {
       "id": "rrc-41729",
-      "name": "제20회 자원봉사 사랑 굿펀 마라톤(취소)",
+      "name": "제20회 자원봉사 사랑 굿펀 마라톤",
       "date": "2026-11-08",
       "start_time": "09:00",
       "location": {
@@ -1308,7 +1308,7 @@
       "registration_start": "2026-08-09",
       "registration_deadline": "2026-11-04",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41845",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41838",
@@ -1984,7 +1984,7 @@
       "registration_start": "2026-10-15",
       "registration_deadline": "2026-11-05",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41925",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41832",
@@ -2171,6 +2171,32 @@
       "registration_deadline": "2026-09-30",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41859",
       "status": "접수마감"
+    },
+    {
+      "id": "rrc-41947",
+      "name": "목욕런 2026",
+      "date": "2026-11-28",
+      "start_time": "8:00",
+      "location": {
+        "address": "월드컵공원 평화의 광장",
+        "city": "서울",
+        "province": "서울",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "사우나 민족",
+      "contact": {
+        "phone": "02-111-1111"
+      },
+      "registration_url": "http://mokyokrun.shop",
+      "registration_start": "2026-10-28",
+      "registration_deadline": "2026-11-09",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41947",
+      "status": "접수중"
     },
     {
       "id": "rrc-41927",
@@ -2801,7 +2827,7 @@
       },
       "registration_url": "http://www.youthrun.co.kr",
       "registration_start": "2026-09-09",
-      "registration_deadline": "2026-11-08",
+      "registration_deadline": "2026-11-22",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41860",
       "status": "접수중"
     },
@@ -2880,33 +2906,6 @@
       "registration_start": "2026-08-18",
       "registration_deadline": "2026-11-06",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41812",
-      "status": "접수중"
-    },
-    {
-      "id": "rrc-41840",
-      "name": "제3회 긍정의힘 마라톤",
-      "date": "2026-12-12",
-      "start_time": "09:00",
-      "location": {
-        "address": "신정교 하부 영롱이 억새구장",
-        "city": "서울",
-        "province": "서울",
-        "lat": null,
-        "lng": null
-      },
-      "distances": [
-        "하프",
-        "10K",
-        "5K"
-      ],
-      "organizer": "(사)한국유튜브방송협회",
-      "contact": {
-        "phone": "02-336-1588"
-      },
-      "registration_url": "http://www.powerrun.kr/",
-      "registration_start": "2026-08-30",
-      "registration_deadline": "2026-12-06",
-      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41840",
       "status": "접수중"
     },
     {
@@ -3042,60 +3041,6 @@
       "registration_start": "2026-10-20",
       "registration_deadline": "2026-11-23",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41935",
-      "status": "접수중"
-    },
-    {
-      "id": "rrc-41801",
-      "name": "제2회 청춘 릴레이 마라톤",
-      "date": "2026-12-19",
-      "start_time": "08:00",
-      "location": {
-        "address": "상암월드컵공원 평화의광장",
-        "city": "서울",
-        "province": "서울",
-        "lat": null,
-        "lng": null
-      },
-      "distances": [
-        "하프",
-        "10K",
-        "5K"
-      ],
-      "organizer": "(사)재한다문화총연합회",
-      "contact": {
-        "phone": "02-2636-7775"
-      },
-      "registration_url": "http://youngrun.kr",
-      "registration_start": "2026-08-12",
-      "registration_deadline": "2026-12-09",
-      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41801",
-      "status": "접수중"
-    },
-    {
-      "id": "rrc-41824",
-      "name": "2026 코리아 시즌 레이스",
-      "date": "2026-12-26",
-      "start_time": "08:00",
-      "location": {
-        "address": "상암월드컵공원 평화광장",
-        "city": "서울",
-        "province": "서울",
-        "lat": null,
-        "lng": null
-      },
-      "distances": [
-        "하프",
-        "10K",
-        "5K"
-      ],
-      "organizer": "(사)한국경비원협회중앙회",
-      "contact": {
-        "phone": "02-888-8875"
-      },
-      "registration_url": "http://k-run.kr",
-      "registration_start": "2026-08-25",
-      "registration_deadline": "2026-12-16",
-      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41824",
       "status": "접수중"
     },
     {
