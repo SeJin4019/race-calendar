@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-11T05:25:15Z",
+  "last_updated": "2026-11-13T05:48:41Z",
   "races": [
     {
       "id": "rrc-41871",
@@ -1752,7 +1752,7 @@
       "registration_start": "2026-04-01",
       "registration_deadline": "2026-11-11",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41522",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41885",
@@ -2354,7 +2354,7 @@
       "registration_start": "2026-09-28",
       "registration_deadline": "2026-11-11",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41898",
-      "status": "접수중"
+      "status": "접수마감"
     },
     {
       "id": "rrc-41879",
