@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-18T06:38:23Z",
+  "last_updated": "2026-11-20T06:27:14Z",
   "races": [
     {
       "id": "rrc-41871",
@@ -1987,6 +1987,34 @@
       "status": "접수마감"
     },
     {
+      "id": "rrc-41972",
+      "name": "마르 백야드울트라6",
+      "date": "2026-11-22",
+      "start_time": "12:00",
+      "location": {
+        "address": "제주시 월각로 783",
+        "city": "제주",
+        "province": "제주",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "풀",
+        "하프",
+        "10K",
+        "5K"
+      ],
+      "organizer": "(주)마르어드벤처",
+      "contact": {
+        "phone": "010-8691-2251"
+      },
+      "registration_url": "http://events.maar-adv.com/backyardultra",
+      "registration_start": "2026-11-01",
+      "registration_deadline": "2026-11-20",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41972",
+      "status": "접수중"
+    },
+    {
       "id": "rrc-41832",
       "name": "2026 인천마라톤",
       "date": "2026-11-22",
@@ -2389,7 +2417,7 @@
       "date": "2026-11-29",
       "start_time": "",
       "location": {
-        "address": "롯데워터파크 제3주차장",
+        "address": "가동교차로 (김해시 한림면 가동리)",
         "city": "경남",
         "province": "경남",
         "lat": null,
@@ -2619,6 +2647,32 @@
       "registration_start": "2026-08-31",
       "registration_deadline": "2026-11-25",
       "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41833",
+      "status": "접수중"
+    },
+    {
+      "id": "rrc-41982",
+      "name": "2026 유관순 평화 마라톤",
+      "date": "2026-12-05",
+      "start_time": "",
+      "location": {
+        "address": "천안 독립기념관 겨레의 큰 마",
+        "city": "충남",
+        "province": "충남",
+        "lat": null,
+        "lng": null
+      },
+      "distances": [
+        "10K",
+        "5K"
+      ],
+      "organizer": "천안시체육회, 대전일보사",
+      "contact": {
+        "phone": "042-335-2543"
+      },
+      "registration_url": "http://ryugwansun.co.kr/",
+      "registration_start": "2026-11-17",
+      "registration_deadline": "2026-11-23",
+      "source_url": "http://www.roadrun.co.kr/schedule/view.php?no=41982",
       "status": "접수중"
     },
     {
